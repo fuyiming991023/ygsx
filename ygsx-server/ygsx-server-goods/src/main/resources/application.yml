@@ -1,0 +1,36 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: ygsx-goods
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/ssm?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone = GMT
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://127.0.0.1:7001/eureka/
+
+  instance: #服务名称的修改
+    instance-id: ygsx-server-goods
+    prefer-ip-address: true     #访问路径可以显示IP地址
+
+info:
+  app.name: ygsx-goods
+  company.name: www.ygsx.com
+  build.artifactId: ${project.artifactId}
+  build.version: ${project.version}
+  build.description: ${project.description}
+
+mybatis: #别名
+  type-aliases-package: com.ygsx.pojo
+
+
+
+
