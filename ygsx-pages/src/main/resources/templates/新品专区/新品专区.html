@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>新品专区</title>
+		<link rel="stylesheet" type="text/css" href="../layui-v2.5.5/layui/css/layui.css"/>
+		<script type="text/javascript" src="../layui-v2.5.5/layui/layui.js "></script>
+		<script type="text/javascript" src="../jquery-3.4.1.js"></script>
+		</head>
+		<style>
+			*{
+				margin:0px ;
+				padding: 0px;
+			}
+
+			.xpzq-tp{
+				width: 1280px;
+				margin: 0 auto;
+			}
+			.xpzq-tp img{
+				width: 1280px;
+			}
+			.djjx-tp img{
+				position: absolute;
+				left:244px;
+				top:670px;
+			}
+			.tpzs{
+				width: 1005px;
+				margin:0 auto;				
+				margin-top:138px;
+				overflow: hidden;
+				
+			}
+			.tpzs li{
+				width:240px;
+				float:left;
+				margin-left:11px;
+				background:white;
+				margin-top:20px;
+				height: 337px;
+			}
+			.tpzs .tpzs1 {
+				width:230px;
+			}
+			.tpzs-jg {
+				font-size:20px;
+				color: red;
+				margin-top:20px;
+				padding-bottom:20px;
+				font-weight: 600;
+				padding-left: 5px;
+			}
+			.tpzs-jg img{
+				padding-left:60px;
+			}
+			.tpzs-jg2{
+				padding-left:5px;
+				height: 30px;
+			}
+			.tpzs-jg2:hover{
+				color: red;
+				text-decoration:underline;
+			}
+			/*缤纷鲜果*/
+			.bfxg-tp{
+				width: 1005px;
+				margin: 0 auto;
+				margin-top:30px;	
+			}
+			.tpzs-bf{
+				width: 1005px;
+				margin: 0 auto;				
+				margin-top:-20px;
+				overflow: hidden;	
+			}
+			.tpzs-bf li{
+				width:240px;
+				float:left;
+				margin-left:11px;
+				background:white;
+				margin-top:20px;
+				height: 337px;
+			}
+			.tpzs-bf .tpzs1 {
+				width:230px;
+			}
+			/*肉品禽蛋*/
+			.bfxg-rp{
+				width: 1005px;
+				margin: 0 auto;
+			}
+			.tpzs-rp{
+				width: 1005px;
+				margin: 0 auto;
+				margin-top:-20px;
+				overflow: hidden;	
+			}
+			.tpzs-rp li{
+				width:240px;
+				float:left;
+				margin-left:11px;
+				background:white;
+				margin-top:20px;
+				height: 337px;
+			}
+			.tpzs-rp .tpzs1 {
+				width:230px;
+			}
+			
+			/*海鲜水产*/
+			.bfxg-sc{
+				width: 1005px;
+				margin: 0 auto;
+			}
+			.tpzs-sc{
+				width: 1005px;
+				margin: 0 auto;		
+				margin-top:-20px;
+				overflow: hidden;	
+			}
+			.tpzs-sc li{
+				width:240px;
+				float:left;
+				margin-left:11px;
+				background:white;
+				margin-top:20px;
+				height: 337px;
+			}
+			.tpzs-sc .tpzs1 {
+				width:230px;
+			}
+			/*清新鲜蔬*/
+			.bfxg-qx{
+			width: 1005px;
+			margin: 0 auto;
+			}
+			.tpzs-qx{
+				width: 1005px;
+				margin: 0 auto;			
+				margin-top:-20px;
+				overflow: hidden;	
+			}
+			.tpzs-qx li{
+				width:240px;
+				float:left;
+				margin-left:11px;
+				background:white;
+				margin-top:20px;
+				height: 337px;
+			}
+			.tpzs-qx .tpzs1 {
+				width:230px;
+			}
+			/*食品饮料*/
+			.bfxg-sp{
+				width: 1005px;
+				margin: 0 auto;
+			}
+			.tpzs-sp{
+				width: 1005px;
+				margin: 0 auto;			
+				margin-top:-20px;
+				overflow: hidden;	
+			}
+			.tpzs-sp li{
+				width:240px;
+				float:left;
+				margin-left:11px;
+				background:white;
+				margin-top:20px;
+				height: 337px;
+			}
+			.tpzs-sp .tpzs1 {
+				width:230px;
+			}
+			ul li{
+				position: relative;
+			}
+			.chuangjianp{
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 230px;
+				height: 230px;
+				z-index: 999;
+			}
+			.chuangjianp img{
+				position: absolute;
+				width: 220px;
+				height: 220px;
+				z-index: 999;
+			}
+		</style>
+		
+	
+	<body>
+		
+		<div class="dingbu"></div>
+		<div class="daohang"></div>
+	    <!--新品专区-->
+		<div class="xpzq-tp">
+			<a href=""><img src="../图片/xpzq/9288737665721981_1147x462.jpg"/></a>
+		</div>
+		
+		
+		
+		<!--djjx-->
+		<div class="djjx-tp">
+			<a href=""><img src="../图片/xpzq/9288692841455723.jpg"/></a>
+		</div>
+		<ul class="tpzs">
+	    </ul>
+		<!--bfxg-->
+		<div class="bfxg-tp">
+			<img src="../图片/xpzq/9288692842111083.jpg"/>
+		</div>
+		<ul class="tpzs-bf">
+       </ul>
+		<!--rpqd-->
+		<div class="bfxg-rp">
+			<img src="../图片/xpzq/9288692842438763.jpg"/>
+		</div>
+		<ul class="tpzs-rp">
+		</ul>
+		<!--海鲜水产-->
+		<div class="bfxg-sc">
+			<img src="../图片/xpzq/9288692842569835.jpg"/>
+		</div>
+		<ul class="tpzs-sc">
+		</ul>
+		
+		<!--清新鲜蔬-->
+		<div class="bfxg-qx">
+			<img src="../图片/xpzq/9288692842700907.jpg"/>
+		</div>
+		<ul class="tpzs-qx">
+		</ul>
+		
+		<!--食品饮料-->
+		<div class="bfxg-sp">
+			<img src="../图片/xpzq/9288694021333161.jpg"/>
+		</div>
+		<ul class="tpzs-sp">
+		</ul>
+		<div id="db"></div>
+		<script type="text/javascript">
+			$(".dingbu").load("../顶部/顶部.html")
+			$(".daohang").load("../导航栏/导航栏.html");
+			$("#db").load("../底部/底部.html");
+			$("#shop").load("../空购物车/空购物车.html");
+			
+			
+			
+	        $(".qbsp").mouseenter(function(){	        	
+	        	$(".xpxl").css("display","block");
+	        })
+	       
+            $(".p1").hover(function(){
+                $(this).css({
+                	"margin-left":"20px"
+                },500).siblings().css("margin-left","10px")
+            },function(){
+            	$(this).animate({
+                	"margin-left":"10px"
+                },500)
+            })
+            
+            $(".xpxl li").hover(function(){
+            	$(this).css({
+            		"border-bottom":"1px solid #ccc",
+            		"border-top":"1px solid #ccc"
+            	})},function(){
+            		$(this).css({
+            	    "border-bottom":"none",
+            		"border-top":"none"
+            		})
+            	})
+         
+            $(".p5").hover(function(){
+            	$(".xpxl2").css("display","block")
+            	$(".xpxl2 a").text("禽类蛋类")
+            	$(".xpxl2 img").attr("src","../图片/xpzq/QQ图片20191111154304.png")
+            })
+            
+            $(".p2").hover(function(){
+            	$(".xpxl2 a").text("方便速食")
+            	$(".xpxl2").css("display","block")
+            	$(".xpxl2 img").attr("src","../图片/xpzq/QQ图片20191111154313.png")
+            })
+             
+             
+             $(".p3").hover(function(){
+            	$(".xpxl2 a").text("粮油杂食")
+            	$(".xpxl2").css("display","block")
+            	$(".xpxl2 img").attr("src","../图片/xpzq/QQ图片20191111154321.png")
+            })
+              $(".p4").hover(function(){
+            	$(".xpxl2 a").text("食品饮料")
+            	$(".xpxl2").css("display","block")
+            	$(".xpxl2 img").removeAttr("src")
+            })
+              $(".xpxl2").hover(function(){
+              	$(".xpxl").css("display","block")
+              },function(){
+              	$(".xpxl").css("display","none")
+              	$(".xpxl2").css("display","none")
+              })
+              
+               $(".xpxl").hover(function(){	        	
+	             $(".xpxl").css("display","block");
+	        },function(){
+	        	$(".xpxl").css("display","none");
+	        	$(".xpxl2").css("display","block");
+	        })
+               
+             var data=[{
+             	imgSrc:"../图片/xpzq/9288729469822225_300.jpg",
+             	tpzsJg2:"农百鲜樱桃谷鸭950g",
+             	tpzsJg:"￥29.9",
+             	tpzsJg3:"../图片/xpzq/daoguozhong.png"
+             },{
+             	imgSrc:"../图片/xpzq/9288725486937316_300.jpg",
+             	tpzsJg2:"原膳新西兰精修带骨牛肋排(含顿料包)400g",
+             	tpzsJg:"￥39.0",
+             	tpzsJg3:"../图片/xpzq/daoguozhong.png"
+             },{
+             	imgSrc:"../图片/xpzq/9288719653577819_300.jpg",
+             	tpzsJg2:"原膳加拿大北京甜虾熟冻500g(120+/kg)",
+             	tpzsJg:"￥41.9",
+             	tpzsJg3:"../图片/xpzq/1.png"
+             },{
+             	imgSrc:"../图片/xpzq/9288727914489095_300.jpg",
+             	tpzsJg2:"SunMoon泰国金枕头冷冻榴莲果肉300g",
+             	tpzsJg:"￥49.9",
+             	tpzsJg3:"../图片/xpzq/1.png"
+             },{
+             	imgSrc:"../图片/xpzq/9288715872871294_300.jpg",
+             	tpzsJg2:"原膳南美白虾仁(中)250g",
+             	tpzsJg:"￥32.9",
+             	tpzsJg3:"../图片/xpzq/1.png"
+             },{
+             	imgSrc:"../图片/xpzq/9288729664202004_300.jpg",
+             	tpzsJg2:"AMPERO乌拉圭冷冻去骨安格斯牛肉糜(85%瘦)454g",
+             	tpzsJg:"￥39.9",
+             	tpzsJg3:"../图片/xpzq/1.png"
+             },{
+             	imgSrc:"../图片/xpzq/9288733757351272_300.jpg",
+             	tpzsJg2:"百年渔港蒜蓉粉丝扇贝200g(6枚装)",
+             	tpzsJg:"￥19.9",
+             	tpzsJg3:"../图片/xpzq/1.png"
+             },{
+             	imgSrc:"../图片/xpzq/9288729662432532_300.jpg",
+             	tpzsJg2:"PAMPERO乌拉圭冷冻去骨安格斯谷饲薄裙肉牛排150g",
+             	tpzsJg:"￥39.9",
+             	tpzsJg3:"../图片/xpzq/1.png"
+             },{
+             	imgSrc:"../图片/xpzq/170224100848940_1002515_300.jpg",
+             	tpzsJg2:"原膳东海黄鱼400g(3-4条)",
+             	tpzsJg:"￥35.0",
+             	tpzsJg3:"../图片/xpzq/1.png"
+             },{
+             	imgSrc:"../图片/xpzq/9288727884670215_300.jpg",
+             	tpzsJg2:"原膳加拿大AAA级谷饲西冷牛排180g",
+             	tpzsJg:"￥59.9",
+             	tpzsJg3:"../图片/xpzq/1.png"
+             },{
+             	imgSrc:"../图片/xpzq/9288716047164292_300.jpg",
+             	tpzsJg2:"KONO半壳冷冻青口贝500g",
+             	tpzsJg:"￥49.8",
+             	tpzsJg3:"../图片/xpzq/1.png"
+             },{
+             	imgSrc:"../图片/xpzq/9288729665905940_300.jpg",
+             	tpzsJg2:"PAMPERO乌拉圭冷冻去骨安格斯谷饲板腱心牛排150g",
+             	tpzsJg:"￥39.9",
+             	tpzsJg3:"../图片/xpzq/1.png"
+             }
+             ]
+             var h=""
+             for(var i=0;i<data.length;i++){
+             	h=h+'<li>'+
+				'<img src="'+data[i].imgSrc+'" class="tpzs1"/>'+
+				'<p class="tpzs-jg2">'+data[i].tpzsJg2+'</p>'+
+				'<p class="tpzs-jg">'+data[i].tpzsJg+' <img src="'+data[i].tpzsJg3+'" class="tpzs-jg3"/></p>'+
+			    '</li>';
+             }
+             $(".tpzs").html(h); 
+             
+             
+             
+//          bfxg 
+            var data2=[{
+             	imgSrc:"../图片/xpzq/9288738788288265_300.jpg",
+             	tpzsJg2:"国产麒麟瓜1个2.4kg以上/个",
+             	tpzsJg:"￥26.8",
+             	tpzsJg3:"../图片/xpzq/daoguozhong.png"
+             },{
+             	imgSrc:"../图片/xpzq/9288738784028425_300.jpg",
+             	tpzsJg2:"南非血橙4个/盒200g以上/个",
+             	tpzsJg:"￥26.0",
+             	tpzsJg3:"../图片/xpzq/daoguozhong.png"
+             },{
+             	imgSrc:"../图片/xpzq/9288738743101189_300.jpg",
+             	tpzsJg2:"新疆西梅400g",
+             	tpzsJg:"￥38.0",
+             	tpzsJg3:"../图片/xpzq/daoguozhong.png"
+             },{
+             	imgSrc:"../图片/xpzq/9288738712626946_300.jpg",
+             	tpzsJg2:"河北红香酥梨1kg/盒130g以上/个",
+             	tpzsJg:"￥19.9",
+             	tpzsJg3:"../图片/xpzq/daoguozhong.png"
+             },{
+             	imgSrc:"../图片/xpzq/9288738693687041_300.jpg",
+             	tpzsJg2:"新西兰Diva苹果4个/盒(140g以上/个)",
+             	tpzsJg:"￥26.9",
+             	tpzsJg3:"../图片/xpzq/daoguozhong.png"
+             },{
+             	imgSrc:"../图片/xpzq/9288738665703166_300.jpg",
+             	tpzsJg2:"河北皇冠梨6个(250g以上/个)",
+             	tpzsJg:"￥26.9",
+             	tpzsJg3:"../图片/xpzq/daoguozhong.png"
+             },{
+             	imgSrc:"../图片/xpzq/9288738659444478_300.jpg",
+             	tpzsJg2:"新疆黑提1kg",
+             	tpzsJg:"￥38.0",
+             	tpzsJg3:"../图片/xpzq/daoguozhong.png"
+             },{
+             	imgSrc:"../图片/xpzq/9288738659084030_300.jpg",
+             	tpzsJg2:"新疆无核白葡萄1kg",
+             	tpzsJg:"￥29.0",
+             	tpzsJg3:"../图片/xpzq/daoguozhong.png"
+             }
+             ]
+             var z=""
+             for(var i=0;i<data2.length;i++){
+             	z=z+'<li>'+
+				'<img src="'+data2[i].imgSrc+'"class="tpzs1"/>'+
+				'<p class="tpzs-jg2">'+data2[i].tpzsJg2+'</p>'+
+				'<p class="tpzs-jg">'+data2[i].tpzsJg+' <img src="'+data2[i].tpzsJg3+'" class="tpzs-jg3"/></p>'+
+			    '</li>';
+             }
+             $(".tpzs-bf").html(z); 
+             
+             
+//          肉品禽蛋
+             var data3=[{
+             	imgSrc:"../图片/xpzq/9288738812438285_300.jpg",
+             	tpzsJg2:"尊享澳新进口原切牛排礼盒1.68kg",
+             	tpzsJg:"￥499.0",
+             	tpzsJg3:"../图片/xpzq/1.png"
+             },{
+             	imgSrc:"../图片/xpzq/9288725486937316_300.jpg",
+             	tpzsJg2:"原膳澳洲进口原切和牛雪花牛肉粒300g",
+             	tpzsJg:"￥56.0",
+             	tpzsJg3:"../图片/xpzq/1.png"
+             },{
+             	imgSrc:"../图片/xpzq/9288738598266615_300.jpg",
+             	tpzsJg2:"原膳澳洲进口原切和牛雪花牛排150g",
+             	tpzsJg:"￥39.9",
+             	tpzsJg3:"../图片/xpzq/1.png"
+             },{
+             	imgSrc:"../图片/xpzq/9288738598987511_300.jpg",
+             	tpzsJg2:"原膳澳洲进口原切和牛煎烤片200g",
+             	tpzsJg:"￥49.9",
+             	tpzsJg3:"../图片/xpzq/1.png"
+             },{
+             	imgSrc:"../图片/xpzq/9288738598594295_300.jpg",
+             	tpzsJg2:"原膳澳洲进口原切和牛涮烤片150g",
+             	tpzsJg:"￥36.0",
+             	tpzsJg3:"../图片/xpzq/1.png"
+             },{
+             	imgSrc:"../图片/xpzq/9288738525685488_300.jpg",
+             	tpzsJg2:"原膳澳洲安格斯汉堡牛肉饼110g",
+             	tpzsJg:"￥23.8",
+             	tpzsJg3:"../图片/xpzq/1.png"
+             },{
+             	imgSrc:"../图片/xpzq/9288738630969082_300.jpg",
+             	tpzsJg2:"原膳巴西菲力牛排700g",
+             	tpzsJg:"￥198.0",
+             	tpzsJg3:"../图片/xpzq/1.png"
+             },{
+             	imgSrc:"../图片/xpzq/9288738504517356_300.jpg",
+             	tpzsJg2:"原膳乌拉圭眼肉芯牛排150g",
+             	tpzsJg:"￥36.0",
+             	tpzsJg3:"../图片/xpzq/1.png"
+             },{
+             	imgSrc:"../图片/xpzq/9288736791701040_300.jpg ",
+             	tpzsJg2:"原膳澳洲精修牛腱子1kg",
+             	tpzsJg:"￥98.0",
+             	tpzsJg3:"../图片/xpzq/1.png"
+             },{
+             	imgSrc:"../图片/xpzq/9288736792782384_300.jpg",
+             	tpzsJg2:"原膳乌拉圭精修牛腩1kg",
+             	tpzsJg:"￥90.0",
+             	tpzsJg3:"../图片/xpzq/1.png"
+             },{
+             	imgSrc:"../图片/xpzq/9288736208987549_300.jpg",
+             	tpzsJg2:"恒都带骨羊前腿1.2kg",
+             	tpzsJg:"￥89.9",
+             	tpzsJg3:"../图片/xpzq/daoguozhong.png"
+             },{
+             	imgSrc:"../图片/xpzq/9288734965900675_300.jpg",
+             	tpzsJg2:"农百鲜草麻鸭1kg",
+             	tpzsJg:"￥59.9",
+             	tpzsJg3:"../图片/xpzq/1.png"
+             }
+             ]
+             var t=""
+             for(var i=0;i<data3.length;i++){
+             	t=t+'<li>'+
+				'<img src="'+data3[i].imgSrc+'" class="tpzs1"/>'+
+				'<p class="tpzs-jg2">'+data3[i].tpzsJg2+'</p>'+
+				'<p class="tpzs-jg">'+data3[i].tpzsJg+' <img src="'+data3[i].tpzsJg3+'" class="tpzs-jg3"/></p>'+
+			    '</li>';
+             }
+             $(".tpzs-rp").html(t); 
+             
+             
+             //海鲜水产
+               var data4=[{
+             	imgSrc:"../图片/xpzq/9288738666030846_300.jpg",
+             	tpzsJg2:"原膳加拿大多春鱼500g",
+             	tpzsJg:"￥39.9",
+             	tpzsJg3:"../图片/xpzq/daoguozhong.png"
+             },{
+             	imgSrc:"../图片/xpzq/9288738592466679_300.jpg",
+             	tpzsJg2:"海天下深海鳕鱼片300g",
+             	tpzsJg:"￥29.0",
+             	tpzsJg3:"../图片/xpzq/daoguozhong.png"
+             },{
+             	imgSrc:"../图片/xpzq/9288738618418937_300.jpg",
+             	tpzsJg2:"格陵兰比目鱼200g",
+             	tpzsJg:"￥49.0",
+             	tpzsJg3:"../图片/xpzq/1.png"
+             },{
+             	imgSrc:"../图片/xpzq/9288738662852350_300.jpg",
+             	tpzsJg2:"冰川51急冻犬牙鱼150g",
+             	tpzsJg:"￥168.0",
+             	tpzsJg3:"../图片/xpzq/1.png"
+             },{
+             	imgSrc:"../图片/xpzq/9288738520475375_300.jpg",
+             	tpzsJg2:"FOPPEN炙烧熏大西洋三文鱼片100g",
+             	tpzsJg:"￥59.9",
+             	tpzsJg3:"../图片/xpzq/1.png"
+             },{
+             	imgSrc:"../图片/xpzq/9288738463459048_300.jpg",
+             	tpzsJg2:"鳗鱼皇后冷冻烤鳗100g",
+             	tpzsJg:"￥39.9",
+             	tpzsJg3:"../图片/xpzq/1.png"
+             },{
+             	imgSrc:"../图片/xpzq/9288737938941607_300.jpg",
+             	tpzsJg2:"必乐鲜生冻马来西亚黑虎虾400g",
+             	tpzsJg:"￥68.0",
+             	tpzsJg3:"../图片/xpzq/daoguozhong.png"
+             },{
+             	imgSrc:"../图片/xpzq/9288737743971977_300.jpg",
+             	tpzsJg2:"原膳南美白虾仁（中）250g*3",
+             	tpzsJg:"￥95.9",
+             	tpzsJg3:"../图片/xpzq/1.png"
+             }
+             ]
+             var u=""
+             for(var i=0;i<data4.length;i++){
+             	u=u+'<li>'+
+				'<img src="'+data4[i].imgSrc+'"class="tpzs1"/>'+
+				'<p class="tpzs-jg2">'+data4[i].tpzsJg2+'</p>'+
+				'<p class="tpzs-jg">'+data4[i].tpzsJg+' <img src="'+data4[i].tpzsJg3+'" class="tpzs-jg3"/></p>'+
+			    '</li>';
+             }
+             $(".tpzs-sc").html(u); 
+             
+//           清新鲜蔬
+            var data5=[{
+             	imgSrc:"../图片/xpzq/170302212804500_21206_300.jpg",
+             	tpzsJg2:"大昌食品纯正美国梨米粒400g",
+             	tpzsJg:"￥13.9",
+             	tpzsJg3:"../图片/xpzq/daoguozhong.png"
+             },{
+             	imgSrc:"../图片/xpzq/9288730123674908_300.jpg",
+             	tpzsJg2:"轩尧田园荠菜馅300g",
+             	tpzsJg:"￥9.9",
+             	tpzsJg3:"../图片/xpzq/daoguozhong.png"
+             },{
+             	imgSrc:"../图片/xpzq/170414140343420_21304_300.jpg",
+             	tpzsJg2:"大昌食品美国三角薯饼500g",
+             	tpzsJg:"￥21.8",
+             	tpzsJg3:"../图片/xpzq/1.png"
+             },{
+             	imgSrc:"../图片/xpzq/9288708375880379_300.jpg",
+             	tpzsJg2:"大昌食品纯正新西兰甜青豆400g",
+             	tpzsJg:"￥13.8",
+             	tpzsJg3:"../图片/xpzq/daoguozhong.png"
+             },{
+             	imgSrc:"../图片/xpzq/9288732350653769_300.jpg",
+             	tpzsJg2:"轩尧烤红薯1kg",
+             	tpzsJg:"￥45.9",
+             	tpzsJg3:"../图片/xpzq/1.png"
+             },{
+             	imgSrc:"../图片/xpzq/9288734653654396_300.jpg",
+             	tpzsJg2:"轩尧槟榔芋400g",
+             	tpzsJg:"￥17.9",
+             	tpzsJg3:"../图片/xpzq/daoguozhong.png"
+             },{
+             	imgSrc:"../图片/xpzq/170414140415892_45552_300.jpg",
+             	tpzsJg2:"大昌食品纯正美国杂菜400g",
+             	tpzsJg:"￥13.8",
+             	tpzsJg3:"../图片/xpzq/daoguozhong.png"
+             },{
+             	imgSrc:"../图片/xpzq/9288720523928692_300.jpg",
+             	tpzsJg2:"轩尧藕片500g",
+             	tpzsJg:"￥11.8",
+             	tpzsJg3:"../图片/xpzq/1.png"
+             }
+             ]
+             var o=""
+             for(var i=0;i<data5.length;i++){
+             	o=o+'<li>'+
+				'<img src="'+data5[i].imgSrc+'"class="tpzs1"/>'+
+				'<p class="tpzs-jg2">'+data5[i].tpzsJg2+'</p>'+
+				'<p class="tpzs-jg">'+data5[i].tpzsJg+' <img src="'+data5[i].tpzsJg3+'" class="tpzs-jg3"/></p>'+
+			    '</li>';
+             }
+             $(".tpzs-qx").html(o); 
+             
+//           食品饮料
+             var data6=[{
+             	imgSrc:"../图片/xpzq/9288727893517575_300.jpg",
+             	tpzsJg2:"意大利进口Dolomia多洛米亚天然饮用水经典款1.5L*6",
+             	tpzsJg:"￥159.0",
+             	tpzsJg3:"../图片/xpzq/1.png"
+             },{
+             	imgSrc:"../图片/xpzq/9288738080433847_300.jpg",
+             	tpzsJg2:"浙仙梅鲜杨梅汁(果蔬汁饮料)386ml",
+             	tpzsJg:"￥18.8",
+             	tpzsJg3:"../图片/xpzq/daoguozhong.png"
+             },{
+             	imgSrc:"../图片/xpzq/9288738486593259_300.jpg",
+             	tpzsJg2:"爱德华国王八世干红葡萄酒750ml",
+             	tpzsJg:"￥358.0",
+             	tpzsJg3:"../图片/xpzq/1.png"
+             },{
+             	imgSrc:"../图片/xpzq/9288738156193475_300.jpg",
+             	tpzsJg2:"卡乐比水果麦片500g",
+             	tpzsJg:"￥58.8",
+             	tpzsJg3:"../图片/xpzq/daoguozhong.png"
+             },{
+             	imgSrc:"../图片/xpzq/9288738228610763_300.jpg",
+             	tpzsJg2:"浙仙梅鲜杨梅汁(果蔬汁饮料)386ml*4",
+             	tpzsJg:"￥65.0",
+             	tpzsJg3:"../图片/xpzq/daoguozhong.png"
+             },{
+             	imgSrc:"../图片/xpzq/9288713922061136_300.jpg",
+             	tpzsJg2:"心中甜夏威夷果178g",
+             	tpzsJg:"￥42.8",
+             	tpzsJg3:"../图片/xpzq/1.png"
+             },{
+             	imgSrc:"../图片/xpzq/9288738273044174_300.jpg",
+             	tpzsJg2:"劳仑兹番茄味细薯条100g",
+             	tpzsJg:"￥10.8",
+             	tpzsJg3:"../图片/xpzq/daoguozhong.png"
+             },{
+             	imgSrc:"../图片/xpzq/170515132618955_1289900_300.jpg",
+             	tpzsJg2:"酷椰屿100%椰子水1L",
+             	tpzsJg:"￥19.9",
+             	tpzsJg3:"../图片/xpzq/1.png"
+             }
+             ]
+             var n=""
+             for(var i=0;i<data6.length;i++){
+             	n=n+'<li>'+
+				'<img src="'+data6[i].imgSrc+'"class="tpzs1"/>'+
+				'<p class="tpzs-jg2">'+data6[i].tpzsJg2+'</p>'+
+				'<p class="tpzs-jg">'+data6[i].tpzsJg+' <img src="'+data6[i].tpzsJg3+'" class="tpzs-jg3"/></p>'+
+			    '</li>';
+             }
+             $(".tpzs-sp").html(n); 
+			$(".tpzs-jg").click(function(){
+				var a=$('<p class="chuangjianp"><img src="'+$(this).prev().prev().attr("src")+'"/></p>');
+				$(this).after(a);
+				$(this).next().children().animate({
+					"width":"50px",
+					"height":"50px",
+				},1500).animate({
+					"top":"-500px",
+					"right":"-1500px"
+					
+				},500,function(){
+					
+				var b='<div id="gwcsp">'+
+					'<ul class="gwcspul">'+
+						'<li>'+
+							'<img src="'+$(this).attr("src")+'"/>'+
+							'<a href="#">'+$(this).parent().prev().prev().text()+'</a>'+
+							'<div class="spsl">'+
+								'<b>'+$(this).parent().prev().text()+'</b>'+
+								'<i id="gwcsc">删除</i>'+
+							'</div>'+
+						'</li>'+
+					'</ul>'+
+					'<div class="dqgwc">'+
+						'<span>共<i class="gwcspsl">1</i>件商品</span>'+
+						'<span>共计<i class="gwcspq">'+$(this).parent().prev().text()+'</i></span>'+
+						'<div>'+
+						'<a href="../购物车/购物车.html">去购物车</a>'+
+						'</div>'+
+					'</div>';
+				'</div>';
+				$(".gwcjg").css({
+					"color":"#008842",
+					"font-size":"20px"
+				})
+				$(".gwcjg").html($(this).parent().prev().text());
+				$("#ycgwc1").html(b);
+				})
+			})
+			$("#gwcsc").click(function(){
+				console.log($(this));
+				$(this).parent().parent().remove()
+			})
+			$(".tpzs li:eq(3)").click(function(){
+				location.href="../分页/榴莲.html";
+			})
+		</script>
+	</body>
+</html>

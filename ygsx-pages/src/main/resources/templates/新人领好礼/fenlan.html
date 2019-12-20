@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../layui-v2.5.5/layui/css/layui.css" />
+		<script type="text/javascript" src="../jquery-3.4.1.js" ></script>
+		<script type="text/javascript" src="../layui-v2.5.5/layui/layui.js" ></script>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				list-style-type: none;
+			}
+			#quanbu{
+				position: absolute;
+				left: 30px;
+				top: 0px;
+				width: 180px;
+				height: 50px;
+				background: #008842;
+				line-height: 50px;
+				text-align: center;
+			}
+			#quanbu>p{
+				color: white;
+				font-size: 20px;
+			}
+			#fenlan-ul{
+				display: none;
+				width: 160px;
+				padding: 10px;
+			}
+			#fenlan-ul li{
+				width: 180px;
+				height: 35px;
+				box-sizing: border-box;
+			}
+			#fenlan-div{
+				display: none;
+				position: absolute;
+				top: 0;
+				left: 180px;
+				padding: 20px;
+				width: 340px;
+				height: 450px;
+				border: 1px solid #CCCCCC;
+			}
+			#fenlan-div h3{
+				text-align: left;
+				color: #008842;
+				text-decoration: underline;
+			}
+			#fenlan-div ul li{
+				float: left;
+			}
+			#fenlan-div ul li span{
+				margin: 0 20px;
+			}
+			#fenlan-img{
+				position: absolute;
+				left:220px;
+				top: 250px;
+			}
+		</style>
+	</head>
+	<body>
+	<div id="quanbu">
+		<p id="zfl">全部商品分类▽</p>
+		<div id="quanbu1">
+			<ul id="fenlan-ul">
+				<li><img src="tutu1.png"/><a>进口水果></a></li>
+				<li><img src="tutu1.png"/><a>国产水果></a></li>
+				<li><img src="tutu1.png"/><a>精选肉类></a></li>
+				<li><img src="tutu1.png"/><a>禽类蛋品></a></li>
+				<li><img src="tutu1.png"/><a>即烹美食></a></li>
+				<li><img src="tutu1.png"/><a>海鲜水产></a></li>
+				<li><img src="tutu1.png"/><a>乳品糕点></a></li>
+				<li><img src="tutu1.png"/><a>新鲜蔬菜></a></li>
+				<li><img src="tutu1.png"/><a>方便速食></a></li>
+				<li><img src="tutu1.png"/><a>粮油杂货></a></li>
+				<li><img src="tutu1.png"/><a>食品饮料></a></li>
+				<li><img src="tutu1.png"/><a>礼品礼券></a></li>
+			</ul>
+			<div id="fenlan-div">
+				<h3 id="h3"></h3>
+				<ul id="fenlan-div-ul">
+					
+				</ul>
+				<p id="fenlan-img"></p>
+			</div>
+		</div>
+		</div>
+		<script>
+			$("#fenlan-ul li img").hover(function(){
+				$(this).css({
+					"border-top":"1px solid #ccc",
+					"border-bottom":"1px solid #ccc",
+					"transform":"translateX(5px)",
+					"transition":"transform 500ms"
+				})
+				$("#fenlan-ul").css("border","1px solid #ccc")
+			},function(){
+				$(this).css({
+					"border":"none",
+					"transform":"translateX(0px)",
+					"transition":"transform 500ms"
+				})
+			})
+			var fenlan=[
+				["奇异果","车厘子","李梅","牛油果","提子","苹果","梨","柑橘橙柚","火龙果","椰子","芒果","凤梨","榴莲","热带水果","时令水果"],
+				["苹果 梨","柑桔橙柚","猕猴桃","瓜","葡萄","桃","李","枣","莓","芒果" ,"凤梨","莲雾","百香果","热带水果","时令水果","原箱水果"],
+				["牛排","进口牛肉","国产牛肉","猪肉","羊肉","肉制品"],
+				["鸡","鸭","鹅","鸽","特色禽类","蛋"],
+				["独家秘制","中华美食"],
+				["鳕鱼","虾仁","大闸蟹券","鱼","三文鱼","虾","蟹 贝","活鲜","海参","加工水产"],
+				["奶酪","黄油","奶油","乳品","面包","蛋糕","甜点"],
+				["叶菜类","根茎类","茄果瓜果类","花菜豆类","香料","菌菇","沙拉菜","冷冻蔬菜","豆制品","葱蒜类","蔬菜组合","净菜类"],
+				["冷冻点心 ","中式主食","火锅料","半成品菜"],
+				["米","杂粮","面","面制品 ","油","调味料","干货","果干","零食"],
+				["水 ","冲调饮品","葡萄酒","酒具","休闲食品","啤酒"],
+				["礼品礼盒","礼品礼券","原膳礼盒"]
+			];
+			var img=[
+				["tutu01.png"],
+				["tutu02.png"],
+				["tutu03.png"],
+				["tutu04.png"],
+				["tutu05.png"],
+				["tutu06.png"],
+				["tutu07.png"],
+				["tutu08.png"],
+				["tutu09.png"],
+				["tutu10.png"],
+				["tutu01.png"],
+				["tutu02.png"]
+			];
+			var uname=[
+			["进口水果"],
+			["国产水果"],
+			["精选肉类"],
+			["禽类蛋品"],
+			["即烹美食"],
+			["海鲜水产"],
+			["乳品糕点"],
+			["新鲜蔬菜"],
+			["方便速食"],
+			["粮油杂货"],
+			["食品饮料"],
+			["礼品礼券"]
+			];
+			$("#fenlan-ul li").mouseenter(function(){
+				var xb=$(this).index();
+				console.log(xb);
+				var fl="";
+				var img1="";
+				var uname1="";
+				for(var i=0;i<fenlan[xb].length;i++){
+					fl=fl+'<li>'+'<span>'+fenlan[xb][i]+'</span>'+'</li>';
+				}
+				$("#fenlan-div-ul").html(fl);
+				for(var j=0;j<img[xb].length;j++){
+					img1=img1+'<li>'+'<img src="'+img[xb][j]+'"/>'+''+'</li>';
+				}
+				$("#fenlan-img").html(img1);
+				for(var jj=0;jj<uname[xb].length;jj++){
+					uname1=uname1+uname[xb][jj];
+				}
+				$("h3").html(uname1);
+			})
+			$("#zfl").hover(function(){
+				$("#fenlan-ul").show();
+			},function(){
+				$("#fenlan-ul").hide();
+			})
+			$("#fenlan-ul").hover(function(){
+				$("#fenlan-ul").show();
+			},function(){
+				$("#fenlan-ul").hide();
+			})
+			$("#fenlan-ul li").hover(function(){
+				$("#fenlan-ul").show();
+				$("#fenlan-div").show();
+			},function(){
+				$("#fenlan-ul").hide();
+				$("#fenlan-div").hide()
+			})
+			$("#fenlan-div").hover(function(){
+				$("#fenlan-div").show();
+				$("#fenlan-ul").show();
+			},function(){
+				$("#fenlan-div").hide();
+				$("#fenlan-ul").hide();
+			})
+		</script>
+	</body>
+</html>

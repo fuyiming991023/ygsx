@@ -1,0 +1,796 @@
+
+
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>易果生鲜_全球精选</title>
+    <meta name="Keywords" content="水果，进口水果，国产水果，易果网" />
+    <meta name="Description" content="易果生鲜Yiguo网是专业的进口生鲜水果食品网络购物平台，为您精选全球3001多种生鲜果蔬品质食材，在体验网上购物新模式的同时享尽各国新鲜美味，易果网是您悠悦生活的品质之选。" />
+    <meta property="qc:admins" content="15753240576117576375" />
+    <link rel="shortcut icon" href="http://static01.yiguo.com/common/images/yiguo.ico" />
+    <link href="http://static01.yiguo.com/utaste/css/public.css?v=v20160816" rel="stylesheet" type="text/css">
+
+    <link href="http://static01.yiguo.com/utaste/css/yg.css?v=20150922" rel="stylesheet" type="text/css">
+    <link href="http://static01.yiguo.com/utaste/css/search.css?v=20150922" rel="stylesheet" type="text/css">
+    <script src="http://static01.yiguo.com/control/jquery-1.7.2-min.js?v20150427"></script>
+    <link href="http://static01.yiguo.com/utaste/css/returns.css" rel="stylesheet" type="text/css">
+
+    <link href="http://static01.yiguo.com/utaste/css/themes.css?v=20150922" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+        var _bdhm_top = 0;
+        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        var _bdhm_tim = new Image(1, 1);
+        _bdhm_tim.id = "bdhmPerimg";
+        _bdhm_tim.src = _bdhmProtocol + "hm.baidu.com/_tt.gif?si=36a486fbdec46fc52ca666dd2e98f260&rnd=" + Math.round(Math.random() * 2147483647);
+        _bdhm_tim.onload = function () { _bdhm_top = 1; }
+    </script>
+    <script type="text/javascript">
+        yg_x = new Date();
+    </script>
+    <!-- start Dplus -->
+    <script type="text/javascript">!function (a, b) { if (!b.__SV) { var c, d, e, f; window.dplus = b, b._i = [], b.init = function (a, c, d) { function g(a, b) { var c = b.split("."); 2 == c.length && (a = a[c[0]], b = c[1]), a[b] = function () { a.push([b].concat(Array.prototype.slice.call(arguments, 0))) } } var h = b; for ("undefined" != typeof d ? h = b[d] = [] : d = "dplus", h.people = h.people || [], h.toString = function (a) { var b = "dplus"; return "dplus" !== d && (b += "." + d), a || (b += " (stub)"), b }, h.people.toString = function () { return h.toString(1) + ".people (stub)" }, e = "disable track track_links track_forms register unregister get_property identify clear set_config get_config get_distinct_id track_pageview register_once track_with_tag time_event people.set people.unset people.delete_user".split(" "), f = 0; f < e.length; f++) g(h, e[f]); b._i.push([a, c, d]) }, b.__SV = 1.1, c = a.createElement("script"), c.type = "text/javascript", c.charset = "utf-8", c.async = !0, c.src = "//w.cnzz.com/dplus.php?token=1915ef989c5aence66fa", d = a.getElementsByTagName("script")[0], d.parentNode.insertBefore(c, d) } }(document, window.dplus || []), dplus.init("1915ef989c5aence66fa");</script><!-- end Dplus -->
+    <script src="http://static01.yiguo.com/common/topdsp.js"></script>
+</head>
+<body id="body">
+    <!------- 弹出框 ------->
+    <div class="popout soldOut-poput">
+        <div class="popout-wrap">
+            <div class="popout-con">
+                <div class="title"><i></i>提 示</div>
+                <div class="con">
+                    <h1>您设置了该商品到货通知！</h1>
+                    <p>
+                        我们会将到货通知信息及时发送到您的邮箱：<br> <a href="#"><u>Xushun@yiguo.com</u></a> <a href="#" target="_blank">修改邮箱</a>
+                    </p>
+                    <div class="btnbox"><a class="confirm" href="javascript:">确  认</a><a class="cancel" href="javascript:">取  消</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="popout-bg">&nbsp;</div>
+    </div>
+
+    <div class="w">
+        <!------- 顶部工具栏 ------->
+
+
+
+<div class="site-nav">
+    <div class="wrap">
+        <ul class="fl">
+            <li>欢迎光临易果生鲜！</li>
+            <!--送货城市 开始-->
+            <li class="city clearfix">
+                <div class="city-sz">配送至：</div>
+                <div class="city-tit">
+                    <a class="city-name" href="javascript:void()" data-name="上海">上海<s></s></a>
+                </div>
+                <div class="city-con" id="citylist">
+
+
+<script id="_citytpl" type="text/x-handlebars-template">
+
+        <div class="headline">
+            <a href="javascript:;" v="64" aid="00000000-0000-0000-0000-000000000000">全国其它城市&gt;&gt;</a> 请根据您的收货地址选择
+        </div>
+        <div class="city-hot">
+            <span><i></i>热门城市</span>
+            {{#each HotCity}}
+            <a href="javascript:;" v="{{WebCode}}" aid="{{AreaId}}" _type="{{DeliveryType}}">{{AreaName}}</a>
+            {{/each}}
+        </div>
+        <p class="citytab"><span class="active">ABCDE</span><span>FGHIJ</span><span>KLMNO</span><span class="">PQRST</span><span class="">UVWXYZ</span></p>
+        <div class="citylist active">
+            {{#each City1}}
+            <dl>
+                <dt>{{@key}}</dt>
+                <dd>
+                    {{#each this}}
+                    {{#equal WebShow 2}}
+                    <a href="javascript:;" class="hot" v="{{WebCode}}" aid="{{AreaId}}" _type="{{DeliveryType}}"><strong>{{AreaName}}</strong></a>
+                    {{else}}
+                    <a href="javascript:;" v="{{WebCode}}" aid="{{AreaId}}" _type="{{DeliveryType}}">{{AreaName}}</a>
+                    {{/equal}}
+                    {{/each}}
+                </dd>
+            </dl>
+            {{/each}}
+        </div>
+    <div class="citylist ">
+        {{#each City2}}
+        <dl>
+            <dt>{{@key}}</dt>
+            <dd>
+                {{#each this}}
+                {{#equal WebShow 2}}
+                <a href="javascript:;" class="hot" v="{{WebCode}}" aid="{{AreaId}}" _type="{{DeliveryType}}"><strong>{{AreaName}}</strong></a>
+                {{else}}
+                <a href="javascript:;" v="{{WebCode}}" aid="{{AreaId}}" _type="{{DeliveryType}}">{{AreaName}}</a>
+                {{/equal}}
+                {{/each}}
+            </dd>
+        </dl>
+        {{/each}}
+    </div>
+    <div class="citylist ">
+        {{#each City3}}
+        <dl>
+            <dt>{{@key}}</dt>
+            <dd>
+                {{#each this}}
+                {{#equal WebShow 2}}
+                <a href="javascript:;" class="hot" v="{{WebCode}}" aid="{{AreaId}}" _type="{{DeliveryType}}"><strong>{{AreaName}}</strong></a>
+                {{else}}
+                <a href="javascript:;" v="{{WebCode}}" aid="{{AreaId}}" _type="{{DeliveryType}}">{{AreaName}}</a>
+                {{/equal}}
+                {{/each}}
+            </dd>
+        </dl>
+        {{/each}}
+    </div>
+    <div class="citylist ">
+        {{#each City4}}
+        <dl>
+            <dt>{{@key}}</dt>
+            <dd>
+                {{#each this}}
+                {{#equal WebShow 2}}
+                <a href="javascript:;" class="hot" v="{{WebCode}}" aid="{{AreaId}}" _type="{{DeliveryType}}"><strong>{{AreaName}}</strong></a>
+                {{else}}
+                <a href="javascript:;" v="{{WebCode}}" aid="{{AreaId}}" _type="{{DeliveryType}}">{{AreaName}}</a>
+                {{/equal}}
+                {{/each}}
+            </dd>
+        </dl>
+        {{/each}}
+    </div>
+    <div class="citylist ">
+        {{#each City5}}
+        <dl>
+            <dt>{{@key}}</dt>
+            <dd>
+                {{#each this}}
+                {{#equal WebShow 2}}
+                <a href="javascript:;" class="hot" v="{{WebCode}}" aid="{{AreaId}}" _type="{{DeliveryType}}"><strong>{{AreaName}}</strong></a>
+                {{else}}
+                <a href="javascript:;" v="{{WebCode}}" aid="{{AreaId}}" _type="{{DeliveryType}}">{{AreaName}}</a>
+                {{/equal}}
+                {{/each}}
+            </dd>
+        </dl>
+        {{/each}}
+    </div>
+
+</script>
+                </div>
+            </li>
+            <!--送货城市 结束-->
+                    <li>
+                        <img src="//img05.yiguoimg.com/d/web/190408/00592/145951/notice.png" style="vertical-align:middle;width:16px;height:16px;">
+                        <a href="http://www.yiguo.com/help/policenotice.html" target="_blank">网警提示</a>
+                    </li>
+        </ul>
+        <ul class="fr">
+            <li class="apt">
+                <img src="//img06.yiguoimg.com/d/web/190328/00592/142712/招聘1.png" style="vertical-align:middle;">
+                <a href="http://hr.yiguo.com" target="_blank">人才招聘</a>
+            </li>
+            <li class="apt">
+            <img src="//img06.yiguoimg.com/d/web/181129/00341/103626/aptitudeicon.png" style="vertical-align:middle;">
+            <a href="http://www.yiguo.com/help/Qualification.html" target="_blank">营业资质</a>
+            </li>
+            <li class="TEL"><a href="http://testdev.yiguo.com:8801/Trade/OnlineDelivery" target="_blank"><i></i>礼品兑换券入口</a></li>
+            <li class="pay"><a href="/Recharge/Index" target="_blank"><i></i>礼品卡绑定</a></li>
+            <li class="mobile">
+                <div class="tit"><a href="javascript:void(0)"><i></i>手机易果<s></s></a></div>
+                <div class="con">
+                    <div class="item"><img src="http://static01.yiguo.com/utaste/images/header/qrcode_app.jpg" width="125" height="125"><span>扫码下载移动APP</span></div>
+                    <div class="item"><img src="http://static01.yiguo.com/utaste/images/header/qrcode_wechat.jpg" width="125" height="125"><span>微信扫一扫</span></div>
+                </div>
+            </li>
+            <li class="myyiguo">
+                <div class="tit"><a href="/Trade/Index" target="_blank"><i></i>我的易果<s></s></a></div>
+                <div class="con">
+
+                    <a href="/Trade/OrderList">我的订单</a>
+                    <a href="/Trade/MyCoupons">我的优惠券<b id="couponCount">2</b></a>
+                    <a href="/Trade/MyCollection">我的收藏</a>
+                    <a href="/Trade/UMoney">我的悠币</a>
+                    <a href="/Trade/BackOrder">我的退换货</a>
+                    <a href="/Recharge/TransInfo">预存款查询</a>
+                    <a href="/Trade/CommodityVote">评论商品</a>
+
+                </div>
+            </li>
+                <li id="loginoutLi"><a href="javascript:;" class="logout">[退出]</a></li>
+                <li id="usernameLi"><a href="/Trade/Index">17331773172</a></li>
+        </ul>
+    </div>
+</div>
+
+
+        <!------- 头部 ------->
+        <div class="header clearfix">
+            <div class="wrap">
+                <div class="logo">
+                    <a href="http://www.yiguo.com"></a>
+                </div>
+                <!--搜索 开始-->
+                <div class="search" style="position:relative;">
+    <div class="search-bar clearfix">
+        <input type="text" id="keyword" name="keyword" class="search-input" value="输入商品名／编号／拼音" onfocus=" if (this.value == '输入商品名／编号／拼音') {this.value = '';this.style.color = '#000';} " onblur=" if (this.value == '') {this.value = '输入商品名／编号／拼音';this.style.color = '#999';} " style="color: rgb(153, 153, 153);">
+        <input class="search-btn" type="submit" value="搜索">
+    </div>
+    <ul class="hide" id="shelper" style="display: none;"></ul>
+    <div class="search-keywords" id="keywords">
+        <script id="keywordstpl" type="text/x-handlebars-template">
+            {{#KeyWords}}
+            {{#equal IsImportant true}}
+            <a href="{{Link}}" class="hot" target="_blank">{{Text}}</a>
+            {{else}}
+            <a href="{{Link}}" target="_blank">{{Text}}</a>
+            {{/equal}}
+            {{/KeyWords}}
+        </script>
+    </div>
+</div>
+                <!--购物车 开始-->
+
+
+<div class="shopping-cart">
+    <dl>
+        <dt class="shopping-btn"><a href="http://cart.yiguo.com"> <span class="totleNum"><b>0</b></span><b class="totlePrice">0.0</b></a></dt>
+        <dd class="shopping-list">
+            <div class="spacer"></div>
+            <div class="nogoods" style="display:none;">
+                购物车中还没有商品，赶紧选购吧！
+            </div>
+            <div class="goods">
+                <p id="deliveryType" style="display:none;">满100元包邮！</p>
+                <ul></ul>
+                <div class="price-total">
+                    <div><span class="totleNum">共<b>0</b>件商品</span><span>共计<b class="totlePrice">¥0.00</b></span></div>
+                    <div><a href="http://cart.yiguo.com/ShopCart.aspx" class="settleup">去购物车</a></div>
+                </div>
+            </div>
+        </dd>
+    </dl>
+</div>
+                <!--购物车 结束-->
+            </div>
+        </div>
+        <!--商品分类 开始-->
+        <div class="header-nav">
+    <div class="wrap">
+        <!--商品分类 开始-->
+        <div class="catalogs">
+            <div class="catalogs-title btn-green"><a href="#"><i></i>全部商品分类</a></div>
+            <div class="catalogs-list" id="_categry" style="display:none;">
+                <script id="_categorytpl" type="text/x-handlebars-template">
+    {{#each Catrgories}}
+    <div class="item">
+        <h3 class="t{{CategoryCode}}"><a href="http://www.yiguo.com/products/{{CategoryCode}}.html"><i></i>{{CategoryName}}<s>&gt;</s></a></h3>
+        <div class="sub-item" style="display: none;">
+            <h4><a href="http://www.yiguo.com/products/{{CategoryCode}}.html"> {{CategoryName}}</a></h4>
+            <div class="sub-list">
+                {{#if SubCategory2}}
+                {{#each SubCategory2}}
+                <a href="http://www.yiguo.com/products/{{CategoryCode}}.html" target="_blank">{{CategoryName}}</a>
+                {{/each}}
+                {{/if}}
+
+                {{#if SubCategory1}}
+                {{#each SubCategory1}}
+                <a href="http://www.yiguo.com/products/{{CategoryCode}}.html" target="_blank">{{CategoryName}}</a>
+                {{/each}}
+                {{/if}}
+
+                {{#if SubCategory0}}
+                {{#each SubCategory0}}
+                <a href="http://www.yiguo.com/products/{{CategoryCode}}.html" target="_blank">{{CategoryName}}</a>
+                {{/each}}
+                {{/if}}
+
+            </div>
+            <div class="catalogs-ad">
+                {{#each CategoryImageAd}}
+                <a href="{{Link}}"><img src="{{Image}}"></a>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+    {{/each}}
+
+</script>
+
+            </div>
+        </div>
+        <!--商品分类 结束-->
+        <div class="nav-items">
+            <ul id="homenav">
+                <script id="homenavtpl" type="text/x-handlebars-template">
+                    {{#HomeNav}}
+                    <li><a href="{{Link}}" target="_blank">{{Text}}</a></li>
+                    {{/HomeNav}}
+                </script>
+            </ul>
+        </div>
+    </div>
+</div>
+        <div class="wrap">
+                    <!--面包屑-->
+                <div class="crumbs"><a class="ml0" href="http://www.yiguo.com">首页</a>&gt;<a href="/Trade/Index" class="j_ygnav">我的易果</a><span class="j_thridcrumbs hide">&gt;<a href="javascript:void(0)" class="on j_thirdnav"></a></span></div>
+            <div class="content myyg">
+                    <div class="sub">
+                        <div class="menu j_menu">
+                            <dl>
+                                <dt>交易信息</dt>
+                                <dd>
+                                    <ul>
+                                        <li><a href="../我的异果/我的异果.html">我的订单</a></li>
+                                        <li><a href="../我的优惠券/我的优惠券.html">我的优惠券</a><span class="num">2</span></li>
+                                        <li><a href="../我的悠币/我的悠币.html">我的悠币</a></li>
+                                        <li><a href="../购买过的商品/ddxt.html">购买过的商品</a></li>
+                                        <li><a href="../收藏/收藏.html">我的收藏</a></li>
+                                        <li><a href="../评论商品/评论商品.html">评论商品</a></li>
+                                    </ul>
+                                </dd>
+                                <dt>账号信息</dt>
+                                <dd>
+                                    <ul>
+                                        <li>
+                                            <a href="geren.html">个人资料</a>
+                                                <img style="height: 19px; width: 20px; margin-left: 10px;" src="http://static01.yiguo.com/utaste/images/icon-gift.png" />
+                                        </li>
+                                        <li><a href="../收货地址/收货地址.html">收货地址管理</a></li>
+                                    </ul>
+                                </dd>
+                                
+                            </dl>
+                        </div>
+                        <div>
+                            <div class="ad" style="height: 308px;">
+                                <a href="#" target="_blank" style="display: none"><img src="http://static01.yiguo.com/utaste/images/ad.jpg" width="194" height="308"></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+<div class="main profile">
+    <div class="title">个人资料</div>
+    <div>
+        <div class="sub-tit">基本信息</div>
+        <form id="personalProfileForm">
+            <div class="control-group">
+                <div class="control-label">头像</div>
+                <div class="controls"><a href="javascript:" id="btnUpload"><input type="hidden" name="UserPicture" /><img style=" width:100px; height:100px;" src="http://static01.yiguo.com/utaste/images/Avatar.jpg" /></a></div>
+            </div>
+            <div class="control-group">
+                <div class="control-label">真实姓名</div>
+                <div class="controls">
+                    <span class="EidtGroup">
+<input class="input" id="RealName" name="RealName" placeholder="请输入您的真实姓名" type="text" value="" />                            <span class="pass-tip"><i></i>长度不能超过10个汉字</span>
+                    </span>
+                </div>
+            </div>
+            <div class="control-group">
+                <div class="control-label">用户名</div>
+                <input id="UserName" name="UserName" type="hidden" value="17331773172" />
+                <div class="controls"><span>17331773172</span></div>
+            </div>
+            <div class="control-group">
+                <div class="control-label">手机</div>
+                <div class="controls">
+                    <span class="EidtGroup">
+<input id="Mobile" name="Mobile" type="hidden" value="17331773172" />                            <span>173****3172</span>
+<span class="green">（修改绑定手机请在易果APP上操作）</span>
+                        <div><img src="http://static01.yiguo.com/www/images/header/qrcode_app.jpg" width="125" height="125"></div>
+                    </span>
+                </div>
+            </div>
+            <div class="control-group">
+                <div class="control-label">邮箱</div>
+                <div class="controls">
+                    <span class="EidtGroup">
+                            <span style=" border-bottom: 1px solid #54a110;"><a href="javascript:" class="edit" data-val="" data-name="Email" style="color:#54a110;">未验证</a></span>
+                    </span>
+                        <span><a href="javascript:" style="margin-left:10px;line-height:23px;padding:2px" class="btn-gn bindEmail">邮箱验证</a></span>
+                </div>
+            </div>
+            <div class="sub-tit">选填信息</div>
+            <div class="control-group">
+                <div class="control-label">性别</div>
+                <div class="controls">
+                    <label><input data-val="true" data-val-number="字段 Sex 必须是一个数字。" data-val-required="Sex 字段是必需的。" id="Sex" name="Sex" type="radio" value="1" />男</label>
+                    <label><input id="Sex" name="Sex" type="radio" value="2" />女</label>
+                </div>
+            </div>
+            <div class="control-group">
+                <div class="control-label">生日</div>
+                <div class="controls IsEditYear" data-edit="1">
+                    <select class="Birthday" data-val="true" data-val-number="字段 Year 必须是一个数字。" data-val-required="Year 字段是必需的。" id="Year" name="Year"><option value="">请选择</option>
+<option value="1900">1900</option>
+<option value="1901">1901</option>
+<option value="1902">1902</option>
+<option value="1903">1903</option>
+<option value="1904">1904</option>
+<option value="1905">1905</option>
+<option value="1906">1906</option>
+<option value="1907">1907</option>
+<option value="1908">1908</option>
+<option value="1909">1909</option>
+<option value="1910">1910</option>
+<option value="1911">1911</option>
+<option value="1912">1912</option>
+<option value="1913">1913</option>
+<option value="1914">1914</option>
+<option value="1915">1915</option>
+<option value="1916">1916</option>
+<option value="1917">1917</option>
+<option value="1918">1918</option>
+<option value="1919">1919</option>
+<option value="1920">1920</option>
+<option value="1921">1921</option>
+<option value="1922">1922</option>
+<option value="1923">1923</option>
+<option value="1924">1924</option>
+<option value="1925">1925</option>
+<option value="1926">1926</option>
+<option value="1927">1927</option>
+<option value="1928">1928</option>
+<option value="1929">1929</option>
+<option value="1930">1930</option>
+<option value="1931">1931</option>
+<option value="1932">1932</option>
+<option value="1933">1933</option>
+<option value="1934">1934</option>
+<option value="1935">1935</option>
+<option value="1936">1936</option>
+<option value="1937">1937</option>
+<option value="1938">1938</option>
+<option value="1939">1939</option>
+<option value="1940">1940</option>
+<option value="1941">1941</option>
+<option value="1942">1942</option>
+<option value="1943">1943</option>
+<option value="1944">1944</option>
+<option value="1945">1945</option>
+<option value="1946">1946</option>
+<option value="1947">1947</option>
+<option value="1948">1948</option>
+<option value="1949">1949</option>
+<option value="1950">1950</option>
+<option value="1951">1951</option>
+<option value="1952">1952</option>
+<option value="1953">1953</option>
+<option value="1954">1954</option>
+<option value="1955">1955</option>
+<option value="1956">1956</option>
+<option value="1957">1957</option>
+<option value="1958">1958</option>
+<option value="1959">1959</option>
+<option value="1960">1960</option>
+<option value="1961">1961</option>
+<option value="1962">1962</option>
+<option value="1963">1963</option>
+<option value="1964">1964</option>
+<option value="1965">1965</option>
+<option value="1966">1966</option>
+<option value="1967">1967</option>
+<option value="1968">1968</option>
+<option value="1969">1969</option>
+<option value="1970">1970</option>
+<option value="1971">1971</option>
+<option value="1972">1972</option>
+<option value="1973">1973</option>
+<option value="1974">1974</option>
+<option value="1975">1975</option>
+<option value="1976">1976</option>
+<option value="1977">1977</option>
+<option value="1978">1978</option>
+<option value="1979">1979</option>
+<option value="1980">1980</option>
+<option value="1981">1981</option>
+<option value="1982">1982</option>
+<option value="1983">1983</option>
+<option value="1984">1984</option>
+<option value="1985">1985</option>
+<option value="1986">1986</option>
+<option value="1987">1987</option>
+<option value="1988">1988</option>
+<option value="1989">1989</option>
+<option value="1990">1990</option>
+<option value="1991">1991</option>
+<option value="1992">1992</option>
+<option value="1993">1993</option>
+<option value="1994">1994</option>
+<option value="1995">1995</option>
+<option value="1996">1996</option>
+<option value="1997">1997</option>
+<option value="1998">1998</option>
+<option value="1999">1999</option>
+<option value="2000">2000</option>
+<option value="2001">2001</option>
+<option value="2002">2002</option>
+<option value="2003">2003</option>
+<option value="2004">2004</option>
+<option value="2005">2005</option>
+<option value="2006">2006</option>
+<option value="2007">2007</option>
+<option value="2008">2008</option>
+<option value="2009">2009</option>
+<option value="2010">2010</option>
+<option value="2011">2011</option>
+<option value="2012">2012</option>
+<option value="2013">2013</option>
+<option value="2014">2014</option>
+<option value="2015">2015</option>
+<option value="2016">2016</option>
+<option value="2017">2017</option>
+<option value="2018">2018</option>
+<option value="2019">2019</option>
+</select>年
+                    <select class="Birthday" data-val="true" data-val-number="字段 Month 必须是一个数字。" data-val-required="Month 字段是必需的。" id="Month" name="Month"><option value="">请选择</option>
+<option selected="selected" value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+</select>月
+                    <select class="Birthday" data-val="true" data-val-number="字段 Day 必须是一个数字。" data-val-required="Day 字段是必需的。" id="Day" name="Day"><option value="">请选择</option>
+<option selected="selected" value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+</select>日
+                </div>
+            </div>
+            <div class="control-group">
+                <div class="controls"><a href="javascript:" class="btn-green btn-green-l">确 &nbsp; 认</a></div>
+            </div>
+            <div></div>
+        </form>
+    </div>
+</div>
+
+
+
+<link href="http://static01.yiguo.com/utaste/css/profile.css" rel="stylesheet" type="text/css">
+
+
+
+            </div>
+
+        </div>
+
+        <!------- 页尾 ------->
+        <style>
+    i {
+        background-image: none;
+    }
+</style>
+<div class="footer">
+    <div class="wrap">
+        <dl class="col1">
+            <dt>新手指南</dt>
+            <dd>
+                <p><a href="http://www.yiguo.com/help/registersteps.html">账户注册</a></p>
+                <p><a href="http://www.yiguo.com/help/gouwuliucheng.html">购物流程</a></p>
+                <p><a href="http://www.yiguo.com/help/ordering.html">订购方式</a></p>
+                <p><a href="http://www.yiguo.com/help/ubremark.html">悠币说明</a></p>
+                            <p><a href="http://www.yiguo.com/activity/sale/2999">会员等级<i class="ml5"><img src="http://img06.yiguoimg.com/e/web/170315/00941/154425/icon-new.png"></i></a></p>
+
+            </dd>
+        </dl>
+        <dl class="col2">
+            <dt>付款方式</dt>
+            <dd>
+                <p><a href="http://www.yiguo.com/help/payment.html">支付方式</a></p>
+
+                <p><a href="http://www.yiguo.com/help/usegiftcard.html">优惠代码</a>
+                <p><a href="http://www.yiguo.com/help/cardbuynotes.html">卡券购买章程</a></p>
+            </dd>
+        </dl>
+        <dl class="col3">
+            <dt>配送方式</dt>
+            <dd>
+                <p><a href="http://www.yiguo.com/help/sendyuefei.html">配送运费</a></p>
+
+                <p><a href="http://www.yiguo.com/help/sendtime.html">时间及范围</a></p>
+            </dd>
+        </dl>
+        <dl class="col4">
+            <dt>售后服务</dt>
+            <dd>
+                <p><a href="http://www.yiguo.com/help/tuihuanhuoshuoming.html">退换货政策</a></p>
+                <p><a href="http://www.yiguo.com/help/huanhuolc.html">退换货流程</a></p>
+                <p><a href="http://www.yiguo.com/help/qa.html">常见问题</a></p>
+                <p><a href="http://home.yiguo.com/Trade/Advice">投诉与建议</a></p>
+                <p><a href="http://www.yiguo.com/help/quicknessrefund.html">极速退款</a></p>
+            </dd>
+        </dl>
+        <dl class="col5">
+            <dt>关于我们</dt>
+            <dd>
+                <p><a href="http://www.yiguo.com/help/introduction.html">公司介绍</a></p>
+                <p><a href="http://www.yiguo.com/help/contact.html">联系我们</a></p>
+                <p><a href="http://www.yiguo.com/help/procooperation.html">业务合作</a></p>
+                <p><a href="http://www.yiguo.com/help/chengxinjubao.html">诚信举报</a></p>
+                <p> <a href="http://www.yiguo.com/help/RegisterAgreement.html"> 用户协议</a> </p>
+                <p><a href="http://www.yiguo.com/help/PrivacyAgreement.html">隐私协议</a></p>
+
+
+
+            </dd>
+        </dl>
+        <div class="service"><span>客服热线 400-000-7788</span><span>周一至周日 9:00-21:00</span></div>
+        <div class="copyright">
+            <p>所有图片均受著作权保护，未经许可任何单位与个人不得使用、复制、转载、摘编，违者必究法律责任。</p>
+
+            <p><a href="http://www.miibeian.gov.cn" target="_blank" rel="nofollow">沪ICP备09008015号</a> Copyright © 2005-2019 版权所有</p>
+            <p class="authentication">
+                <a href="http://www.yiguo.com/legal" target="_blank" rel="nofollow"><img src="http://img07.yiguoimg.com/d/web/171208/00652/173249/153685368061665897_121x29.png"></a>
+                <a href="http://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&amp;entyId=20110512114405424" target="_blank"><img src="//img06.yiguoimg.com/d/web/181227/00281/143951/footer_copy.jpg" height="47px"></a>
+                <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010502000002" style="">
+                    <img src="http://www.beian.gov.cn/file/ghs.png"><span style="width: 180px;">沪公网安备 31010502000002号</span>
+                </a>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<!--yiguoStats-->
+<script type="text/javascript">
+    var _yaq = _yaq || [];
+    _yaq.push(['_operate', 'view']);
+    _yaq.push(['_site', 'Utaste']);
+    _yaq.push(['categoryid', '']);
+    _yaq.push(['behaviorid', '']);
+    _yaq.push(['behavior', '']);
+
+    (function () {
+        var ya = document.createElement('script'); ya.type = 'text/javascript'; ya.async = true;
+        ya.src = "http://tracker.yiguo.com/Scripts/yiguoStats.min.js";
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ya, s);
+    })();
+
+    var nowDate = new Date();
+    var nowTime = nowDate.getFullYear() + "-" + (nowDate.getMonth() + 1) + "-" + nowDate.getDate();
+    var endTime = "2017-5-15";
+    if (ToDate(nowTime) >= ToDate(endTime)) {
+        $('.col1 .ml5').hide();
+    }
+
+    function ToDate(str) {
+        var arr = str.split("-");
+        var newDate = new Date(arr[0], arr[1], arr[2]);
+        return newDate;
+    }
+</script>
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20131478-1']);
+    _gaq.push(['_setDomainName', 'yiguo.com']);
+    _gaq.push(['_setSiteSpeedSampleRate', 50]);
+    _gaq.push(['_addOrganic', 'baidu', 'word']);
+    _gaq.push(['_addOrganic', 'soso', 'w']);
+    _gaq.push(['_addOrganic', 'youdao', 'q']);
+    _gaq.push(['_addOrganic', 'so.360.cn', 'q']);
+    _gaq.push(['_addOrganic', 'sogou', 'query']);
+    _gaq.push(['_setCampNameKey', 'n']);
+    _gaq.push(['_setCampSourceKey', 's']);
+    _gaq.push(['_setCampMediumKey', 'm']);
+    _gaq.push(['_setCampTermKey', 'k']);
+    _gaq.push(['_setCampContentKey', 'c']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+<div style="display: none">
+    <script type="text/javascript">
+        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F36a486fbdec46fc52ca666dd2e98f260' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+</div>
+        <!------- 侧边悬浮 ------->
+        <div class="sidebar" id="sidebar">
+            <a href="javascript:void(0);"></a>
+        </div>
+
+    </div>
+    <script src="http://static01.yiguo.com/utaste/js/handlebars-v3.0.1.js"></script>
+    <script src="http://static01.yiguo.com/control/jquery.superslide.js"></script>
+    <script src="http://static01.yiguo.com/utaste/js/utaste.js?v20160519"></script>
+    <script src="http://static01.yiguo.com/utaste/js/sidebar.js"></script>
+    <script src="http://static01.yiguo.com/control/jquery.scrollLoading-min.js"></script>
+
+    <script src="http://static01.yiguo.com/utaste/js/search.js?v20150427"></script>
+    <script src="http://static01.yiguo.com/common/global-v2.js"></script>
+    <script src="http://static01.yiguo.com/utaste/js/base.js"></script>
+    <script src="http://static01.yiguo.com/www/js/app.js?v20160816"></script>
+    <script src="http://static01.yiguo.com/common/common.js?v=20150922"></script>
+    <script src="http://yunwang.yiguo.com/Scripts/static/js/chat.js"></script>
+
+    <script type="text/javascript" src="http://static01.yiguo.com/utaste/js/jquery.bgiframe.js"></script>
+    <script src="/YGUpload/swfupload2.2/swfupload.js" type="text/javascript"></script>
+    <script src="/YGUpload/swfupload2.2/swfupload.queue.js" type="text/javascript"></script>
+    <script src="/YGUpload/ygupload.js" type="text/javascript"></script>
+    <script src="/YGUpload/ygupload.events.js" type="text/javascript"></script>
+
+    <script src="http://static01.yiguo.com/common/util.js?v=20150922"></script>
+    <script src="http://static01.yiguo.com/www/js/city.js?v20160816"></script>
+
+    <script type="text/javascript" src="http://static01.yiguo.com/utaste/js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="http://static01.yiguo.com/utaste/js/personalProfile.js"></script>
+    <script>
+        $(function() {
+            PsersonalProfile.init({
+                userId: 'eb92e9df-3e9b-495d-82cc-eee20e7c6c02',
+                httpUrlYiGuo: 'http://www.yiguo.com'
+            });
+            if ($('.IsEditYear').data('edit') == '1') {
+                $('.Birthday').removeAttr('diabled');
+            } else {
+                $('.Birthday').attr('disabled', true);
+            }
+        });
+    </script>
+
+
+    <script>
+        $(function () {
+            app.initLayout("/Handler/InitLayOut");
+            // app.changecity();
+            app.referCart();
+            app.logout(".logout");
+        });
+    </script>
+
+</body>
+</html>

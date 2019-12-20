@@ -1,0 +1,1266 @@
+<link rel="stylesheet" href="../layui-v2.5.5/layui/css/layui.css" />
+		<script src="../layui-v2.5.5/layui/layui.js"></script>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				background-color: rgb(247,248,248);
+			}
+			.yysh{
+				width: 1100px;
+				margin: 0 auto;
+			}
+			.yysh img{
+				width: 1100px;
+				height: 330px;
+			}
+			.syst{
+				margin-bottom: 10px;
+				width: 1100px;
+				height: 25px;
+				position: relative;
+				margin: 0 auto;
+			}
+			.png1{
+				width: 14px;
+				margin: 0 auto;
+				margin-bottom: -9px;
+			}
+			.png2{
+				width: 34px;
+				margin-left: 24px;
+				margin-bottom: -9px;
+			}
+			.png3{
+				width: 34px;
+				margin-left: 29px;
+				margin-bottom: -9px;
+			}
+			.png4{
+				width: 24px;
+				margin-left: 30px;
+				margin-bottom: -9px;
+			}
+			.png5{
+				width: 26px;
+				margin-left: 18px;
+				margin-bottom: -9px;
+			}
+			.png6{
+				width: 26px;
+				margin-left: 28px;
+				margin-bottom: -9px;
+			}
+			.syst a{
+				color: rgb(133,177,0);
+				font-size: 12px;
+				font-style:normal ;
+				margin-bottom: -9px;
+				display: inline-block;
+				width: 100px;
+				height: 22px;
+				text-align: center;
+				line-height: 22px;
+			}
+			.syst13{
+				height: 1310px;
+				width: 1100px;
+				margin: 0 auto;
+				border-top: 2px solid rgb(133,177,0);
+			}
+			.ysp{
+				width: 1100px;
+				margin: 0 auto;
+			}
+			.ysp{
+				color: rgb(133,177,0);
+			}
+			.zkgy{
+				width: 265px;
+				height: 320px;
+				vertical-align: middle;
+				background-color: rgb(255,255,255);
+				display: inline-block;
+			}
+			.syst13 img{
+				width: 242px;
+				height: 242px;
+				padding: 0.875rem 11px;
+				background-color: rgb(255,255,255);	
+			}
+			.zkgy .divziti1{
+				font-size: 12px;
+				margin-left: 10px;
+				background-color: rgb(255,255,255);
+			}
+			
+			.zkgy i{
+				font-style:normal ;
+				background-color: rgb(255,255,255);
+				font-size: 13px;
+				color: rgb(142,182,35);
+				margin-left: 10px;
+			}
+			.cwz{
+				
+				width: 265px;
+				height: 320px;
+				vertical-align: middle;
+				background-color: rgb(255,255,255);
+				display: inline-block;
+			}
+			.cwz .divziti1{
+				font-size: 12px;
+				margin-left: 10px;
+				background-color: rgb(255,255,255);
+			}
+			.cwz i{
+				font-style:normal ;
+				background-color: rgb(255,255,255);
+				font-size: 13px;
+				color: rgb(142,182,35);
+				margin-left: 10px;
+			}
+			.srtpz{
+				
+				width: 265px;
+				height: 320px;
+				vertical-align: middle;
+				background-color: rgb(255,255,255);
+				display: inline-block;
+			}
+			.srtpz .divziti1{
+				font-size: 12px;
+				margin-left: 10px;
+				background-color: rgb(255,255,255);
+			}
+			.srtpz i{
+				font-style:normal ;
+				background-color: rgb(255,255,255);
+				font-size: 13px;
+				color: rgb(142,182,35);
+				margin-left: 10px;
+			}
+			.thds{
+				
+				width: 265px;
+				height: 320px;
+				vertical-align: middle;
+				background-color: rgb(255,255,255);
+				display: inline-block;
+			}
+			.thds .divziti1{
+				font-size: 12px;
+				margin-left: 10px;
+				background-color: rgb(255,255,255);
+			}
+			.thds i{
+				font-style:normal ;
+				background-color: rgb(255,255,255);
+				font-size: 13px;
+				color: rgb(142,182,35);
+				margin-left: 10px;
+			}
+			.rshbp{
+				margin-top: 10px;
+				width: 265px;
+				height: 320px;
+				vertical-align: middle;
+				background-color: rgb(255,255,255);
+				display: inline-block;
+			}
+			.rshbp .divziti1{
+				font-size: 12px;
+				margin-left: 10px;
+				background-color: rgb(255,255,255);
+			}
+			.rshbp i{
+				font-style:normal ;
+				background-color: rgb(255,255,255);
+				font-size: 13px;
+				color: rgb(142,182,35);
+				margin-left: 10px;
+			}
+			.kft{
+				margin-top: 10px;
+				width: 265px;
+				height: 320px;
+				vertical-align: middle;
+				background-color: rgb(255,255,255);
+				display: inline-block;
+			}
+			.kft .divziti1{
+				font-size: 12px;
+				margin-left: 10px;
+				background-color: rgb(255,255,255);
+			}
+			.kft i{
+				font-style:normal ;
+				background-color: rgb(255,255,255);
+				font-size: 13px;
+				color: rgb(142,182,35);
+				margin-left: 10px;
+			}
+			.zhlm{
+				margin-top: 10px;
+				width: 265px;
+				height: 320px;
+				vertical-align: middle;
+				background-color: rgb(255,255,255);
+				display: inline-block;
+			}
+			.zhlm .divziti1{
+				font-size: 12px;
+				margin-left: 10px;
+				background-color: rgb(255,255,255);
+			}
+			.zhlm i{
+				font-style:normal ;
+				background-color: rgb(255,255,255);
+				font-size: 13px;
+				color: rgb(142,182,35);
+				margin-left: 10px;
+			}
+			.rsgl{
+				margin-top: 10px;
+				width: 265px;
+				height: 320px;
+				vertical-align: middle;
+				background-color: rgb(255,255,255);
+				display: inline-block;
+			}
+			.rsgl .divziti1{
+				font-size: 12px;
+				margin-left: 10px;
+				background-color: rgb(255,255,255);
+			}
+			.rsgl i{
+				font-style:normal ;
+				background-color: rgb(255,255,255);
+				font-size: 13px;
+				color: rgb(142,182,35);
+				margin-left: 10px;
+			}
+			.pczr{
+				margin-top: 10px;
+				width: 265px;
+				height: 320px;
+				vertical-align: middle;
+				background-color: rgb(255,255,255);
+				display: inline-block;
+			}
+			.pczr .divziti1{
+				font-size: 12px;
+				margin-left: 10px;
+				background-color: rgb(255,255,255);
+			}
+			.pczr i{
+				font-style:normal ;
+				background-color: rgb(255,255,255);
+				font-size: 13px;
+				color: rgb(142,182,35);
+				margin-left: 10px;
+			}
+			.fnsxg{
+				margin-top: 10px;
+				width: 265px;
+				height: 320px;
+				vertical-align: middle;
+				background-color: rgb(255,255,255);
+				display: inline-block;
+			}
+			.fnsxg .divziti1{
+				font-size: 12px;
+				margin-left: 10px;
+				background-color: rgb(255,255,255);
+			}
+			.fnsxg i{
+				font-style:normal ;
+				background-color: rgb(255,255,255);
+				font-size: 13px;
+				color: rgb(142,182,35);
+				margin-left: 10px;
+			}
+			.pgfq{
+				margin-top: 10px;
+				width: 265px;
+				height: 320px;
+				vertical-align: middle;
+				background-color: rgb(255,255,255);
+				display: inline-block;
+			}
+			.pgfq .divziti1{
+				font-size: 12px;
+				margin-left: 10px;
+				background-color: rgb(255,255,255);
+			}
+			.pgfq i{
+				font-style:normal ;
+				background-color: rgb(255,255,255);
+				font-size: 13px;
+				color: rgb(142,182,35);
+				margin-left: 10px;
+			}
+			.cbf{
+				margin-top: 10px;
+				width: 265px;
+				height: 320px;
+				vertical-align: middle;
+				background-color: rgb(255,255,255);
+				display: inline-block;
+			}
+			.cbf .divziti1{
+				font-size: 12px;
+				margin-left: 10px;
+				background-color: rgb(255,255,255);
+			}
+			.cbf i{
+				font-style:normal ;
+				background-color: rgb(255,255,255);
+				font-size: 13px;
+				color: rgb(142,182,35);
+				margin-left: 10px;
+			}
+			.mpdf{
+				margin-top: 10px;
+				width: 265px;
+				height: 320px;
+				vertical-align: middle;
+				background-color: rgb(255,255,255);
+				display: inline-block;
+			}
+			.mpdf .divziti1{
+				font-size: 12px;
+				margin-left: 10px;
+				background-color: rgb(255,255,255);
+			}
+			.mpdf i{
+				font-style:normal ;
+				background-color: rgb(255,255,255);
+				font-size: 13px;
+				color: rgb(142,182,35);
+				margin-left: 10px;	
+			}
+			/* ---------------------------------------------------------- 顶部*/
+			.dnt{
+				width: 1280px;
+				margin: 0 auto;
+			}
+			img {
+				vertical-align: middle;
+				margin-left: 0px;
+			}
+			
+			a {
+				text-decoration: none;
+				color: #444;
+			}
+			
+			a:hover {
+				color: #008842;
+			}
+			
+			.dht {
+				margin: 0 auto;
+				width: 1280px;
+				height: 30px;
+				background: #f7f9f8;
+			}
+			
+			.dht2 {
+				line-height: 30px;
+				font-size: 12px;
+				margin-left:50px;
+			}
+			
+			.dht2>p {
+				float: left;
+			}
+			
+			.z1,
+			.z2 {
+				width: 18px;
+				height: 18px;
+			}
+			
+			.dht2 .a1 {
+				color: #008842;
+				margin-left: 5px;
+			}
+			
+			.a1 span {
+				margin-left: 10px;
+			}
+			
+			.a2 {
+				margin-left: 15px;
+			}
+			
+			.a3 {
+				margin-left: 100px;
+			}
+			
+			.a4 {
+				margin-left: 20px;
+			}
+			.a4{
+				cursor:pointer;
+				color: #008842;
+			}
+			.xlk {
+				background: white;
+				width: 400px;
+				height: 500px;
+				border: 2px solid #008000;
+				position: absolute;
+				left: 180px;
+			}
+			
+			.xlk .w1 {
+				display: inline-block;
+				width: 380px;
+				height: 25px;
+				background: rgb(230, 230, 230);
+				font-size: 12px;
+				line-height: 25px;
+				padding-left: 20px;
+			}
+			
+			.xlk .w1 a {
+				margin-left: 130px;
+				color: #008842;
+			}
+			
+			.huo {
+				margin: 5px 20px;
+			}
+			
+			.huo span {
+				vertical-align: middle;
+				font-size: 12px;
+				font-weight: 800;
+				color: #666666;
+			}
+			
+			.huo p {
+				font-size: 12px;
+				margin-left: 20px;
+			}
+			
+			.fl {
+				overflow: hidden;
+				margin-left: 6px;
+			}
+			
+			.fl li {
+				float: left;
+				font-size: 12px;
+				display: inline-block;
+				width: 78px;
+				/*background: #008000;*/
+				height: 25px;
+				line-height: 25px;
+				color: #008000;
+				text-align: center;
+				box-sizing: border-box;
+				border-bottom: 1px solid #ccc;
+			}
+			
+			.fl .li1 {
+				border: 1px solid #ccc;
+				border-bottom: none;
+			}
+			
+			.xlk {
+				display: none;
+			}
+			.city0{
+				width: 400px;
+			}
+			.city0 ul,.city1 ul,.city2 ul,.city3 ul,.city4 ul{
+				overflow: hidden;
+			}
+			.city0 ul li,.city1 ul li,.city2 ul li,.city3 ul li,.city4 ul li{
+				font-size: 13px;
+				margin-left: 10px;
+				
+			}
+			.city0 ul li span,.city1 ul li span,.city2 ul li span,.city3 ul li span,.city4 ul li span{
+				float: left;
+				margin-left: 20px;
+				margin-top: 15px;
+			}
+			.city4 ul li:hover{
+				color: #008842;
+			}
+			.city0 ul li:hover{
+				color: #008842;
+			}
+			.city1 ul li:hover{
+				color: #008842;
+			}
+			.city2 ul li:hover{
+				color: #008842;
+			}
+			.city3 ul li:hover{
+				color: #008842;
+			}
+			.city1,.city2,.city3,.city4{
+				display: none;
+			}
+			#p1{
+				display: inline-block;
+			}
+			.mine{
+				background: white;
+				text-align: left;
+				padding: 8px;
+				position: absolute;
+				top: 30px;
+				left:	700px;
+				width: 110px;
+				border: 1px solid #CCCCCC;
+				box-shadow: 1px 1px 3px gray;
+				display: none;
+			}
+			.mine li{
+				margin-top: 5px;
+				font-size: 13px;
+			}
+			.mine i{
+				margin-left:10px;
+				text-align: center;
+				line-height: 20px;
+				font-style: normal;
+				display: inline-block;
+				width: 20px;
+				height: 20px;
+				border-radius: 50px;
+				background: #008842;
+			}
+			.mine li:hover{
+				color: #008842;
+			}
+			.app{
+				background: white;
+				width: 102px;
+				padding: 5px;
+				border: 1px solid #ccc;
+				box-shadow: 1px 1px 3px #ccc;
+				position: absolute;
+				top: 30px;
+				left:830px;
+				text-align: center;
+				display: none;
+			}
+			.app img{
+				width: 90px;
+				height: 90px;
+			}
+			/* ---------------------------------------------------------- 顶部*/
+			/* ---------------------------------------------------------- 导航*/
+			#top-logo {
+				height: 78px;
+				width: 1280px;
+				background: #E0E0E0;
+				margin: 0 auto;
+			}
+			
+			#top-logo>div {
+				display: inline-block;
+				background-color: rgb(224,224,224);
+			}
+			
+			#logo a {
+				display: inline-block;
+				width: 145px;
+				height: 50px;
+			}
+			
+			#logo img {
+				width: 145px;
+				height: 50px;
+				vertical-align: middle;
+			}
+			
+			#logo {
+				display: inline-block;
+				width: 280px;
+				height: 50px;
+				margin-left: 70px;
+			}
+			
+			#top-search {
+				vertical-align: middle;
+				overflow: hidden;
+			}
+			
+			#keyword span {
+				font-size: 13px;
+				margin-right: 15px;
+				margin-top: 10px;
+				background-color: rgb(224,224,224);
+			}
+			#keyword{
+				background-color: rgb(224,224,224);
+			}
+			#keyword .keywords {
+				color: #008842;
+				
+			}
+			
+			#search input {
+				float: left;
+				width: 425px;
+				height: 26px;
+				line-height: 26px;
+				padding: 0 10px;
+				border: 1px solid #008842;
+				background: #e0e0e0;
+			}
+			
+			#sousuo {
+				float: left;
+				display: block;
+				width: 81px;
+				height: 28px;
+				line-height: 28px;
+				padding: 0;
+				border: none;
+				cursor: pointer;
+				color: #fff;
+				font-size: 14px;
+				background: #008842;
+			}
+			
+			#shop {
+				
+				margin-left: 70px;
+				width: 300px;
+				height: 50px;
+				text-align: center;
+				line-height: 80px;
+			}
+			
+			#shop a {
+				position:relative;
+				width: 190px;
+				height: 40px;
+				text-align: center;
+				line-height: 40px;
+				display: inline-block;
+				text-decoration: none;
+				outline: none;
+				color: #008842;
+				border: 1px solid #008842;
+				background: white;
+			}
+			
+			#shop a b {
+				margin-left: 8px;
+				color: #008842;
+				font-size: 20px;
+				background-color: rgb(255,255,255);
+			}
+			
+			#shop a i {
+				font-size: 20px;
+				color: #008842;
+				vertical-align: top;
+				background-color: rgb(255,255,255);
+			}
+			#ycgwc{
+			position: absolute;
+			top: 40px;
+			right: 0px;
+			display: none;
+			width: 380px;
+			height: 140px;
+			text-align: center;
+			line-height: 140px;
+			background: white;
+			border: 1px solid #008842;
+			}
+			/* ---------------------------------------------------------- 导航*/
+			/* ---------------------------------------------------------- 底部*/
+			#dibu{
+					width: 1280px;
+					margin: 0 auto;
+				}
+				b{
+					font-weight: 100;
+					
+				}
+				.xqq{
+					font-size: 20px;
+					color: #008842;
+					font-weight: 500;
+				}
+				#dibu-top{
+					margin-top: 60px;
+					width: 1280px;
+					height: 102px;
+					overflow: hidden;
+					background: #E0E0E0;
+				}
+				#ul li{
+					margin-top: 20px;
+					margin-left: 50px;
+					
+					padding: 5px;
+					height: 42px;
+					float: left;
+				}
+				.xq{
+					display: inline-block;
+					width: 180px;
+					height: 42px;
+					border-left: 1px dashed gray;
+					padding: 10px;
+					padding-top: 5px;
+					margin-left: 10px
+					;
+					background-color: rgb(224,224,224);
+				}
+				.xq p{
+					background-color: rgb(224,224,224);
+				}
+				.xq b{
+					background-color: rgb(224,224,224);
+				}
+				#ul li{
+					background-color: rgb(224,224,224);
+				}
+				.bq{
+					background-color: rgb(224,224,224);
+				}
+				.bq i{
+					background-color: rgb(224,224,224);
+				}
+			#dibu-top>.layui-icon{
+					font-size: 40px;
+					color: #008842;
+			
+				}
+				.bq{
+					
+					display: inline-block;
+					width: 42px;
+					height: 42px;
+					text-align: center;
+					line-height: 42px;
+				}
+				#dibu-dibu{
+					width: 1280px;
+					color: #444444;
+				}
+				#dibu-bottom-div{
+					overflow: hidden;
+				}
+				#dibu-dibu .layui-icon{
+					margin-right: 5px;
+					font-size: 20px;
+					color: gray;
+				}
+				.div1{
+					margin-left: 110px;
+					margin-top: 60px;
+				}
+				.div1 span{
+					color: #444444;
+					font-size: 15px;
+				}
+				.u2 li a:hover{
+					color: #008842;
+				}
+				.u2 li{
+					margin-top: 5px;
+				}
+				.u2{
+					height: 130px;
+					margin-top: 15px;
+					padding-left: 30px;
+					padding-top: 0px;
+					border-left: 2px dashed #444444;
+				}
+				.div1{
+					float: left;
+				}
+				#kefu{
+					width: 1280px;
+					margin: 60px auto 30px;
+					text-align: center;
+				}
+				#kefu p{
+					color: #444444;
+					font-size: 12px;
+				}
+				#suoyoutupian{
+					width: 1280px;
+					margin: 10px auto;
+					text-align: center;
+				}
+				#suoyoutupian p{
+					color: #444444;
+					font-size: 12px;
+				}
+				#tupian{
+					margin-top: 30px;
+					width: 1280px;
+					text-align: center;
+				}
+				#tupian p{
+					color: #444444;
+					font-size: 15px;
+					margin-top: 30px;
+				}
+				/* ---------------------------------------------------------- 顶部*/
+				#d1{
+					width: 1280px;
+					margin: 0 auto;
+				}
+		</style>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<div id="d1">
+		<div class="dht">
+			<div class="dht2">
+				<p>欢迎光临易果生鲜!</p>
+				<p class="a1">配送至:<span id="city">全国其他城市<img src="" alt=""class="layui-icon layui-icon-triangle-d" /></span></p>
+				<p class="a2"><img src="../图片/1.png" class="z1" />
+					<a href="">网警提示</a>
+				</p>
+				<p class="a3">
+					<a href="">[登录]</a>
+				</p>
+				<p class="a4">
+					<a href="">[注册]</a>
+				</p>
+				<p class="a4" id="mine1"><img src="" class="layui-icon layui-icon-username" />我的易果<img src="" alt="" class="layui-icon layui-icon-triangle-d class="layui-nav-item"/></p>
+				<p class="a4" id="app1"><img src="../图片/2.jpg" class="z2" />手机易果<img src="" alt="" class="layui-icon layui-icon-triangle-d" /></p>
+				<p class="a4"><img src="" alt="" class="layui-icon layui-icon-rate " />礼品卡绑定</p>
+				<p class="a4"><img src="" alt="" class="layui-icon layui-icon-user " />礼品兑换卷入口</p>
+				<p class="a4"><img src="../图片/3.png" alt="" />营业资质</p>
+				<p class="a4"><img src="../图片/4.png" alt="" />人才招聘</p>
+			</div>
+			<div class="mine">
+				<ul>
+					<li>我的订单</li>
+					<li>我的优惠券<i>0</i></li>
+					<li>我的收藏</li>
+					<li>我的悠币</li>
+					<li>我的退换货</li>
+					<li>预存款查询</li>
+					<li>立即充值</li>
+				</ul>
+			</div>
+			<div class="app">
+				<p>
+						<img src="../图片/app.png" />
+						<p>扫一扫下载app</p>
+				</p>
+				<p>
+						<img src="../图片/易果微信.png" />
+						<p>易果生鲜微信</p>
+				</p>
+			</div>
+		</div>
+		<!--下拉框-->
+		<div class="xlk">
+			<p class="w1">请根据您的收货地址选择
+				<a>全国其他城市>></a>
+			</p>
+			<div>
+				<div class="huo">
+					<a href=""><img src="../图片/5.png" /></a><span>热门城市</span>
+					<p>上海</p>
+				</div>
+			</div>
+			<!--1-->
+			<ul class="fl">
+				<li class="li1">ABCDE</li>
+				<li>FGHIJ</li>
+				<li>KLMNO</li>
+				<li>PQRST</li>
+				<li>UVWXYZ</li>
+			</ul>
+			<div class="city0">
+				<ul id="a"></ul>
+			</div>
+			<div class="city1">
+				<ul id="f"></ul>
+			</div>
+			<div class="city2">
+				<ul id="k"></ul>
+			</div>
+			<div class="city3">
+				<ul id="p"></ul>
+			</div>
+			<div class="city4">
+				<ul id="w"></ul>
+			</div>
+		</div>
+		
+		<div id="top-logo">
+			<div id="logo">
+				<a href="../我的易果首页1/首页.html"><img src="../图片/logo.png" /></a>
+			</div>
+			<div id="top-search">
+				<div id="search">
+					<input type="text" placeholder="输入商品名/编号/拼音" />
+					<button id="sousuo">搜索</button>
+				</div>
+				<div id="keyword">
+					<span class="keywords">奇异果</span>
+					<span class="keywords">谷饲</span>
+					<span>家佳康</span>
+					<span>贝类</span>
+				</div>
+			</div>
+			<div id="shop">
+				<a href="#">
+					<i class="layui-icon">&#xe657</i>
+					<b>0.0</b>
+					<div id="ycgwc">
+						<p>购物车里没有东西</p>
+					</div>
+				</a>
+				
+			</div>
+		</div>
+	
+		<div class="yysh">
+			<img src="../图片/0111.png">
+		</div>
+		<div class="syst">
+			<img src="../图片/10.png" class="png1" />&nbsp;&nbsp;&nbsp;&nbsp;<a class="syst1">深夜食堂（13）</a>
+			<img src="../图片/11.png" class="png2" />&nbsp;&nbsp;&nbsp;&nbsp;<a class="syst2">简单轻食（29）</a>
+			<img src="../图片/12.png" class="png3" />&nbsp;&nbsp;&nbsp;&nbsp;<a class="syst3">饕餮大餐（156）</a>
+			<img src="../图片/13.png" class="png4" />&nbsp;&nbsp;&nbsp;&nbsp;<a class="syst4">至纯汤品（19）</a>
+			<img src="../图片/14.png" class="png5" />&nbsp;&nbsp;&nbsp;&nbsp;<a class="syst5">丰富主食（15）</a>
+			<img src="../图片/16.png" class="png6" />&nbsp;&nbsp;&nbsp;&nbsp;<a class="syst6">所有食谱（232）</a>
+		</div>
+		<div class="ysp">
+			<img src="../图片/15.png" /><b>易食谱</b>
+		</div>
+		<div class="syst13">
+			<div class="zkgy">
+				<img src="../图片/0001.png">
+				<p class="divziti1">照烧鲑鱼</p>
+				<i>❤</i><i>16人想吃</i>
+			</div>
+			<div class="cwz">
+				<img src="../图片/0002.png">
+				<p class="divziti1">茶碗蒸</p>
+				<i>❤</i><i>101人想吃</i>
+			</div>
+			<div class="srtpz">
+				<img src="../图片/0003.png">
+				<p class="divziti1">松茸土瓶蒸</p>
+				<i>❤</i><i>60人想吃</i>
+			</div>
+			<div class="thds">
+				<img src="../图片/0004.png">
+				<p class="divziti1">甜厚蛋烧</p>
+				<i>❤</i><i>50人想吃</i>
+			</div>
+			<div class="rshbp">
+				<img src="../图片/0005.png">
+				<p class="divziti1">日式汉堡排</p>
+				<i>❤</i><i>65人想吃</i>
+			</div>
+			<div class="kft">
+				<img src="../图片/0006.png">
+				<p class="divziti1">烤饭团</p>
+				<i>❤</i><i>84人想吃</i>
+			</div>
+			<div class="zhlm">
+				<img src="../图片/0007.png">
+				<p class="divziti1">中华冷面</p>
+				<i>❤</i><i>7人想吃</i>
+			</div>
+			<div class="rsgl">
+				<img src="../图片/0008.png">
+				<p class="divziti1">日式咖喱</p>
+				<i>❤</i><i>344人想吃</i>
+			</div>
+			<div class="pczr">
+				<img src="../图片/0009.png">
+				<p class="divziti1">泡菜猪肉</p>
+				<i>❤</i><i>11人想吃</i>
+			</div>
+			<div class="fnsxg">
+				<img src="../图片/00010.png">
+				<p class="divziti1">肥牛瘦喜锅</p>
+				<i>❤</i><i>7800人想吃</i>
+			</div>
+			<div class="pgfq">
+				<img src="../图片/00011.png">
+				<p class="divziti1">培根番茄</p>
+				<i>❤</i><i>133人想吃</i>
+			</div>
+			<div class="cbf">
+				<img src="../图片/00012.png">
+				<p class="divziti1">茶包饭</p>
+				<i>❤</i><i>25人想吃</i>
+			</div>
+			<div class="mpdf">
+				<img src="../图片/00013.png">
+				<p class="divziti1">麻婆豆腐</p>
+				<i>❤</i><i>182人想吃</i>
+			</div>
+		</div>
+		
+		<div id="dibu">
+			<div id="dibu-top">
+				<ul id="ul">
+					<li>
+						<div class="bq"><i id="tubiao" class="layui-icon layui-icon-website"></i></div>
+						<div  class="xq">
+							<p>全球精选</p>
+							<b>一站式购物方案</b>
+						</div>
+					</li>
+					<li>
+						<div class="bq"><i class="layui-icon layui-icon-home"></i></div>
+						<div  class="xq">
+							<p class="xqq">多仓直发</p>
+							<b>次日达配送服务</b>
+						</div>
+					</li>
+					<li>
+						<div class="bq"><i class="layui-icon layui-icon-location"></i></div>
+						<div  class="xq">
+							<p class="xqq">品质严选</p>
+							<b>精选正宗品质好食材</b>
+						</div>
+					</li>
+					<li>
+						<div class="bq"><i class="layui-icon">&#xe698</i></div>
+						<div  class="xq">
+							<p class="xqq">天天低价</p>
+							<b>会员专属优惠购不停</b>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div id="dibu-dibu">
+				<div id="dibu-bottom-div">
+		
+					<div class="div1">
+						<p><i class="layui-icon layui-icon-templeate-1"></i><span>新手指南</span></p>
+						<ul class="u2">
+							<li><a href="#">账户注册</a></li>
+							<li><a href="#">购物流程</a></li>
+							<li><a href="#">订购方式</a></li>
+							<li><a href="#">悠币说明</a></li>
+							<li><a href="#">会员等级</a></li>
+						</ul>
+					</div>
+				
+					<div class="div1">
+						<p><i class="layui-icon layui-icon-layouts"></i><span>付款方式</span></p>
+						<ul class="u2">
+							<li><a href="#">支付方式</a>/<a href="#">发票说明</a></li>
+							<li><a href="#">礼品卡章程</a></li>
+							<li><a href="#">优惠代码</a></li>
+							<li><a href="#">卡券购买流程</a></li>
+						</ul>
+					</div>
+				
+					<div class="div1">
+						<p><i class="layui-icon layui-icon-circle"></i><span>配送方式</span></p>
+						<ul class="u2">
+							<li><a href="#">配送运费</a></li>
+							<li><a href="#">时间及范围</a></li>
+						</ul>
+					</div>
+				
+					<div class="div1">
+						<p><i class="layui-icon layui-icon-face-smile"></i><span>售后服务</span></p>
+						<ul class="u2">
+							<li><a href="#">退换货政策</a></li>
+							<li><a href="#">退换货流程</a></li>
+							<li><a href="#">常见问题</a></li>
+							<li><a href="#">极速退款</a></li>
+							<li><a href="#">投诉与建议</a></li>
+						</ul>
+					
+					</div>
+					<div class="div1">
+						<p><i class="layui-icon layui-icon-location"></i><span>关于我们</span></p>
+						<ul class="u2">
+							<li><a href="#">公司介绍</a></li>
+							<li><a href="#">联系我们</a></li>
+							<li><a href="#">业务合作</a></li>
+							<li><a href="#">诚信举报</a></li>
+							<li><a href="#">用户协议</a></li>
+							<li><a href="#">隐私协议</a></li>
+						</ul>
+					</div>
+				</div>
+				<div id="kefu"><p>客服热线400-000-7788企业采购或团购，请转2号键咨询，周一至周日9:00-21:00</p></div>
+				<div id="suoyoutupian"><p>所有图片均受著作权保护，未经许可任何单位与个人不得使用，复制转载摘编，违者必究法律责任</p><p>沪Icp备09008015号&nbsp;Copyright&copy;2005-2019版权所有</p></div>
+				<div id="tupian">
+					<img src="../图片/底部01.png" />
+					<img src="../图片/底部02.png" />
+					<img src="../图片/底部03.png" />
+					<img src="../图片/底部04.png" />
+					<img src="../图片/底部05.png" />
+					<img src="../图片/底部06.png" />
+					<img src="../图片/底部07.png" />
+					<span>沪公网安备&nbsp;&nbsp;310105020000002号</span>
+					<p>违法和不良信息举报电话&nbsp;400-000-7788</p>
+				</div>
+		</div>
+		</div>
+	</body>
+	<script src="../jquery-3.4.1.js"></script>
+	<script>
+		$("#app1").mouseenter(function(){
+			$(".app").slideDown(300)
+		})
+		$(".app").mouseleave(function(){
+			$(".app").slideUp(300);
+		})
+		$("#mine1").mouseenter(function(){
+			$(".mine").slideDown(300)
+		})
+		$(".mine").mouseleave(function(){
+			$(".mine").slideUp(300)
+		})
+		$(".fl li").mouseenter(function() {
+			$(this).addClass("li1").siblings().removeClass("li1");
+		})
+		$("#city").mouseenter(function() {
+			$(".xlk").slideDown(300)
+		})
+		$(".xlk").mouseleave(function() {
+			$(".xlk").slideUp(300)
+		})
+		var a=[["阿坝藏族羌族自治州","阿拉善","安顺市","安阳市 ","安庆市 ","鞍山市"],["白城市 ","巴中市","滨州市", "本溪市","巴彦淖尔","白银市","百色市","蚌埠市","毕节","保山市","北海市","保定市","包头市","白山市","北京 北京(郊区)"],["朝阳市","崇明县","慈溪市","崇左市","常德市","滁州市","郴州市","长治市","楚雄彝族自治州","成都市","承德市", "赤峰市","常熟市","长春市","常州市","池州市 ","长沙市","巢湖市","沧州市 ","潮州市", "重庆"],["丹东市","达州市","东莞市","大庆市","东营市","德州市","大同市","迪庆藏族自治州","大连市","定西市","德宏傣族景颇族自治州","大理白族自治州","丹阳市","大兴安岭"],["E","鄂州市","恩施土家族苗族自治州","鄂尔多斯"]]
+		var f=[["佛山市","防城港市","福州市","抚顺市","阜阳市","抚州市","阜新市","奉化市"],["白城市 ","巴中市","滨州市", "本溪市","巴彦淖尔","白银市","百色市","蚌埠市","毕节","保山市","北海市","保定市","包头市","白山市","北京 北京(郊区)"],["朝阳市","崇明县","慈溪市","崇左市","常德市","滁州市","郴州市","长治市","楚雄彝族自治州","成都市","承德市", "赤峰市","常熟市","长春市","常州市","池州市 ","长沙市","巢湖市","沧州市 ","潮州市", "重庆"],["鄂州市","恩施土家族苗族自治州","鄂尔多斯"]];
+		var k=[["开封市","昆明市","昆山市"],["白城市 ","巴中市","滨州市", "本溪市","巴彦淖尔","白银市","百色市","蚌埠市","毕节","保山市","北海市","保定市","包头市","白山市","北京 北京(郊区)"],["朝阳市","崇明县","慈溪市","崇左市","常德市","滁州市","郴州市","长治市","楚雄彝族自治州","成都市","承德市", "赤峰市","常熟市","长春市","常州市","池州市 ","长沙市","巢湖市","沧州市 ","潮州市", "重庆"],["丹东市","达州市","东莞市","大庆市","东营市","德州市","大同市","迪庆藏族自治州","大连市","定西市","德宏傣族景颇族自治州","大理白族自治州","丹阳市","大兴安岭"]]
+		var p=[["攀枝花市","平顶山市","莆田市","平凉市 ","盘锦市","普洱市",],["白城市 ","巴中市","滨州市", "本溪市","巴彦淖尔","白银市","百色市","蚌埠市","毕节","保山市","北海市","保定市","包头市","白山市","北京 北京(郊区)"],["朝阳市","崇明县","慈溪市","崇左市","常德市","滁州市","郴州市","长治市","楚雄彝族自治州","成都市","承德市", "赤峰市","常熟市","长春市","常州市","池州市 ","长沙市","巢湖市","沧州市 ","潮州市", "重庆"],["丹东市","达州市","东莞市","大庆市","东营市","德州市","大同市","迪庆藏族自治州","大连市","定西市","德宏傣族景颇族自治州","大理白族自治州","丹阳市","大兴安岭"],["T","鄂州市","恩施土家族苗族自治州","鄂尔多斯"]];
+		var w=[["潍坊市 ","武威市","武汉市","梧州市","芜湖市","乌海市","乌兰察布","温州市","威海市","吴忠市"],["朝阳市","崇明县","慈溪市","崇左市","常德市","滁州市","郴州市","长治市","楚雄彝族自治州","成都市","承德市", "赤峰市","常熟市","长春市","常州市","池州市 ","长沙市","巢湖市","沧州市 ","潮州市", "重庆"],["丹东市","达州市","东莞市","大庆市","东营市","德州市","大同市","迪庆藏族自治州","大连市","定西市","德宏傣族景颇族自治州","大理白族自治州","丹阳市","大兴安岭"],["鄂州市","恩施土家族苗族自治州","鄂尔多斯"]]
+		 var aa="",bb="";cc="";dd="";ee="";ff="";gg="";hh="";jj="";kk="";ll="";mm="";nn="";oo="";pp="";rr="";ss="";tt="";ww="";xx="";yy="";zz="";
+		 for(var i=0;i<a.length;i++){
+		 	for(var j=1;j<a[i].length;j++){
+		 		aa=aa+"<li><span>"+a[i][j]+"</span></li>";
+		 	}
+		 }
+		 $("#a").html(aa);
+		for(var i=0;i<f.length;i++){
+		 	for(var j=0;j<f[i].length;j++){
+		 		ff=ff+"<li><span>"+f[i][j]+"</span></li>";
+		 	}
+		 }
+		 $("#f").html(ff);
+		 for(var i=0;i<k.length;i++){
+		 	for(var j=0;j<k[i].length;j++){
+		 		kk=kk+"<li><span>"+k[i][j]+"</span></li>";		 		
+		 	}
+		 }
+		 $("#k").html(kk);
+		 for(var i=0;i<k.length;i++){
+		 	for(var j=0;j<k[i].length;j++){
+		 		pp=pp+"<li><span>"+p[i][j]+"</span></li>";		 		
+		 	}
+		 }
+		 $("#p").html(pp);
+		 for(var i=0;i<k.length;i++){
+		 	for(var j=0;j<w[i].length;j++){
+		 		ww=ww+"<li><span>"+w[i][j]+"</span></li>";		 		
+		 	}
+		 }
+		 $("#w").html(ww);
+		 $(".fl li").mouseenter(function() {
+			$(this).addClass("li1").siblings().removeClass("li1");
+			var ccc=$(this).index();
+			if(ccc==0){
+				$(".city0").css("display","block")
+				$(".city1").css("display","none")
+				$(".city2").css("display","none")
+				$(".city3").css("display","none")
+				$(".city4").css("display","none")
+			}else if(ccc==1){
+				$(".city0").css("display","none")
+				$(".city1").css("display","block")
+				$(".city2").css("display","none")
+				$(".city3").css("display","none")
+				$(".city4").css("display","none")
+			}else if(ccc==2){
+				$(".city0").css("display","none")
+				$(".city1").css("display","none")
+				$(".city2").css("display","block")
+				$(".city3").css("display","none")
+				$(".city4").css("display","none")
+			}else if(ccc==3){
+				$(".city0").css("display","none")
+				$(".city1").css("display","none")
+				$(".city2").css("display","none")
+				$(".city3").css("display","block")
+				$(".city4").css("display","none")
+			}else if(ccc==4){
+				$(".city0").css("display","none")
+				$(".city1").css("display","none")
+				$(".city2").css("display","none")
+				$(".city3").css("display","none")
+				$(".city4").css("display","block")
+			}
+			
+		})
+		$("#city").mouseenter(function() {
+			$(".xlk").css("display", "block");
+		})
+		$(".xlk").mouseleave(function() {
+			$(".xlk").css("display", "none");
+		})
+		
+		$("#shop").hover(function(){
+				$("#ycgwc").slideDown(300);
+			},function(){
+				$("#ycgwc").slideUp(300);
+			})
+		
+		$(".syst1").mouseover(function(){
+			$(this).css("background-color","rgb(133,177,0)").css("color","rgb(255,255,255)")
+		});
+		$(".syst1").mouseout(function(){
+			$(this).css("background-color","rgb(247,248,248)").css("color","rgb(133,177,0)")
+		});
+		$(".syst2").mouseover(function(){
+			$(this).css("background-color","rgb(133,177,0)").css("color","rgb(255,255,255)")
+		});
+		$(".syst2").mouseout(function(){
+			$(this).css("background-color","rgb(247,248,248)").css("color","rgb(133,177,0)")
+		});
+		$(".syst3").mouseover(function(){
+			$(this).css("background-color","rgb(133,177,0)").css("color","rgb(255,255,255)")
+		});
+		$(".syst3").mouseout(function(){
+			$(this).css("background-color","rgb(247,248,248)").css("color","rgb(133,177,0)")
+		});
+		$(".syst4").mouseover(function(){
+			$(this).css("background-color","rgb(133,177,0)").css("color","rgb(255,255,255)")
+		});
+		$(".syst4").mouseout(function(){
+			$(this).css("background-color","rgb(247,248,248)").css("color","rgb(133,177,0)")
+		});
+		$(".syst5").mouseover(function(){
+			$(this).css("background-color","rgb(133,177,0)").css("color","rgb(255,255,255)")
+		});
+		$(".syst5").mouseout(function(){
+			$(this).css("background-color","rgb(247,248,248)").css("color","rgb(133,177,0)")
+		});
+		$(".syst6").mouseover(function(){
+			$(this).css("background-color","rgb(133,177,0)").css("color","rgb(255,255,255)")
+		});
+		$(".syst6").mouseout(function(){
+			$(this).css("background-color","rgb(247,248,248)").css("color","rgb(133,177,0)")
+		});
+		
+	</script>
+</html>

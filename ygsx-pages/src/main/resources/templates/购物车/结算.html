@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>结算</title>
+		<link rel="stylesheet" type="text/css" href="../layui-v2.5.5/layui/css/layui.css"/>
+		<script type="text/javascript" src="../jquery-3.4.1.js"></script>
+		<script src="../layui-v2.5.5/layui/layui.js"></script>
+		<script src="../jQueryDistpicker20160621/dist/distpicker.data.js"></script>
+		<script src="../jQueryDistpicker20160621/dist/distpicker.js"></script>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.gwctop{
+				background: #E0E0E0;
+				height: 82px;
+				width: 1280px;
+				margin: 0 auto;
+				position: relative;
+			}
+			.gwctop img{
+				margin-left: 50px;
+			}
+			#wdgwc1{
+				display: inline-block;
+				color: rgb(0,136,66);
+				font-size: 12px;
+				position: absolute;
+				top: 10px;
+				left: 750px;
+			}
+			#quan11{
+				border-radius: 50%;
+				width: 45px;
+				height: 45px;
+				background-color: rgb(0,136,66);
+				display:inline-block;
+				position: absolute;
+				top: 30px;
+				left: 760px;
+				text-align: center;
+				line-height: 45px;
+			}
+			#quan11 i{
+				text-align: center;
+				font-size: 22px;
+				color: rgb(255,255,255);
+				font-style: normal;
+			}
+			#jdt11{
+				width: 137px;
+				height: 13px;
+				display: inline-block;
+				position: absolute;
+				top: 45px;
+				left: 804px;
+				background: #008842;
+			}
+			#quan22{
+				color: white;
+				background: #008842;
+				border-radius: 50%;
+				width: 45px;
+				height: 45px;
+				display:inline-block;
+				position: absolute;
+				top: 30px;
+				left: 940px;
+				text-align: center;
+				line-height: 45px;
+				border: 1px solid rgb(0,136,66);
+			}
+			#quan22 i{
+				text-align: center;
+				font-size: 22px;
+				font-style: normal;
+				
+			}
+			#jdt22{
+				width: 147px;
+				height: 13px;
+				background-color: rgb(255,255,255);
+				display: inline-block;
+				position: absolute;
+				top: 45px;
+				left: 987px;
+				
+			}
+			#quan33{
+				border-radius: 50%;
+				width: 45px;
+				height: 45px;
+				background-color: rgb(255,255,255);
+				display:inline-block;
+				position: absolute;
+				top: 30px;
+				left: 1130px;
+				text-align: center;
+				line-height: 45px;
+				border: 1px solid rgb(0,136,66);
+			}
+			#quan33 i{
+				text-align: center;
+				font-size: 22px;
+				color: rgb(0,136,66);
+				font-style: normal;
+			}
+			#dingdan{
+				margin-top: 20px;
+			}
+			#xinxi1{
+				width: 1200px;
+				height: 60px;
+				margin: 0 auto;
+				border-bottom: 2px solid #008842;
+			}
+			#xinxi1 i{
+				font-style: normal;
+				display: inline-block;
+				width: 250px;
+				height: 60px;
+				line-height: 60px;
+				text-align: center;
+				background: #008842;
+				font-weight: 900;
+				font-size: 20px;
+				color: white;
+			}
+			#dingdanxinxi{
+				margin-top: 20px;
+			}
+			#dingdanxinxi li{
+				position: relative;
+				width: 1000px;
+				height: 150px;
+				margin: 0 auto;
+				border-bottom: 1px dashed #ccc;
+				border-left: 1px solid #008842;
+			}
+			#dingdanxinxi li>i{
+				font-size: 26px;
+				color: #008842;
+				font-weight: 900;
+				position: absolute;
+				top: -13px;
+				left: -13px;
+			}
+			#dingdanxinxi li:first-child{
+				width: 1000px;
+				margin: 0 auto;
+				border-bottom: 1px dashed #ccc;
+				border-left: 1px solid #008842;
+			}
+			#address{
+				font-weight: 700;
+			}
+			#address>h3{
+				margin-left: 10px;
+				font-weight: 700;
+				color: #008842;
+			}
+			#address>p{
+				margin-top: 30px;
+				margin-left: 50px;
+			}
+			#peisong h3,#zhifu h3{
+				margin-left: 10px;
+				font-weight: 700;
+				color: #008842;
+			}
+			#zhifu p{
+				margin-top: 30px;
+				margin-left: 50px;
+			}
+			#zhifu p a{
+				text-decoration: underline;
+			}
+			#zhifu p span{
+				font-weight: 400;
+			}
+			#zhifu input{
+				margin-right: 15px;
+				vertical-align: middle;
+			}
+			#fapiao{
+				font-weight: 700;
+			}
+			#fapiao h3{
+				margin-left: 10px;
+				font-weight: 700;
+				color: #008842;
+			}
+			#fapiao p{
+				color: #008842;
+				margin-top: 30px;
+				margin-left: 50px;
+			}
+			#fapiao span{
+				color: #444;
+				font-weight: normal;
+			}
+			#fapiao a{
+				color: #008842;
+				font-weight: lighter;
+			}
+			/*#shangpin{
+				overflow: hidden;
+			}*/
+			.fanhui{
+				overflow: hidden;
+			}
+			#shangpin h3{
+				margin-left: 10px;
+				font-weight: 700;
+				color: #008842;
+			}
+			#shangpin .fanhui p{
+				color: #008842;
+				float: right;
+				margin-right: 30px;
+			}
+			.shangpin-bg{
+				width: 1000px;
+				margin-left: 30px;
+			}
+			table{
+				text-align: center;
+				background: #e5e5e5;
+			}
+			tr{
+				height: 35px;
+				line-height: 35px;
+			}
+			.name{
+				width: 611px;
+			}
+			.dj1{
+				width: 107px;
+			}
+			.sl{
+				width: 107px;
+			}
+			.gg{
+				width: 107px;
+			}
+			.je{
+				width: 166px;
+			}
+			.bcsm{
+				color: #008842;
+				margin: 20px 0 0 20px;
+			}
+			.bcsm input{
+				width: 500px;
+			}
+			#youhuiquan{
+				font-weight: 700;
+			}
+			#youhuiquan h3{
+				margin-left: 10px;
+				font-weight: 700;
+				color: #008842;
+			}
+			#youhuiquan p{
+				color: #008842;
+				margin-top: 30px;
+				margin-left: 50px;
+			}
+			#dinghuoren{
+				font-weight: 700;
+			}
+			#dinghuoren h3{
+				margin-left: 10px;
+				font-weight: 700;
+				color: #008842;
+			}
+			#dinghuoren p{
+				color: #008842;
+				margin-top: 30px;
+				margin-left: 50px;
+			}
+			.time{
+				width: 440px;
+			}
+			.bz{
+				width: 450px;
+			}
+			.yf{
+				width: 69px;
+			}
+			.psfs{
+				width: 141px;
+			}
+			.psdiv{
+				margin: 20px 0 0 20px;
+			}
+			#tijiao{
+				width: 80rem;
+				margin: 0 auto;
+				text-align: right;
+			}
+			#tijiao p{
+				margin-right: 35px;
+				margin-top: 15px;
+			}
+			#tijiao1{
+				margin-top: 50px;
+				margin-right: 50px;
+			}
+			#tijiao1 i{
+				font-size: 20px;
+				color: orangered;
+			}
+				 .btn{
+				background: orangered;
+				border: 1px solid orangered;
+				width: 100px;
+				height: 30px;
+				text-align: center;
+				line-height: 30px;
+				color: white;
+			}
+			#gddw{
+				background: white;
+				position: fixed;
+				bottom: -45px;
+				left: 30px;
+				width: 1280px;
+				height: 40px;
+				line-height: 40px;
+				margin: 0 auto;
+				overflow: hidden;
+				margin: 50px 0;
+			}
+			#gddw span{
+				float: right;
+				margin: 0 20px;
+				margin-right: 160px;
+			}
+			#gddw button{
+				float: right;
+				margin: 0 20px;
+			}
+			#gddw span i{
+				font-size: 20px;
+				color: orangered;
+			}
+			#gddw .btn{
+				position: absolute;
+				top: 0px;
+				right: 30px;
+			}
+			#gddw1{
+				border: 1px solid #CCCCCC;
+				position: fixed;
+				top: 80px;
+				left: 350px;
+				width: 660px;
+				background: white;
+				padding: 20px;
+				display: none;
+			}
+			#gddw1-top{
+				padding: 5px;
+				position: relative;
+				border-bottom: 1px solid #008842;
+				color: #008842;
+			}
+			#gddw1>div{
+				margin: 30px 20px;
+			}
+			#gddw1>div span{
+				display: inline-block;
+				width: 200px;
+				text-align: right;
+			}
+			#gddw1>div input{
+				width: 270px;
+				height: 26px;
+				margin-left: 20px;
+			}
+			#bcdz{
+				width: 600px;
+				margin: 0 auto;
+				text-align: center;
+			}
+			#bcdz button{
+				width: 94px;
+				height: 41px;
+				background: #008842;
+				color: white;
+				text-align: center;
+				line-height: 41px;
+				border: 1px solid #008842;
+				border-radius: 5px;
+			}
+			#tianjiadz{
+				cursor: pointer;
+			}
+			.xzddz{
+				margin-top: 20px;
+				color: black;
+				padding: 5px;
+				height: 30px;
+				line-height: 30px;
+				border: 1px solid #008842;
+				margin-left: 20px;
+			}
+			.ycsc{
+				display: inline-block;
+				color: #008842;
+			}
+			.ycsc span{
+				margin-left: 10px;
+			}
+			.del1{
+				cursor: pointer;
+			}
+			#guanbigddw{
+				position: absolute;
+				top: 0px;
+				right: 20px;
+				float: right;
+				margin-right: 60px;
+				display: inline-block;
+				width: 30px;
+				height: 30px;
+				text-align: center;
+				line-height: 30px;
+			}
+			#guanbigddw:hover{
+				background: red;
+				color: white;
+			}
+			#distpicker2{
+				display: inline-block;
+			}
+			.biaoge{
+				background: white;
+				}
+			.name001{
+				padding-left: 2.1875rem;
+				text-align: left;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="dingbu"></div>
+		<div class="gwctop">
+				<a href="../我的易果首页1/首页.html"><img src="../图片/logo.png" /></a>
+				<div id="wdgwc1"><span>
+					我的购物车&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;填写订单信息&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;成功提交订单</span></div>
+				<div id="quan11"><i>1</i></div>
+				<div id="jdt11"></div>
+				<div id="quan22"><i>2</i></div>
+				<div id="jdt22"></div>
+				<div id="quan33"><i>3</i></div>
+				<div class="shopjdt"></div>
+			</div>
+			<div id="dingdan">
+				<div id="xinxi1">
+					<i>
+						<b class="layui-icon layui-icon-cart"></b>
+						填写核对订单信息
+					</i>
+				</div>
+				<div id="xinxi2">
+					<ul id="dingdanxinxi">
+						<li id="address">
+							<i class="layui-icon layui-icon-location"></i>
+							<h3>收货信息</h3>
+							<p><span id="tianjiadz">+使用新地址</span></p>
+							<div class="xzddz">
+								<span class="name001">****</span>
+								<span class="province">北京</span>
+								<span class="qu">昌平区</span>
+								<span class="xxdz">南口镇北京工商</span>
+								<span>，</span>
+								<span class="phone001">131***8866</span>
+								<div class="ycsc">
+									<span>设为默认地址</span>
+									<span>编辑</span>
+									<span class="del1">删除</span>
+								</div>
+							</div>
+						</li>
+						<li id="peisong">
+							<i class="layui-icon layui-icon-component"></i>
+							<h3>配送信息</h3>
+							<div class="psdiv">
+								<table>
+									<tr>
+										<th class="time">收货时间</th>
+										<th class="yf">运费</th>
+										<th class="psfs">配送方式</th>
+										<th class="bz">备注</td>
+									</tr>
+									<tr>
+										<td>星期六 11-16 全天09:00——21:00</td>
+										<td>10</td>
+										<td>易果生鲜物流</td>
+										<td>满100元免基础运费，100元以下收取基础运费</td>
+									</tr>
+								</table>
+							</div>
+						</li>
+						<li id="zhifu">
+							<i class="layui-icon layui-icon-rmb"></i>
+							<h3>支付信息</h3>
+							<p><span>支付方式：</span><span>支付宝</span><img src="支付宝.jpg"/><a href="#">修改</a></p>
+							<p><input type="checkbox"/>配送单上不显示价格（仅在非货到付款时有效）</p>
+						</li>
+						<li id="fapiao">
+							<i class="layui-icon layui-icon-website"></i>
+							<h3>发票信息</h3>
+							<p>
+								<span><input type="checkbox"/>需要发票</span>&nbsp;&nbsp;
+								<a>温馨提示</a>
+							</p>
+						</li>
+						<li id="shangpin">
+							<i class="layui-icon layui-icon-star-fill"></i>
+							<h3>商品信息</h3>
+							<div class="fanhui"><p><a href="#">返回购物车</a></p></div>
+							<div class="shangpin-bg">
+								<table>
+									<tr>
+										<td class="name">商品名称</td>
+										<td class="dj1">单价</td>
+										<td class="sl">数量</td>
+										<td class="gg">规格</td>
+										<td class="je">金额小计</td>
+									</tr>
+									<tr class="biaoge">
+										<td class="name01">云南蜜桔1kg50g/个</td>
+										<td>￥25.00</td>
+										<td>1</td>
+										<td>1kg/盒</td>
+										<td>￥25.00</td>
+									</tr>
+								</table>
+							</div>
+							<p class="bcsm">补充说明<input type="text"/></p>
+						</li>
+						<li id="youhuiquan">
+							<i class="layui-icon layui-icon-add-circle"></i>
+							<h3>优惠券信息</h3>
+							<p><span>+使用优惠券</span></p>
+							<p><span>使用现金券</span></p>
+						</li>
+						<li id="dinghuoren">
+							<i class="layui-icon layui-icon-find-fill"></i>
+							<h3>订货人信息</h3>
+							<p><span>订货人姓名：<input type="text" placeholder="非必填"/></span></p>
+							<p><span>订货人手机：<input type="text" placeholder="非必填"/></span></p>
+						</li>
+					</ul>
+				</div>
+				<div id="tijiao">
+					<p>商品金额：￥49.00</p>
+					<p>运费：￥10.00</p>
+					<p>礼品卡支付：￥0.00</p>
+					<p>优惠金额：￥0.00</p>
+					<p>悠币：￥0.00</p>
+					<div id="tijiao1">
+						<span>应付款<i>￥59.90</i></span>
+						<button class="btn">
+							提交订单
+						</button>
+					</div>
+				</div>
+			</div>
+			<div id="gddw">
+				<span>运费<i>￥10.00元</i></span>
+				<span>商品金额<i>￥49.90元</i></span>
+				<span>应付款<i>￥59.90元</i></span>
+				<button class="btn">提交订单</button>
+			</div>
+			<div id="gddw1">
+				<p id="gddw1-top"><i class="layui-icon layui-icon-add-circle"></i>使用新地址<span id="guanbigddw">X</span></p>
+				<div>
+					<span>收货人姓名：</span><input type="text"  id="name1"/>
+				</div>
+				<div>
+					<span>手机号码：</span><input type="text" id="phone1"/>
+				</div>
+				<div>
+					<span>收货地址：</span>
+					<div id="distpicker2">
+						<select id="sele1"></select>
+						<select id="sele2"></select>
+						<select id="sele3"></select>
+					</div>
+				</div> 	
+				<div>
+					<span>详细地址：</span><input type="text"  id="add1"/>
+				</div> 
+				<div>
+					<span>固定电话：</span><input type="text" id="phone2"/>
+				</div>
+				<div>
+					<span>邮政编码：</span><input type="text" id="ybm"/>
+				</div>
+				<div id="bcdz"><button>保存地址</button></div>
+			</div>
+			<div id="dibu"></div>
+			<script>
+				$(".ycsc").hide();
+				function create(){
+					var html=$('<div class="xzddz">'+
+								'<span class="name001">'+$("#name1").val()+'</span>'+
+								'<span class="province">'+$("#sele1").val()+'</span>'+
+								'<span class="qu">'+$("#sele2").val()+'</span>'+
+								'<span class="xxdz">'+$("#sele3").val()+'</span>'+
+								'<span>，</span>'+
+								'<span class="phone001">'+$("#phone1").val()+'</span>'+
+								'<div class="ycsc">'+
+									'<span>设为默认地址</span>'+
+									'<span>编辑</span>'+
+									'<span class="del1">删除</span>'+
+								'</div>'+
+							'</div>');
+					$("#tianjiadz").after(html);
+				}
+				$("#dingbu").load("../顶部/顶部.html");
+				$("#dibu").load("../底部/底部.html");
+//				固定定位滚动监听
+			$(document).scroll(function() {
+				var scrolltop = $(document).scrollTop();
+				if(scrolltop>600){
+					$("#gddw").hide(200);
+				}
+				if(scrolltop<600){
+					$("#gddw").show(200);
+				}
+			})
+			//添加新地址
+			$("#tianjiadz").click(function(){
+				$("#gddw1").show();
+			})
+			$("#bcdz").click(function(){
+				if($("#name1").val()==""||$("#phone1").val()==""||$("#add1")==""||$("#phone2").val()==""||$("#ybm").val()==""){
+					window.alert("必填项不能为空")
+				}else{
+					$("#gddw1").hide();
+					create()
+				}
+			})
+			$(".xzddz").mouseenter(function(){
+				$(".ycsc").show()
+			})
+			$(".del1").click(function(){
+				$(this).parent().parent().remove();
+			})
+			$("#guanbigddw").click(function(){
+				$("#gddw1").hide();
+			})
+			$("#distpicker2").distpicker({
+				autoSelect: false
+			})
+			</script>
+	</body>
+</html>

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>我的优惠券</title>
+		<link rel="stylesheet" type="text/css" href="../layui-v2.5.5/layui/css/layui.css" />
+		<style type="text/css">
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			.wdyg-yhj {
+				width: 200px;
+				height: 30px;
+				
+				margin-top: 10px;
+			}
+			
+			.wdyg-yhj li {
+				float: left;
+				margin-left: 13px;
+				font-size: 13px;
+			}
+			
+			.wdyg-yhj li:last-child {
+				text-decoration: underline;
+			}
+			
+			.wdyg-yhj li:last-child a {
+				color: red;
+			}
+			
+			.wdyg-yhj2 {
+				width: 195px;
+				height: 567px;
+				background: white;
+				
+				float: left;
+			}
+			
+			.wdyg-yhj2 ul {
+				width: 150px;
+				height: 400px;
+				padding: 20px 20px;
+			}
+			
+			.wdyg-yhj2 ul li {
+				line-height: 30px;
+				font-size: 12px;
+			}
+			
+			.wdyg-yhj2 ul li:hover a {
+				color: #008842;
+			}
+			
+			.wdyg-yhj2 ul li h3 {
+				font-weight: 550;
+				font-size: 16px;
+			}
+			
+			.wdyhj {
+				width: 920px;
+				background: white;
+				border: 1px solid #ccc;
+				margin-top: 20px;
+				z-index: 1;
+			    float: left;
+			    margin-left:60px;
+			}
+			.wdyhj2 {
+				width: 880px;
+				height: 50px;
+				margin-left: 50px;
+				margin: 0 auto;
+				line-height: 70px;
+				border-bottom: 1px solid #008842;
+			}
+			
+			.wdyhjd2 .wdyhj-xlk {
+				margin-left: 610px;
+			}
+			
+			.wdyhj2 span {
+				color: #008842;
+			}
+			
+			.wdyhj2 span:last-child a {
+				font-size: 12px;
+				text-decoration: underline;
+				float: right;
+				color: #008842;
+			}
+			
+			.wdyhj-img {
+				width: 870px;
+				height: 130px;
+				float: left;
+				margin-top: 10px;
+			}
+			
+			#demo7 {
+				float: right;
+				margin-top: 15px;
+			}
+			
+			.layui-tab-item .wdyhj-ddxx {
+				width: 880px;
+				height: 40px;
+				margin-left: 50px;
+				margin: 0 auto;
+				line-height: 40px;
+				background: #eee;
+				margin-top: 15px;
+			}
+			
+			.layui-tab-item .wdyhj-ddxx span {
+				display: inline-block;
+				font-size: 12px;
+			}
+			
+			.wdyhj-ddxx span:first-child {
+				width: 100px;
+				text-align: center;
+			}
+			
+			.wdyhj-ddxx span:nth-child(2) {
+				width: 150px;
+				text-align: center;
+			}
+			
+			.wdyhj-ddxx span:nth-child(3) {
+				width: 280px;
+				text-align: center;
+			}
+			
+			.wdyhj-ddxx span:nth-child(4) {
+				width: 280px;
+				text-align: center;
+			}
+			
+			.wdyhj-ddxx span:nth-child(5) {
+				width: 60px;
+				text-align: center;
+			}
+			
+			.wdyhj .layui-tab-content {
+				padding: 0px;
+			}
+			/*已过期优惠卷*/
+			/*.zyhj-box{
+				overflow:hidden;
+			}*/
+			.layui-tab-item .wdyhj-ddxx2 {
+				width: 880px;
+				height: 40px;
+				margin-left: 50px;
+				margin: 0 auto;
+				line-height: 40px;
+				background: #eee;
+				margin-top: 15px;
+			
+			}
+			
+			.layui-tab-item .wdyhj-ddxx2 span {
+				display: inline-block;
+				font-size: 12px;
+			}
+			
+			.wdyhj-ddxx2 span:first-child {
+				width: 150px;
+				text-align: center;
+			}
+			
+			.wdyhj-ddxx2 span:nth-child(2) {
+				width: 100px;
+				text-align: center;
+			}
+			
+			.wdyhj-ddxx2 span:nth-child(3) {
+				width: 100px;
+				text-align: center;
+			}
+			
+			.wdyhj-ddxx2 span:nth-child(4) {
+				width: 400px;
+				text-align: center;
+			}
+			
+			.wdyhj-ddxx2 span:nth-child(5) {
+				width: 100px;
+				text-align: center;
+			}
+			
+			#demo8 {
+				float: right;
+				margin-top: 15px;
+			}
+			.ygq-yhj li span{
+				display:inline-block;
+				height: 20px;
+				line-height: 20px;
+				margin-top:20px;
+				font-size: 12px;
+			}
+			
+			.ygq-yhj span:first-child {
+				width: 150px;
+				text-align: center;
+			}
+			
+			.ygq-yhj span:nth-child(2) {
+				width: 100px;
+				text-align: center;
+			}
+			
+			.ygq-yhj span:nth-child(3) {
+				width: 100px;
+				text-align: center;
+			}
+			
+			.ygq-yhj span:nth-child(4) {
+				width: 400px;
+				text-align: center;
+			}
+			
+			.ygq-yhj span:nth-child(5) {
+				width: 100px;
+				text-align: center;
+			}
+			#yhj{
+				width: 1280px;
+				margin: 0 auto;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="dingbu"></div>
+		<div class="daohang"></div>
+         <div id="yhj">
+		<ul class="wdyg-yhj">
+			<li>首页<span>></span></li>
+			<li>我的易果<span>></span></li>
+			<li>
+				<a href="">我的优惠券</a>
+			</li>
+		</ul>
+		
+		
+		<div class="zyhj-box">
+		<div class="wdyg-yhj2">
+			<ul>
+				<li style="font-weight: bold;font-size: 14px">交易信息</li>
+				<li><a href="../我的异果/我的异果.html">我的订单</a></li>
+				<li><a href="../我的优惠券/我的优惠券.html">我的优惠券</a></li>
+				<li><a href="../我的悠币/我的悠币.html">我的悠币</a></li>
+				<li><a href="../购买过的商品/购买过的商品.html">购买过得商品</a></li>
+				<li><a href="../收藏/收藏.html">我的收藏</a></li>
+				<li><a href="../评论商品/评论商品.html">评论商品</a></li>
+				<li style="font-weight: bold;font-size: 14px">账号信息</li>
+				<li><a href="../个人资料/geren.html">个人资料</a></li>
+				<li><a href="../收货地址/收货地址.html">收货地址管理</a></li>
+			</ul>
+		</div>
+
+		<div class="wdyhj">
+			<div class="wdyhj2">
+				<span>我的优惠券</span>
+				<span><a href="">关于会员礼法放的调整通知</a></span>
+			</div>
+
+			<div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief" style="width:880px;padding-left:20px;">
+				<ul class="layui-tab-title">
+					<li class="layui-this">未使用优惠券</li>
+					<li>已使用优惠券</li>
+					<li>已过期优惠券</li>
+				</ul>
+				<div class="layui-tab-content" style="height:100px;">
+					<div class="layui-tab-item layui-show"><img src="../图片/xpzq/QQ截图20191114105425.png" alt="" class="wdyhj-img" /></div>
+					<div class="layui-tab-item">
+						<div class="wdyhj-ddxx">
+							<span>优惠卷代码</span><span>面值</span><span>优惠卷描述</span><span>截止日期</span><span>使用日期</span>
+						</div>
+						<div id="demo7"></div>
+					</div>
+					<div class="layui-tab-item">
+						<div class="wdyhj-ddxx2">
+							<span>优惠卷代码</span><span>面值</span><span>需消费金额</span><span>优惠卷描述</span><span>截止日期</span>
+						</div>
+						<ul class="ygq-yhj">
+							<li><span>Q1911102213</span><span>¥50</span><span>¥249.00</span><span>全网商品满249减50，部分商品不可用</span><span>2019-11-14</span></li>
+						</ul>
+						
+						<div id="demo8"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		</div>
+		<div id="db"></div>
+		<script type="text/javascript" src="../jquery-3.4.1.js"></script>
+		<script type="text/javascript" src="../layui-v2.5.5/layui/layui.js"></script>
+	
+		<script>
+			$(".dingbu").load("../顶部/顶部.html");
+			$(".daohang").load("../导航栏/导航栏.html");
+			$("#db").load("../底部/底部.html");
+
+			layui.use(['element', 'laypage'], function() {
+//				var element = layui.element;
+				var laypage = layui.laypage;
+				laypage.render({
+					elem: 'demo7',
+					count: 10,
+					layout: ['count', 'prev', 'page', 'next', 'skip'],
+					theme: 'www'
+				});
+				//执行一个laypage实例
+				laypage.render({
+					elem: 'demo8', //注意，这里的 test1 是 ID，不用加 # 号				
+					count: 50,
+					layout: ['count', 'prev', 'page', 'next', 'skip'],
+					theme: 'www'
+					//数据总数，从服务端得到
+				});
+			});
+			
+			
+			var yhj=[{
+				s1:"Q1911102213",
+				s2:"¥50",
+				s3:"¥249.00",
+				s4:"全网商品满249减50，部分商品不可用",
+				s5:"2019-9-14"
+			},{
+				s1:"Q1910232189",
+				s2:"¥60",
+				s3:"¥235.00",
+				s4:"全网商品满235减30，部分商品不可用",
+				s5:"2019-11-30"
+			},{
+				s1:"Q1910222172",
+				s2:"¥80",
+				s3:"¥185.00",
+				s4:"会员回馈券：全网商品满399减80，部分商品不可用",
+				s5:"2019-8-21"
+			},{
+				s1:"Q1910222172",
+				s2:"¥80",
+				s3:"¥320.00",
+				s4:"会员回馈券：全网商品满499减100，部分商品不可用",
+				s5:"2019-6-19"
+			},{
+				s1:"Q1910222172",
+				s2:"¥80",
+				s3:"¥120.00",
+				s4:"会员回馈券：全网商品满299减60，部分商品不可用",
+				s5:"2019-2-15"	
+			},{
+				s1:"Q1910222172",
+				s2:"¥80",
+				s3:"¥385.00",
+				s4:"会员回馈券：全网商品满199减20，部分商品不可用",
+				s5:"2019-1-17"	
+			},{
+				s1:"Q1910222172",
+				s2:"¥80",
+				s3:"¥285.00",
+				s4:"仅限专场商品满149减30",
+				s5:"2019-7-17"	
+			},{
+				s1:"Q1910232189",
+				s2:"¥60",
+				s3:"¥235.00",
+				s4:"仅限专场商品满199减50",
+				s5:"2019-11-15"
+			},{
+				s1:"Q1911102213",
+				s2:"¥50",
+				s3:"¥249.00",
+				s4:"10元优惠券（限选择工行e支付作为支付方式时使用）",
+				s5:"2019-11-14"
+			},{
+				s1:"Q1910222172",
+				s2:"¥80",
+				s3:"¥385.00",
+				s4:"工行e支付专享文旦柚3kg礼盒装20元优惠券",
+				s5:"2019-11-22"	
+			},{
+				s1:"Q1910222172",
+				s2:"¥80",
+				s3:"¥950.00",
+				s4:"专场满188减50（仅部分商品可用）",
+				s5:"2019-11-22"	
+			}]
+			
+			var l=""
+		    for(var i=0;i<yhj.length;i++){
+		    	var l =l+'<li><span>'+yhj[i].s1+'</span><span>'
+		    	+yhj[i].s2+'</span><span>'+yhj[i].s3+
+		    	'</span><span>'+yhj[i].s4+'</span><span>'+
+		    	yhj[i].s5+'</span></li>'
+		    }
+		    $(".ygq-yhj").html(l); 
+		</script>
+	</body>
+
+</html>

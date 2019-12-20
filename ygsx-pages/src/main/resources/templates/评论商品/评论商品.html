@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>评论商品</title>
+		<link rel="stylesheet" type="text/css" href="../layui-v2.5.5/layui/css/layui.css" />
+		<style type="text/css">
+			* {
+				margin: 0px;
+				padding: 0px;
+				font-size: 12px;
+			}
+
+			.wdyg-dh {
+				width: 200px;
+				height: 30px;
+
+				margin-top: 10px;
+			}
+
+			.wdyg-dh li {
+				float: left;
+				margin-left: 13px;
+				font-size: 13px;
+			}
+
+			.wdyg-dh li:last-child {
+				text-decoration: underline;
+			}
+
+			.wdyg-dh li:last-child a {
+				color: red;
+			}
+
+			.wdyg-dh2 {
+				width: 195px;
+				height: 567px;
+				background: white;
+				float: left;
+			}
+
+			.wdyg-dh2 ul {
+				width: 150px;
+				height: 400px;
+				padding: 20px 20px;
+
+			}
+
+			.wdyg-dh2 ul li {
+				line-height: 30px;
+				font-size: 12px;
+			}
+
+			.wdyg-dh2 ul li:hover a {
+				color: #008842;
+			}
+
+			.wdyg-dh2 ul li h3 {
+				font-weight: 550;
+				font-size: 16px;
+			}
+
+			.wddd {
+				width: 920px;
+				height: 270px;
+				background: white;
+				float: left;
+				border: 1px solid #ccc;
+				z-index: 1;
+			}
+
+			.wddd,
+			.wdyg-dh2 {
+				display: inline-block;
+			}
+
+			.wddd2 {
+				width: 880px;
+				height: 50px;
+				margin-left: 50px;
+				margin: 0 auto;
+				line-height: 58px;
+				border-bottom: 1px solid #008842;
+			}
+
+			.wddd2 .wddd-xlk {
+				margin-left: 610px;
+			}
+
+			.wddd2 span {
+				color: #008842;
+			}
+
+			.wddd-ddxx {
+				width: 880px;
+				height: 40px;
+				margin-left: 50px;
+				margin: 0 auto;
+				line-height: 40px;
+				background: #eee;
+				margin-top: 15px;
+			}
+
+			.wddd-ddxx span {
+				display: inline-block;
+				font-size: 12px;
+			}
+
+			.wddd-ddxx span:first-child {
+				width: 510px;
+				text-align: center;
+			}
+
+			.wddd-ddxx span:nth-child(2) {
+				width: 120px;
+				text-align: center;
+			}
+
+			.wddd-ddxx span:nth-child(3) {
+				width: 120px;
+				text-align: center;
+			}
+
+			.wddd-ddxx span:nth-child(4) {
+				width: 120px;
+				text-align: center;
+			}
+
+			.wddd-jl {
+				width: 880px;
+				height: 100px;
+				line-height: 100px;
+				text-align: center;
+			}
+
+			.wddd-jl a {
+				color: #008842;
+				text-decoration: underline;
+			}
+
+			#wddd3 {
+				width: 1280px;
+				margin: 0 auto;
+			}
+
+			.tips {
+				margin: 25px 0 20px 30px;
+				font-size: 12px;
+			}
+
+			.myyg-tab span {
+				display: block;
+				float: left;
+				height: 38px;
+				padding: 0 22px;
+				color: #666;
+				border-bottom: 3px solid #fff;
+				font: bold 14px/38px SimSun;
+				background: #fff;
+				cursor: pointer;
+			}
+
+			.myyg-tab {
+				position: relative;
+				height: 41px;
+				margin-top: 10px;
+				border-bottom: 1px solid #ebebeb;
+				margin-left: 30px;
+				margin-right: 30px;
+			}
+
+			.myyg-tab .on {
+				color: #008842;
+				border-bottom: 3px solid #008842;
+				position: relative;
+			}
+		</style>
+	</head>
+	<body>
+		<script type="text/javascript" src="../layui-v2.5.5/layui/layui.js"></script>
+		<script type="text/javascript" src="../jquery-3.4.1.js"></script>
+		<div class="dingbu"></div>
+		<div class="daohang"></div>
+		<div id="wddd3">
+			<ul class="wdyg-dh">
+				<li>首页<span>></span></li>
+				<li>我的易果<span>></span></li>
+				<li><a href="">评论商品</a></li>
+			</ul>
+			<div class="wdyg-dh2">
+				<ul>
+					<li style="font-weight: bold;font-size: 14px">交易信息</li>
+					<li><a href="../我的异果/我的异果.html">我的订单</a></li>
+					<li><a href="../我的优惠券/我的优惠券.html">我的优惠券</a></li>
+					<li><a href="../我的悠币/我的悠币.html">我的悠币</a></li>
+					<li><a href="../购买过的商品/购买过的商品.html">购买过得商品</a></li>
+					<li><a href="../收藏/收藏.html">我的收藏</a></li>
+					<li><a href="../评论商品/评论商品.html">评论商品</a></li>
+					<li style="font-weight: bold;font-size: 14px">账号信息</li>
+					<li><a href="../个人资料/geren.html">个人资料</a></li>
+					<li><a href="../收货地址/收货地址.html">收货地址管理</a></li>
+				</ul>
+			</div>
+
+			<div class="wddd">
+				<div class="wddd2">
+					<span>评论商品</span>
+				</div>
+				<div class="tips">
+					客户自完成订单后10天内，均可对订单商品进行评论，有效评论可获5枚悠币奖励；超过评论有效期未评论，商品评论自动默认好评，不再奖励悠币
+				</div>
+				<div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief" style="margin:0 30px;">
+					<ul class="layui-tab-title">
+						<li class="layui-this" style="color: #666;font: bold 14px/38px SimSun;">待评论商品</li>
+						<li style="color: #666;font: bold 14px/38px SimSun;">已评论商品</li>
+					</ul>
+					<div class="layui-tab-content">
+						<div class="layui-tab-item layui-show">您还没有待评论商品</div>
+						<div class="layui-tab-item">您还没有评价过商品</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="db"></div>
+		<script type="text/javascript">
+			$(".dingbu").load("../顶部/顶部.html")
+			$(".daohang").load("../导航栏/导航栏.html");
+			$("#db").load("../底部/底部.html");
+			layui.use('element', function() {
+				var element = layui.element;
+			});
+		</script>
+
+	</body>
+</html>

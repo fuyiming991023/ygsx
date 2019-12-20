@@ -1,0 +1,396 @@
+
+		<style type="text/css">
+			* {
+				margin: 0px;
+				padding: 0px;
+				list-style-type: none;
+			}
+			img {
+				vertical-align: middle;
+				margin-left: 6px;
+			}
+			a {
+				text-decoration: none;
+				color: #444;
+			}
+			a:hover {
+				color: #008842;
+			}
+			.dht {
+				margin: 0 auto;
+				width: 1280px;
+				height: 30px;
+				background: #f7f9f8;
+			}
+			.dht2 {
+				line-height: 30px;
+				font-size: 12px;
+				margin-left:50px;
+			}
+			.dht2>p {
+				float: left;
+			}
+			.z1,
+			.z2 {
+				width: 18px;
+				height: 18px;
+			}
+			.dht2 .a1 {
+				color: #008842;
+				margin-left: 5px;
+			}
+			.a1 span {
+				margin-left: 10px;
+			}
+			.a2 {
+				margin-left: 15px;
+			}
+			
+			.a3 {
+				margin-left: 100px;
+			}
+			
+			.a4 {
+				margin-left: 20px;
+			}
+			.a4{
+				cursor:pointer;
+				color: #008842;
+			}
+			.xlk {
+				background: white;
+				width: 400px;
+				height: 500px;
+				border: 2px solid #008000;
+				position: absolute;
+				left: 200px;
+				z-index: 999;
+			}
+			
+			.xlk .w1 {
+				display: inline-block;
+				width: 380px;
+				height: 25px;
+				background: rgb(230, 230, 230);
+				font-size: 12px;
+				line-height: 25px;
+				padding-left: 20px;
+			}
+			
+			.xlk .w1 a {
+				margin-left: 130px;
+				color: #008842;
+			}
+			
+			.huo {
+				margin: 5px 20px;
+			}
+			
+			.huo span {
+				vertical-align: middle;
+				font-size: 12px;
+				font-weight: 800;
+				color: #666666;
+			}
+			
+			.huo p {
+				font-size: 12px;
+				margin-left: 20px;
+			}
+			
+			.fl {
+				overflow: hidden;
+				margin-left: 6px;
+			}
+			
+			.fl li {
+				float: left;
+				font-size: 12px;
+				display: inline-block;
+				width: 78px;
+				/*background: #008000;*/
+				height: 25px;
+				line-height: 25px;
+				color: #008000;
+				text-align: center;
+				box-sizing: border-box;
+				border-bottom: 1px solid #ccc;
+			}
+			
+			.fl .li1 {
+				border: 1px solid #ccc;
+				border-bottom: none;
+			}
+			
+			.xlk {
+				display: none;
+			}
+			.city0{
+				width: 400px;
+			}
+			.city0 ul,.city1 ul,.city2 ul,.city3 ul,.city4 ul{
+				overflow: hidden;
+			}
+			.city0 ul li,.city1 ul li,.city2 ul li,.city3 ul li,.city4 ul li{
+				font-size: 13px;
+				margin-left: 10px;
+				
+			}
+			.city0 ul li span,.city1 ul li span,.city2 ul li span,.city3 ul li span,.city4 ul li span{
+				float: left;
+				margin-left: 20px;
+				margin-top: 15px;
+			}
+			.city4 ul li:hover{
+				color: #008842;
+			}
+			.city0 ul li:hover{
+				color: #008842;
+			}
+			.city1 ul li:hover{
+				color: #008842;
+			}
+			.city2 ul li:hover{
+				color: #008842;
+			}
+			.city3 ul li:hover{
+				color: #008842;
+			}
+			.city1,.city2,.city3,.city4{
+				display: none;
+			}
+			#p1{
+				display: inline-block;
+			}
+			.mine{
+				background: white;
+				text-align: left;
+				padding: 8px;
+				position: absolute;
+				top: 30px;
+				left: 690px;
+				width: 110px;
+				border: 1px solid #CCCCCC;
+				box-shadow: 1px 1px 3px gray;
+				display: none;
+				z-index: 999;
+			}
+			.mine li{
+				margin-top: 5px;
+				font-size: 13px;
+			}
+			.mine i{
+				margin-left: 10px;
+				text-align: center;
+				line-height: 20px;
+				font-style: normal;
+				display: inline-block;
+				width: 20px;
+				height: 20px;
+				border-radius: 50px;
+				background: #008842;
+			}
+			.mine li:hover{
+				color: #008842;
+			}
+			.app{
+				background: white;
+				width: 102px;
+				padding: 5px;
+				border: 1px solid #ccc;
+				box-shadow: 1px 1px 3px #ccc;
+				position: absolute;
+				top: 30px;
+				left: 805px;
+				text-align: center;
+				display: none;
+				z-index: 999;
+			}
+			.app img{
+				width: 90px;
+				height: 90px;
+			}
+			.mine ul li{
+				cursor: pointer;
+			}
+		</style>
+	
+		
+		<div class="dht">
+			<div class="dht2">
+				<p>欢迎光临易果生鲜!</p>
+				<p class="a1">配送至:<span id="city">全国其他城市<img src="" alt=""class="layui-icon layui-icon-triangle-d" /></span></p>
+				<p class="a2"><img src="../图片/1.png" class="z1" />
+					<a href="">网警提示</a>
+				</p>
+				<p class="a3">
+					<a href="../登录/登录.html">[登录]</a>
+				</p>
+				<p class="a4">
+					<a href="../注册/注册.html">[注册]</a>
+				</p>
+				<p class="a4" id="mine1"><img src="" class="layui-icon layui-icon-username" /><a href="../我的异果/我的异果.html">我的易果</a><img src="" alt="" class="layui-icon layui-icon-triangle-d class="layui-nav-item"/></p>
+				<p class="a4" id="app1"><img src="../图片/2.jpg" class="z2" />手机易果<img src="" alt="" class="layui-icon layui-icon-triangle-d" /></p>
+				<p class="a4"><img src="" alt="" class="layui-icon layui-icon-rate " />礼品卡绑定</p>
+				<p class="a4"><img src="" alt="" class="layui-icon layui-icon-user " />礼品兑换卷入口</p>
+				<p class="a4"><img src="../图片/3.png" alt="" />营业资质</p>
+				<p class="a4"><img src="../图片/4.png" alt="" />人才招聘</p>
+			</div>
+			<div class="mine">
+				<ul>
+					<li><a href="../我的异果/我的异果.html">我的订单</a></li>
+					<li><a href="../我的优惠券/我的优惠券.html">我的优惠券</a><i>0</i></li>
+					<li>我的收藏</li>
+					<li>我的悠币</li>
+					<li>我的退换货</li>
+					<li>预存款查询</li>
+					<li>立即充值</li>
+				</ul>
+			</div>
+			<div class="app">
+				<p>
+						<img src="../图片/app.png" />
+						<p>扫一扫下载app</p>
+				</p>
+				<p>
+						<img src="../图片/易果微信.png" />
+						<p>易果生鲜微信</p>
+				</p>
+			</div>
+		</div>
+		<!--下拉框-->
+		<div class="xlk">
+			<p class="w1">请根据您的收货地址选择
+				<a>全国其他城市>></a>
+			</p>
+			<div>
+				<div class="huo">
+					<a href=""><img src="../图片/5.png" /></a><span>热门城市</span>
+					<p>上海</p>
+				</div>
+			</div>
+			<!--1-->
+			<ul class="fl">
+				<li class="li1">ABCDE</li>
+				<li>FGHIJ</li>
+				<li>KLMNO</li>
+				<li>PQRST</li>
+				<li>UVWXYZ</li>
+			</ul>
+			<div class="city0">
+				<ul id="a"></ul>
+			</div>
+			<div class="city1">
+				<ul id="f"></ul>
+			</div>
+			<div class="city2">
+				<ul id="k"></ul>
+			</div>
+			<div class="city3">
+				<ul id="p"></ul>
+			</div>
+			<div class="city4">
+				<ul id="w"></ul>
+			</div>
+		</div>
+		<script>
+			// $("#app1").mouseenter(function(){
+			// 	$(".app").slideDown(300)
+			// })
+			// $(".app").mouseleave(function(){
+			// 	$(".app").slideUp(300);
+			// })
+			// $("#mine1").mouseenter(function(){
+			// 	$(".mine").slideDown(300)
+			// })
+			// $(".mine").mouseleave(function(){
+			// 	$(".mine").slideUp(300)
+			// })
+			$(".fl li").mouseenter(function() {
+				$(this).addClass("li1").siblings().removeClass("li1");
+			})
+			$("#city").mouseenter(function() {
+				$(".xlk").slideDown(300)
+			})
+			$(".xlk").mouseleave(function() {
+				$(".xlk").slideUp(300)
+			})
+			var a=[["阿坝藏族羌族自治州","阿拉善","安顺市","安阳市 ","安庆市 ","鞍山市"],["白城市 ","巴中市","滨州市", "本溪市","巴彦淖尔","白银市","百色市","蚌埠市","毕节","保山市","北海市","保定市","包头市","白山市","北京 北京(郊区)"],["朝阳市","崇明县","慈溪市","崇左市","常德市","滁州市","郴州市","长治市","楚雄彝族自治州","成都市","承德市", "赤峰市","常熟市","长春市","常州市","池州市 ","长沙市","巢湖市","沧州市 ","潮州市", "重庆"],["丹东市","达州市","东莞市","大庆市","东营市","德州市","大同市","迪庆藏族自治州","大连市","定西市","德宏傣族景颇族自治州","大理白族自治州","丹阳市","大兴安岭"],["E","鄂州市","恩施土家族苗族自治州","鄂尔多斯"]]
+			var f=[["佛山市","防城港市","福州市","抚顺市","阜阳市","抚州市","阜新市","奉化市"],["白城市 ","巴中市","滨州市", "本溪市","巴彦淖尔","白银市","百色市","蚌埠市","毕节","保山市","北海市","保定市","包头市","白山市","北京 北京(郊区)"],["朝阳市","崇明县","慈溪市","崇左市","常德市","滁州市","郴州市","长治市","楚雄彝族自治州","成都市","承德市", "赤峰市","常熟市","长春市","常州市","池州市 ","长沙市","巢湖市","沧州市 ","潮州市", "重庆"],["鄂州市","恩施土家族苗族自治州","鄂尔多斯"]];
+			var k=[["开封市","昆明市","昆山市"],["白城市 ","巴中市","滨州市", "本溪市","巴彦淖尔","白银市","百色市","蚌埠市","毕节","保山市","北海市","保定市","包头市","白山市","北京 北京(郊区)"],["朝阳市","崇明县","慈溪市","崇左市","常德市","滁州市","郴州市","长治市","楚雄彝族自治州","成都市","承德市", "赤峰市","常熟市","长春市","常州市","池州市 ","长沙市","巢湖市","沧州市 ","潮州市", "重庆"],["丹东市","达州市","东莞市","大庆市","东营市","德州市","大同市","迪庆藏族自治州","大连市","定西市","德宏傣族景颇族自治州","大理白族自治州","丹阳市","大兴安岭"]]
+			var p=[["攀枝花市","平顶山市","莆田市","平凉市 ","盘锦市","普洱市",],["白城市 ","巴中市","滨州市", "本溪市","巴彦淖尔","白银市","百色市","蚌埠市","毕节","保山市","北海市","保定市","包头市","白山市","北京 北京(郊区)"],["朝阳市","崇明县","慈溪市","崇左市","常德市","滁州市","郴州市","长治市","楚雄彝族自治州","成都市","承德市", "赤峰市","常熟市","长春市","常州市","池州市 ","长沙市","巢湖市","沧州市 ","潮州市", "重庆"],["丹东市","达州市","东莞市","大庆市","东营市","德州市","大同市","迪庆藏族自治州","大连市","定西市","德宏傣族景颇族自治州","大理白族自治州","丹阳市","大兴安岭"],["T","鄂州市","恩施土家族苗族自治州","鄂尔多斯"]];
+			var w=[["潍坊市 ","武威市","武汉市","梧州市","芜湖市","乌海市","乌兰察布","温州市","威海市","吴忠市"],["朝阳市","崇明县","慈溪市","崇左市","常德市","滁州市","郴州市","长治市","楚雄彝族自治州","成都市","承德市", "赤峰市","常熟市","长春市","常州市","池州市 ","长沙市","巢湖市","沧州市 ","潮州市", "重庆"],["丹东市","达州市","东莞市","大庆市","东营市","德州市","大同市","迪庆藏族自治州","大连市","定西市","德宏傣族景颇族自治州","大理白族自治州","丹阳市","大兴安岭"],["鄂州市","恩施土家族苗族自治州","鄂尔多斯"]]
+			 var aa="",bb="";cc="";dd="";ee="";ff="";gg="";hh="";jj="";kk="";ll="";mm="";nn="";oo="";pp="";rr="";ss="";tt="";ww="";xx="";yy="";zz="";
+			 for(var i=0;i<a.length;i++){
+			 	for(var j=1;j<a[i].length;j++){
+			 		aa=aa+"<li><span>"+a[i][j]+"</span></li>";
+			 	}
+			 }
+			 $("#a").html(aa);
+			for(var i=0;i<f.length;i++){
+			 	for(var j=0;j<f[i].length;j++){
+			 		ff=ff+"<li><span>"+f[i][j]+"</span></li>";
+			 	}
+			 }
+			 $("#f").html(ff);
+			 for(var i=0;i<k.length;i++){
+			 	for(var j=0;j<k[i].length;j++){
+			 		kk=kk+"<li><span>"+k[i][j]+"</span></li>";		 		
+			 	}
+			 }
+			 $("#k").html(kk);
+			 for(var i=0;i<k.length;i++){
+			 	for(var j=0;j<k[i].length;j++){
+			 		pp=pp+"<li><span>"+p[i][j]+"</span></li>";		 		
+			 	}
+			 }
+			 $("#p").html(pp);
+			 for(var i=0;i<k.length;i++){
+			 	for(var j=0;j<w[i].length;j++){
+			 		ww=ww+"<li><span>"+w[i][j]+"</span></li>";		 		
+			 	}
+			 }
+			 $("#w").html(ww);
+			 $(".fl li").mouseenter(function() {
+				$(this).addClass("li1").siblings().removeClass("li1");
+				var ccc=$(this).index();
+				if(ccc==0){
+					$(".city0").css("display","block")
+					$(".city1").css("display","none")
+					$(".city2").css("display","none")
+					$(".city3").css("display","none")
+					$(".city4").css("display","none")
+				}else if(ccc==1){
+					$(".city0").css("display","none")
+					$(".city1").css("display","block")
+					$(".city2").css("display","none")
+					$(".city3").css("display","none")
+					$(".city4").css("display","none")
+				}else if(ccc==2){
+					$(".city0").css("display","none")
+					$(".city1").css("display","none")
+					$(".city2").css("display","block")
+					$(".city3").css("display","none")
+					$(".city4").css("display","none")
+				}else if(ccc==3){
+					$(".city0").css("display","none")
+					$(".city1").css("display","none")
+					$(".city2").css("display","none")
+					$(".city3").css("display","block")
+					$(".city4").css("display","none")
+				}else if(ccc==4){
+					$(".city0").css("display","none")
+					$(".city1").css("display","none")
+					$(".city2").css("display","none")
+					$(".city3").css("display","none")
+					$(".city4").css("display","block")
+				}
+				
+			})
+			$("#city").mouseenter(function() {
+				$(".xlk").css("display", "block");
+			})
+			$(".xlk").mouseleave(function() {
+				$(".xlk").css("display", "none");
+			})
+		</script>

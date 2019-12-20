@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>我的易果</title>
+		<link rel="stylesheet" type="text/css" href="../layui-v2.5.5/layui/css/layui.css" />
+		<style type="text/css">
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+
+			.d {
+				height: 750px;
+				width: 1350px;
+
+			}
+
+			.dd {
+				height: 50px;
+				width: 1278px;
+				border: #008842 solid 1px;
+				margin-left: 120px;
+				margin-top: 40px;
+			}
+
+			.s {
+				margin-left: 20px;
+				margin-top: 15px;
+				font-size: 14px;
+				font-weight: bold;
+				float: left;
+			}
+
+			.ss {
+				margin-left: 40px;
+				margin-top: 15px;
+				font: size:14px;
+				font-weight: bold;
+				float: left;
+			}
+
+			.sss {
+				float: left;
+				margin-left: 5px;
+				margin-top: 15px;
+				font: size:14px;
+				color: #008842;
+			}
+
+			.dx {
+				height: 700px;
+				width: 1278px;
+				border: #008842 solid 1px;
+				margin-left: 120px;
+				margin-top: 40px;
+			}
+
+			.dxx {
+				width: 1240px;
+				height: 50px;
+				margin-left: 50px;
+				margin: 0 auto;
+				line-height: 58px;
+				border-bottom: 1px solid #008842
+			}
+
+			.dc {
+				margin-left: 20px;
+				margin-top: 10px;
+			}
+
+			.dcc {
+				margin-left: 20px;
+				margin-top: 10px;
+
+			}
+
+			.dccc {
+				width: 1230px;
+				height: 40px;
+				margin: 10 auto;
+				line-height: 40px;
+				border-bottom: 1px solid #B2B2B2;
+			}
+
+			.dcccc{
+				padding: 0;
+				width: 1230px;
+				height: 40px;
+				margin: 10 auto;
+
+				border-bottom: 1px solid #008842;
+			}
+			.du{
+				margin-left: 1098px;
+				margin-top: 10px;
+			}
+			.duu{
+				margin-left: 1140px;
+				margin-top: 10px;
+			}
+			.duuu{
+				margin-left: 1126px;
+				margin-top: 10px;
+			}
+			.duuuu{
+				margin-left: 1112px;
+				margin-top: 10px;
+				width: 140px;
+				height: 40px;
+				margin: 10 auto;
+				border-bottom: 1px solid #B2B2B2;
+			}
+			.zt{
+				margin-left: 1080px;
+				margin-top: 20px;
+				font-weight: bold;
+			}
+			.ztt{
+				font-size:25px;
+				color: #f30000;
+				font-weight: bold;
+			}
+			.wdyg-dh {
+				width: 230px;
+				height: 30px;
+
+				margin-top: 10px;
+			}
+
+			.wdyg-dh li {
+				float: left;
+				margin-left: 13px;
+				font-size: 13px;
+			}
+
+			.wdyg-dh li:last-child {
+				text-decoration: underline;
+			}
+
+			.wdyg-dh li:last-child a {
+				color: red;
+			}
+
+			.wdyg-dh2 {
+				width: 195px;
+				height: 567px;
+				background: white;
+				float: left;
+			}
+
+			.wdyg-dh2 ul {
+				width: 150px;
+				height: 400px;
+				padding: 20px 20px;
+
+			}
+
+			.wdyg-dh2 ul li {
+				line-height: 30px;
+				font-size: 12px;
+			}
+
+			.wdyg-dh2 ul li:hover a {
+				color: #008842;
+			}
+
+			.wdyg-dh2 ul li h3 {
+				font-weight: 550;
+				font-size: 16px;
+			}
+
+			.wddd {
+				width: 910px;
+				background: white;
+				float: left;
+				border: 1px solid #ccc;
+				z-index: 1;
+			}
+
+			.wdyg-dh2 {
+				display: inline-block;
+			}
+
+			.wddd2 {
+				width: 880px;
+				height: 50px;
+				margin-left: 50px;
+				margin: 0 auto;
+				line-height: 58px;
+				border-bottom: 1px solid #008842;
+			}
+
+			.wddd2 .wddd-xlk {
+				margin-left: 610px;
+			}
+
+			.wddd2 span {
+				color: #008842;
+			}
+
+			.wddd-ddxx {
+				width: 880px;
+				height: 40px;
+				margin-left: 50px;
+				margin: 0 auto;
+				line-height: 40px;
+				background: #eee;
+				margin-top: 15px;
+			}
+
+			.wddd-ddxx span {
+				display: inline-block;
+				font-size: 12px;
+			}
+
+			.wddd-ddxx span:first-child {
+				width: 510px;
+				text-align: center;
+			}
+
+
+			#wddd3 {
+				width: 1280px;
+				margin: 0 auto;
+			}
+		</style>
+	</head>
+	<body>
+		<script type="text/javascript" src="../layui-v2.5.5/layui/layui.js"></script>
+		<script type="text/javascript" src="../jquery-3.4.1.js"></script>
+		<div class="dingbu"></div>
+		<div class="daohang"></div>
+		<div class="d">
+			<div class="dd">
+				<p class="s">订单号：1064599994</p>
+				<p class="ss">状态：</p>
+				<p class="sss">已取消</p>
+			</div>
+			<div class="dx">
+				<div class="dxx"><span style="color:#008842">订单信息</span></div>
+				<div>
+					<div class="dc">收货人信息</div>
+					<ul class="dcc">
+						<li>收货人：李旭冉</li>
+						<li style="margin-top: 10px;">地&nbsp;&nbsp;&nbsp;&nbsp;址：北京工商管理专修学院</li>
+						<li class="dccc">手机号：138****8311</li>
+					</ul>
+				</div>
+				<div>
+					<div class="dc">配送方式</div>
+					<ul class="dcc">
+						<li>运&nbsp;&nbsp;&nbsp;&nbsp;费：￥15.00</li>
+						<li style="margin-top: 10px;">送货日期：2019-12-02</li>
+						<li class="dccc">配送时间：全天09:00-21:00</li>
+					</ul>
+				</div>
+
+				<div style="margin-left: 20px;margin-top: 10px;">
+					<span>商品清单</span>
+					<table id="demo" lay-filter="test"></table>
+					<div class="dcccc"></div>
+				</div>
+				<div>
+					<ul class="du">
+						<li>
+							<span>商品总金额：￥148.00</span>
+						</li>
+					</ul>
+					<ul class="duu">
+						<li>
+							<span>运费：￥15.00</span>
+						</li>
+					</ul>
+					<ul class="duuu">
+						<li>
+							<span>支付宝：￥133.00</span>
+						</li>
+					</ul>
+					<ul class="duuuu">
+						<li>
+							<span>内部折扣：￥30.00</span>
+						</li>
+					</ul>
+				</div>
+				<div class="zt">
+					应付金额：<b class="ztt">￥130.00</b>
+				</div>
+			</div>
+		</div>
+		<div id="db"></div>
+		<script type="text/javascript">
+			$(".dingbu").load("../顶部/顶部.html")
+			$(".daohang").load("../导航栏/导航栏.html");
+			$("#db").load("../底部/底部.html");
+		</script>
+
+		<script>
+			layui.use('table', function() {
+				var table = layui.table;
+
+				//第一个实例
+				table.render({
+					elem: '#demo',
+					height: 100,
+					width: 1227,
+					url: '/demo/table/user/' //数据接口
+						,
+					page: false //开启分页
+						,
+					cols: [
+						[ //表头
+							{
+								field: 'id',
+								title: '商品编号',
+								align: 'center'
+							}, {
+								field: 'username',
+								title: '商品名称',
+								width: 300,
+								align: 'center'
+							}, {
+								field: 'wealth',
+								title: '单价',
+								align: 'center',
+							}, {
+								field: 'wealth',
+								title: '数量',
+								align: 'center',
+							}, {
+								field: 'wealth',
+								title: '规格',
+								align: 'center',
+							}, {
+								field: 'wealth',
+								title: '金额小计',
+								align: 'center',
+							}, {
+								field: 'wealth',
+								title: '操作',
+								align: 'center',
+							}
+						]
+					]
+				});
+
+			});
+		</script>
+
+
+
+	</body>
+</html>

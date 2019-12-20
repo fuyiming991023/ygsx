@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>首页</title>
+		<link rel="stylesheet" type="text/css" href="首页.css" />
+		<link href="../layui-v2.5.5/layui/css/layui.css" />
+		<script src="../jquery-3.4.1.js"></script>
+		<script src="../layui-v2.5.5/layui/layui.js"></script>
+	</head>
+
+	<body>
+		<!--顶部栏-->
+		<div id="dingbu"></div>
+		<!--导航栏-->
+		<div id="daohang"></div>
+		<!--轮播图-->
+		<div id="sy-lbt">
+			<div class="layui-carousel" id="test1">
+				<div carousel-item>
+					<div><a href="../新人领好礼/新人领好礼.html"><img src="../图片/9288733929743724_1000x500.jpg" /></a></div>
+				</div>
+			</div>
+		</div>
+		<script>
+				layui.use('carousel', function() {
+					var carousel = layui.carousel;
+					//建造实例
+					carousel.render({
+						elem: '#test1',
+						width: '1280px', //设置容器宽度
+						height: '500px',
+						arrow: 'hover',
+						anim: 'fade', //切换动画方式
+						indicator: 'outside',
+						interval: '1000',
+						indicator: 'inside'
+					});
+				});
+			</script>
+		<div class="sy-nr">
+			<div class="sy-nr-01">
+				<div class="nr-01"><span id="F1">F1&nbsp;&nbsp;&nbsp;进口水果</span>
+					<p><i>进口苹果</i>
+						<a>|</a><i>佳沛专区</i>
+						<a>|</a><i>泰国鲜果</i></p>
+				</div>
+				<div class="nr-02">
+					<div class="img1"><img src="../图片/Zespri.jpg" /></div>
+					<div class="ul1">
+						<ul class="ul2">
+							<li><img src="../图片/榨汁.jpg" /></li>
+							<li><img src="../图片/高颜值.jpg" /></li>
+							<li><img src="../图片/热带水果.jpg" /></li>
+							<li><img src="../图片/色泽鲜亮.jpg" /></li>
+							<li><img src="../图片/水润清甜.jpg" /></li>
+							<li><img src="../图片/Moon.jpg" /></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="sy-nr-01">
+				<div class="nr-01-2"><span>F2&nbsp;&nbsp;&nbsp;国产水果</span>
+					<p><i>芒香四溢</i>
+						<a>|</a><i>南国风情</i>
+						<a>|</a><i>精选苹果</i></p>
+				</div>
+				<div class="nr-02">
+					<div class="img1"><img src="../图片/热带.jpg" /></div>
+					<div class="ul1">
+						<ul class="ul2">
+							<li><img src="../图片/柔软细嫩.jpg" /></li>
+							<li><img src="../图片/果粒.jpg" /></li>
+							<li><img src="../图片/苹果专区.jpg" /></li>
+							<li><img src="../图片/新疆瓜果季.jpg" /></li>
+							<li><img src="../图片/皮薄筋少.jpg" /></li>
+							<li><img src="../图片/红润晶莹.jpg" /></li>
+						</ul>
+					</div>
+				</div>
+				<div class="sy-nr-01">
+					<div class="nr-01-3"><span>F3&nbsp;&nbsp;&nbsp;海鲜水产</span>
+						<p><i>刺身专区</i>
+							<a>|</a><i>东海水产</i>
+							<a>|</a><i>海产干货</i></p>
+					</div>
+					<div class="nr-02">
+						<div class="img1"><img src="../图片/阿拉斯加.jpg" /></div>
+						<div class="ul1">
+							<ul class="ul2">
+								<li><img src="../图片/饱满弹嫩.jpg" /></li>
+								<li><img src="../图片/鲜香细腻.jpg" /></li>
+								<li><img src="../图片/去骨去刺.jpg" /></li>
+								<li><img src="../图片/壳薄肉厚.jpg" /></li>
+								<li><img src="../图片/优越环境.jpg" /></li>
+								<li><img src="../图片/扇贝专场.jpg" /></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="sy-nr-01">
+					<div class="nr-01-4"><span>F4&nbsp;&nbsp;&nbsp;精选肉类</span>
+						<p><i>欧洲天然猪</i>
+							<a>|</a><i>澳洲牛肉</i>
+							<a>|</a><i>肉类制品</i></p>
+					</div>
+					<div class="nr-02">
+						<div class="img1"><img src="../图片/肥瘦相间.jpg" /></div>
+						<div class="ul1">
+							<ul class="ul3">
+								<li><img src="../图片/新西兰.jpg" /></li>
+								<li><img src="../图片/原膳澳洲.jpg" /></li>
+								<li><img src="../图片/原膳藏羊.jpg" /></li>
+								<li><img src="../图片/塔斯马尼亚.jpg" /></li>
+								<li><img src="../图片/澳洲牛排.jpg" /></li>
+								<li class="zuihouli"><img src="../图片/整根腱子心.jpg" /></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="sy-nr-01">
+					<div class="nr-01-5"><span>F5&nbsp;&nbsp;&nbsp;肉禽蛋类</span>
+						<p><i>原味蒸品</i>
+							<a>|</a><i>原汁煲汤</i>
+							<a>|</a><i>禽类分割品</i></p>
+					</div>
+					<div class="nr-02">
+						<div class="img1"><img src="../图片/领略老麻鸭.jpg" /></div>
+						<div class="ul1">
+							<ul class="ul3">
+								<li><img src="../图片/肉质柔嫩.jpg" /></li>
+								<li><img src="../图片/肉厚骨细.jpg" /></li>
+								<li><img src="../图片/当日产.jpg" /></li>
+								<li><img src="../图片/不将就的健身餐.jpg" /></li>
+								<li><img src="../图片/细化柔嫩.jpg" /></li>
+								<li class="zuihouli"><img src="../图片/玉米主饲.jpg" /></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="fixed1">
+				<p class="jk">
+					<img src="../图片/进口水果.png" />
+					<span>进口水果</span>
+				</p>
+				<p class="gc">
+					<img src="../图片/国产水果.png" />
+					<span>国产水果</span>
+				</p>
+				<p class="haixian">
+					<img src="../图片/海鲜水产.png" />
+					<span>海鲜水产</span>
+				</p>
+				<p class="rou">
+					<img src="../图片/精选肉.png" />
+					<span>肉</span>
+				</p>
+				<p class="dan">
+					<img src="../图片/肉禽蛋.png" />
+					<span>肉蛋</span>
+				</p>
+			</div>
+		</div>
+		<!--底部栏-->
+		<div id="dibu"></div>
+	</body>
+	
+	<script>
+		$("#dingbu").load("../顶部/顶部.html");
+		$("#daohang").load("../导航栏/导航栏.html");
+		$("#dibu").load("../底部/底部.html");
+		$(".ul2 li").hover(function() {
+			$(this).css({
+				"transform": "translateX(5px)",
+				"transition": "transform 500ms",
+				"z-index": "999"
+			})
+		}, function() {
+			$(this).css({
+				"transform": "translateX(0px)",
+				"transition": "transform 500ms"
+			})
+		})
+		$(".ul3 li").hover(function() {
+			$(this).css({
+				"transform": "translateX(5px)",
+				"transition": "transform 500ms",
+				"z-index": "999"
+			})
+		}, function() {
+			$(this).css({
+				"transform": "translateX(0px)",
+				"transition": "transform 500ms"
+			})
+		})
+		//		滚动监听事件
+		$(document).scroll(function() {
+			var scrolltop = $(document).scrollTop();
+			if(scrolltop < 580) {
+				$("#fixed1").hide();
+			}
+			if(scrolltop > 580) {
+				$("#fixed1").show();
+				$(".jk img").hide().siblings().show();
+				$(".gc img").show().siblings().hide();
+				$(".haixian img").show().siblings().hide();
+				$(".rou img").show().siblings().hide();
+				$(".dan img").show().siblings().hide();
+			}
+			if(scrolltop > 1100) {
+				$("#fixed1").show();
+				$(".jk img").show().siblings().hide();
+				$(".gc img").hide().siblings().show();
+				$(".haixian img").show().siblings().hide();
+				$(".rou img").show().siblings().hide();
+				$(".dan img").show().siblings().hide();
+			}
+			if(scrolltop > 1600) {
+				$("#fixed1").show();
+				$(".jk img").show().siblings().hide();
+				$(".gc img").show().siblings().hide();
+				$(".haixian img").hide().siblings().show();
+				$(".rou img").show().siblings().show();
+				$(".dan img").show().siblings().hide();
+			}
+			if(scrolltop > 2200) {
+				$("#fixed1").show();
+				$(".jk img").show().siblings().hide();
+				$(".gc img").show().siblings().hide();
+				$(".haixian img").show().siblings().hide();
+				$(".rou img").hide().siblings().show();
+				$(".dan img").show().siblings().hide();
+			}
+			if(scrolltop > 2700) {
+				$("#fixed1").show();
+				$(".jk img").show().siblings().hide();
+				$(".gc img").show().siblings().hide();
+				$(".rou img").show().siblings().hide();
+				$(".dan img").hide().siblings().show();
+			}
+		})
+		$(".jk").click(function() {
+			$(document).scrollTop("590")
+
+		})
+		$(".gc").click(function() {
+			$(document).scrollTop("1150")
+		})
+		$(".haixian").click(function() {
+			$(document).scrollTop("1610")
+		})
+		$(".rou").click(function() {
+			$(document).scrollTop("2210")
+		})
+		$(".dan").click(function() {
+			$(document).scrollTop("2710")
+		})
+		$("#fenlan-ul li img").hover(function(){
+				$(this).css({
+					"border-top":"1px solid #ccc",
+					"border-bottom":"1px solid #ccc",
+					"transform":"translateX(5px)",
+					"transition":"transform 500ms"
+				})
+				$("#fenlan-ul").css("border","1px solid #ccc")
+			},function(){
+				$(this).css({
+					"border":"none",
+					"transform":"translateX(0px)",
+					"transition":"transform 500ms"
+				})
+			})
+	</script>
+</html>

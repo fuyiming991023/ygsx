@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+		<link href="../layui-v2.5.5/layui/css/layui.css" />
+		<script src="../jquery-3.4.1.js"></script>
+		<script src="../layui-v2.5.5/layui/layui.js"></script>
+		<style>
+			.gwctop{
+				background: #E0E0E0;
+				height: 82px;
+				width: 1280px;
+				margin: 0 auto;
+				position: relative;
+			}
+			input{
+				vertical-align: middle;
+			}
+			.gwctop img{
+				margin-left: 50px;
+			}
+			#gwc{
+				margin-top: 20px;
+			}
+			#gwc1{
+				width: 1200px;
+				height: 60px;
+				margin: 0 auto;
+				border-bottom: 2px solid #008842;
+			}
+			#gwc1 i{
+				font-style: normal;
+				display: inline-block;
+				width: 250px;
+				height: 60px;
+				line-height: 60px;
+				text-align: center;
+				background: #008842;
+				font-weight: 900;
+				font-size: 20px;
+				color: white;
+			}
+			#gwc1 span{
+				margin-left: 20px;
+			}
+			#gwc1>span>a:hover{
+				line-height: 20px;
+				text-align: center;
+				display: inline-block;
+				width: 40px;
+				height: 20px;
+				background: #008842;
+				color: white;
+			}
+			#jx{
+				display: inline-block;
+				margin-top: 20px;
+				font-style: normal;
+				float: right;
+				margin-right: 20px;
+			}
+			#jx a{
+				color: #444;
+			}
+			#cpcart{
+				margin: 0 auto;
+				width: 1160px;
+				padding:10px 20px;
+			}
+			table{
+				margin: 0 auto;
+				border-collapse: collapse;
+			}
+			#biaotou{
+				background: #f1f1f1;
+				height: 41px;
+				line-height: 41px;
+				margin-bottom: 20px;
+			}
+			td{
+				text-align: center;
+			}
+			tr{
+				margin: 10px 0;
+			}
+			#quanbu{
+				width: 151px;
+			}
+			#spxx{
+				width:271px;
+			}
+			#yb{
+				width: 95px;
+			}
+			.hj{
+				color: #FF5317;
+			}
+			#price{
+				width: 120px;
+			}
+			#math,#gg,#cz{
+				width: 130px;
+			}
+			.xuanze{
+				text-align: center;
+			}
+			.spxx img{
+				width: 82px;
+				height: 82px;
+				vertical-align: top;
+			}
+			.spxx .jx{
+				vertical-align: middle;
+				display: inline-block;
+				width: 160px;
+				height: 102px;
+				margin-left: 10px;
+			}
+			.jia,.jian{
+				width:18px;
+				height: 24px;
+				text-align: center;
+				line-height: 24px;
+				text-align: center;
+				line-height: 24px;
+			}
+			.slk{
+				width: 46px;
+				height: 22px;
+			}
+			#del{
+				cursor: pointer;
+			}
+			.yb1 i{
+				font-style: normal;
+				color: #008842;
+			}
+			.zj1 i{
+				font-style: normal;
+				color: #ff5317;
+			}
+			.js1 a{
+				display: inline-block;
+				width: 94px;
+				height: 38px;
+				background: #FF5317;
+				color: white;
+				text-align: center;
+				line-height: 38px;
+			}
+			#zuihoutr{
+			background: #f1f1f1;
+			}
+			#wdgwc1{
+				display: inline-block;
+				color: rgb(0,136,66);
+				font-size: 12px;
+				position: absolute;
+				top: 10px;
+				left: 750px;
+			}
+			#quan11{
+				border-radius: 50%;
+				width: 45px;
+				height: 45px;
+				background-color: rgb(0,136,66);
+				display:inline-block;
+				position: absolute;
+				top: 30px;
+				left: 760px;
+				text-align: center;
+				line-height: 45px;
+			}
+			#quan11 i{
+				text-align: center;
+				font-size: 22px;
+				color: rgb(255,255,255);
+				font-style: normal;
+			}
+			#jdt11{
+				width: 137px;
+				height: 13px;
+				background-color: rgb(255,255,255);
+				display: inline-block;
+				position: absolute;
+				top: 45px;
+				left: 804px;
+			}
+			#quan22{
+				border-radius: 50%;
+				width: 45px;
+				height: 45px;
+				background-color: rgb(255,255,255);
+				display:inline-block;
+				position: absolute;
+				top: 30px;
+				left: 940px;
+				text-align: center;
+				line-height: 45px;
+				border: 1px solid rgb(0,136,66);
+			}
+			#quan22 i{
+				text-align: center;
+				font-size: 22px;
+				color: rgb(0,136,66);
+				font-style: normal;
+				
+			}
+			#jdt22{
+				width: 147px;
+				height: 13px;
+				background-color: rgb(255,255,255);
+				display: inline-block;
+				position: absolute;
+				top: 45px;
+				left: 987px;
+				
+			}
+			#quan33{
+				border-radius: 50%;
+				width: 45px;
+				height: 45px;
+				background-color: rgb(255,255,255);
+				display:inline-block;
+				position: absolute;
+				top: 30px;
+				left: 1130px;
+				text-align: center;
+				line-height: 45px;
+				border: 1px solid rgb(0,136,66);
+			}
+			#quan33 i{
+				text-align: center;
+				font-size: 22px;
+				color: rgb(0,136,66);
+				font-style: normal;
+			}
+			#scxz,#qingkong{
+				cursor: pointer;
+				}
+				.del{
+					cursor: pointer;
+				}
+		</style>
+	</head>
+	<body>
+		<div id="dingbu"></div>
+		<div id="box">
+			<div class="gwctop">
+				<a href="../我的易果首页1/首页.html"><img src="../图片/logo.png" /></a>
+				<div id="wdgwc1"><span>
+					我的购物车&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;填写订单信息&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;成功提交订单</span></div>
+				<div id="quan11"><i>1</i></div>
+				<div id="jdt11"></div>
+				<div id="quan22"><i>2</i></div>
+				<div id="jdt22"></div>
+				<div id="quan33"><i>3</i></div>
+				<div class="shopjdt"></div>
+			</div>
+			<div id="gwc">
+				<div id="gwc1">
+					<i>
+						<b class="layui-icon layui-icon-cart"></b>
+						我的购物车
+					</i>
+					<span>配送至：<a>上海</a></span>
+					<b id="jx"><a href="../我的易果首页1/首页.html">继续购物>></a></b>
+				</div>
+				<div id="cpcart">
+					<table>
+						<tr id="biaotou">
+							<th id="quanbu"><input type="checkbox" id="quanxuan01"/>全选</th>
+							<th id="spxx">商品信息</th>
+							<th id="yb">悠币</th>
+							<th id="price">单价</th>
+							<th id="math">购买数量</th>
+							<th id="hj">合计</th>
+							<th id="gg">规格</th>
+							<th id="cz">操作</th>
+						</tr>
+						<tr>
+							<td class="xuanze"><input type="checkbox" class="xuanze1"/></td>
+							<td class="spxx">
+								<img src="苹果.jpg" />
+								<span class="jx">
+									枝纯一级嘎啦苹果12头礼盒（200g以上/个）
+								</span>
+							</td>
+							<td></td>
+							<td class="price"><span>￥</span><span class="price1">149.90</span></td>
+							<td>
+								<input type="button" value="+" class="jia"/>
+								<input type="text" value="1" class="slk"/>
+								<input type="button" value="-" class="jian"/>
+							</td>
+							<td class="hj"><span>￥</span><span class="hj1">149.90</span></td>
+							<td>2.5kg/盒</td>
+							<td>
+								<p>移入收藏夹</p>
+								<p class="del">删除</p>
+							</td>
+						</tr>
+						<tr>
+							<td class="xuanze"><input type="checkbox" class="xuanze1"/></td>
+							<td class="spxx">
+								<img src="榴莲.jpg" />
+								<span class="jx">
+									SunMoon泰国金枕头冷冻榴莲果肉
+								</span>
+							</td>
+							<td></td>
+							<td class="price"><span>￥</span><span class="price1">49.90</span></td>
+							<td>
+								<input type="button" value="+" class="jia"/>
+								<input type="text" value="1" class="slk"/>
+								<input type="button" value="-" class="jian"/>
+							</td>
+							<td class="hj"><span>￥</span><span class="hj1">49.90</span></td>
+							<td>300g/盒</td>
+							<td>
+								<p>移入收藏夹</p>
+								<p class="del">删除</p>
+							</td>
+						<tr id="zuihoutr">
+							<td><input type="checkbox" id="quanxuan02"/>全选</td>
+							<td><span id="scxz">删除选中的商品</span>&nbsp;&nbsp;&nbsp;<span id="qingkong">清空购物车</span></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td class="yb1">悠币：<i>0个</i></td>
+							<td class="zj1">总价：<span>￥</span><i class="zj2"></i></td>
+							<td class="js1"><a href="结算.html">结算</a></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div id="jiesuan">
+			
+		</div>
+		<div id="dibu"></div>
+		<script>
+			$("#dingbu").load("../顶部/顶部.html");
+			$("#dibu").load("../底部/底部.html")
+			
+//合计封装函数
+			function hj(){
+				var a=$(".hj1");//获取类名hj1的text  返回类数组
+				var p=0;
+				for(var i=0;i<a.length;i++){
+					p=p+Number(a[i].innerHTML);
+				}
+				if(p==0){
+					p=0+".00"
+				}
+				$(".zj2").html(Number(p).toFixed(2));
+			}
+//			全部选中
+			$("#quanxuan02").change(function(){
+				if($(this).is(":checked")){
+					$(".xuanze1").prop("checked","true")
+					$("#quanxuan01").prop("checkked","true")
+				}else{
+					$(".xuanze1").prop("checked","")
+				}
+			})
+			$("#quanxuan01").change(function(){
+				if($(this).is(":checked")){
+					$(".xuanze1").prop("checked","true")
+					$("#quanxuan02").prop("checkked","true")
+				}else{
+					$(".xuanze1").prop("checked","")
+				}
+			})
+//		清空购物车
+		$("#qingkong").click(function(){
+			var table=$("table>tbody").children();
+			console.log(table);
+			for(var i=1;i<table.length-1;i++){
+				table[i].remove();
+			}
+			hj();
+		})
+//			删除选中的商品
+			$("#scxz").click(function(){
+				var checbox = $(".xuanze1:checked");
+				$(".xuanze1:checked").parent().parent().remove();
+				hj();
+				})
+
+//		数量加减	//		价格变化
+		 hj();
+		$(".jia").click(function(){
+			$(this).next().val(Number($(this).next().val())+1);
+			$(this).parent().next().children().eq(1).html(($(this).parent().prev().children().eq(1).text()*$(this).next().val()).toFixed(2));
+			hj()
+		})
+		$(".jian").click(function(){
+			if($(this).prev().val()<2){
+				$(this).prev().val(1);
+			}else{
+				$(this).prev().val($(this).prev().val()-1);
+			}
+			$(this).parent().next().children().eq(1).html(($(this).parent().prev().children().eq(1).text()*$(this).prev().val()).toFixed(2));
+			hj();
+		})
+
+			$(".slk").change(function(){
+				$(this).parent().next().children().eq(1).html($(this).parent().prev().children().eq(1).text()*$(this).val());
+				hj();
+			})
+//			删除选中的商品
+			$(".del").click(function(){
+				$(this).parent().parent().remove();
+				 hj();
+			})
+			
+//			总价
+			
+		</script>
+	</body>
+</html>

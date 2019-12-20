@@ -1,0 +1,604 @@
+<style>
+
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	
+	#top-logo {
+		height: 78px;
+		width: 1280px;
+		background: #E0E0E0;
+		margin: 0 auto;
+	}
+	
+	#top-logo>div {
+		display: inline-block;
+	}
+	
+	#logo a {
+		display: inline-block;
+		width: 145px;
+		height: 50px;
+	}
+	
+	#logo img {
+		width: 145px;
+		height: 50px;
+		vertical-align: middle;
+	}
+	
+	#logo {
+		display: inline-block;
+		width: 280px;
+		height: 50px;
+		margin-left: 70px;
+	}
+	
+	#top-search {
+		vertical-align: middle;
+		overflow: hidden;
+	}
+	
+	#keyword span {
+		font-size: 13px;
+		margin-right: 15px;
+		margin-top: 10px;
+	}
+	
+	#keyword .keywords {
+		color: #008842;
+	}
+	
+	#search input {
+		float: left;
+		width: 425px;
+		height: 26px;
+		line-height: 26px;
+		padding: 0 10px;
+		border: 1px solid #008842;
+		background: #e0e0e0;
+	}
+	
+	#sousuo {
+		float: left;
+		display: block;
+		width: 81px;
+		height: 28px;
+		line-height: 28px;
+		padding: 0;
+		border: none;
+		cursor: pointer;
+		color: #fff;
+		font-size: 14px;
+		background: #008842;
+	}
+	
+	#top1 {
+		background: #E0E0E0;
+		width: 100%;
+		margin: 0 auto;
+		height: 46px;
+	 	position: fixed;
+		top: 0;
+		display: none;
+	}
+	
+	#top1>div {
+		display: inline-block;
+	}
+	
+	#logo1 {
+		margin-left: 70px;
+	}
+	
+	#logo1 a {
+		display: inline-block;
+		width: 145px;
+		height: 36px;
+	}
+	
+	#logo1 img {
+		width: 145px;
+		height: 36px;
+	}
+	
+	#top-search {
+		vertical-align: middle;
+		overflow: hidden;
+	}
+	
+	#logo1-2 {
+		margin-left: 80px;
+	}
+	
+	#logo1-2 span {
+		margin: 0 5px;
+	}
+	
+	#keyword span {
+		font-size: 13px;
+		margin-right: 15px;
+		margin-top: 10px;
+	}
+	
+	#keyword .keywords {
+		color: #008842;
+	}
+	
+	#search input {
+		float: left;
+		width: 425px;
+		height: 26px;
+		line-height: 26px;
+		padding: 0 10px;
+		border: 1px solid #008842;
+		background: #e0e0e0;
+	}
+	
+	#sousuo {
+		float: left;
+		display: block;
+		width: 81px;
+		height: 28px;
+		line-height: 28px;
+		padding: 0;
+		border: none;
+		cursor: pointer;
+		color: #fff;
+		font-size: 14px;
+		background: #008842;
+	}
+	
+	#top-search {
+		vertical-align: middle;
+		overflow: hidden;
+	}
+	
+	#keyword span {
+		font-size: 13px;
+		margin-right: 15px;
+	}
+	
+	.keywords {
+		color: #008842;
+	}
+	
+	input {
+		float: left;
+		width: 425px;
+		height: 26px;
+		line-height: 26px;
+		padding: 0 10px;
+		border: 1px solid #008842;
+		background: #e0e0e0;
+	}
+	
+	#btnn {
+		float: left;
+		display: block;
+		width: 81px;
+		height: 28px;
+		line-height: 28px;
+		padding: 0;
+		border: none;
+		cursor: pointer;
+		color: #fff;
+		font-size: 14px;
+		background: #008842;
+	}
+	
+	#shop1 {
+		margin-top: 8px;
+		position: relative;
+		width: 140px;
+		height: 28px;
+		border: 1px solid #008842;
+		line-height: 28px;
+		text-align: center;
+		margin-left: 90px;
+	}
+	#shop1>a>i{
+		font-size: 16px;
+		color: #008842;
+	}
+	#ycgwc1 {
+		position: absolute;
+		top: 29px;
+		right: 0px;
+		display: none;
+		width: 420px;
+		text-align: center;
+		background: white;
+		border: 1px solid #008842;
+		z-index: 999;
+	}
+	#ycgwc1 img{
+		width: 50px;
+		height: 50px;
+	}
+	/*分栏*/
+	
+	#quanbu {
+		position: relative;
+		left: 0;
+		top: 0px;
+		width: 1280px;
+		margin: 0 auto;
+		height: 50px;
+		text-align: center;
+		z-index: 998;
+		border-bottom: 1px solid #008842;
+		background: #FFF9EC;
+	}
+	
+	#quanbu>p {
+		display: inline-block;
+		vertical-align: top;
+		text-align: center;
+		line-height: 3.125rem;
+		width: 11.25rem;
+		height: 50px;
+		color: white;
+		font-size: 20px;
+		background: #008842;
+		color: white;
+	}
+	
+	#F1 {
+		margin-left: 290px;
+	}
+	
+	#fenlan-ul {
+		position: absolute;
+		top: 50px;
+		left: 50px;
+		background: white;
+		display: none;
+		width: 160px;
+		padding: 10px;
+	}
+	
+	#fenlan-ul li {
+		width: 180px;
+		height: 35px;
+		box-sizing: border-box;
+	}
+	
+	#fenlan-div {
+		background: white;
+		line-height: 45px;
+		display: none;
+		position: absolute;
+		top: 0px;
+		left: 230px;
+		padding: 20px;
+		width: 340px;
+		height: 450px;
+		border: 1px solid #CCCCCC;
+	}
+	
+	#fenlan-div h3 {
+		text-align: left;
+		color: #008842;
+		text-decoration: underline;
+	}
+	
+	#fenlan-div ul li {
+		float: left;
+	}
+	
+	#fenlan-div ul li span {
+		margin: 0 20px;
+	}
+	
+	#fenlan-img {
+		position: absolute;
+		left: 220px;
+		top: 250px;
+	}
+	
+	#test1 #quanbu #fenlan-div img {
+		width: 280px;
+		height: 220px;
+	}
+	
+	#test1 #quanbu #fenlan-ul img {
+		width: 50px;
+		height: 50px;
+	}
+	
+	#quanbu-uli {
+		display: inline-block;
+		width: 1000px;
+		overflow: hidden;
+		border-bottom: 1px solid #008842;
+		background: #FFF9EC;
+	}
+	
+	#quanbu-uli li {
+		width: 100px;
+		height: 50px;
+		float: left;
+		text-align: center;
+		line-height: 50px;
+		font-size: 16px;
+		color: #008842;
+		margin-left: 30px;
+		box-sizing: border-box;
+	}
+	
+	#shop1 a {
+		display: inline-block;
+	}
+	/*购物车商品*/
+			.gwcsp{
+				font-size: 13px;
+				width: 402px;
+				padding: 10px;
+				position: absolute;
+				top: 29px;
+				right: 0;
+			}
+			
+			.gwcsp .gwcspul li img{
+				width: 42px;
+				height: 42px;
+				vertical-align: top;
+			}
+			.gwcspul li{
+				font-size: 13px;
+				width: 380px;
+				height: 60px;
+				
+			}
+			.gwcspul li>div{
+				text-align: right;
+				display: inline-block;
+				float: right;
+			}
+			.gwcspul li>div i{
+				display: block;
+			}
+			.dqgwc{
+				position: relative;
+				margin-top: 20px;
+				font-size: 13px;
+				text-align: right;
+				width: 380px;
+				height: 60px;
+			}
+			.dqgwc i{
+				color: orangered;
+				font-weight: 500;
+				font-size: 18px;
+			}
+			.dqgwc span{
+				margin-left: 15px;
+			}
+			.dqgwc>div{
+				margin-top: 10px;
+				overflow: hidden;
+			}
+			.dqgwc>div a{
+				position: absolute;
+				bottom: 5px;
+				right: 10px;
+				float: right;
+				display: block;
+				width: 75px;
+				height: 27px;
+				background: #008842;
+				color: white;
+				text-align: center;
+				line-height: 27px;
+				font-size: 12px; 
+			}
+			#sc01{
+				cursor: pointer;
+			}
+</style>
+<div id="top-logo">
+	<div id="logo">
+		<a href="../我的易果首页1/首页.html"><img src="../图片/logo.png" /></a>
+	</div>
+	<div id="top-search">
+		<div id="search">
+			<input type="text" placeholder="输入商品名/编号/拼音" />
+			<button id="sousuo">搜索</button>
+		</div>
+		<div id="keyword">
+			<span class="keywords">奇异果</span>
+			<span class="keywords">谷饲</span>
+			<span>家佳康</span>
+			<span>贝类</span>
+		</div>
+	</div>	
+</div>
+<div id="quanbu">
+		<p id="zfl">全部商品分类▽</p>
+		<ul id="quanbu-uli">
+			<li>
+				<a href="../新品专区/新品专区.html">新品专区</a>
+			</li>
+			<li>
+				<a href="../优质生活/优质生活.html">优质生活</a>
+			</li>
+			<li>
+				<a href="#">银行专区</a>
+			</li>
+			<li>
+				<a href="../菜谱专栏/深夜食堂.html">菜谱专栏</a>
+			</li>
+		</ul>
+		<div id="quanbu1">
+			<ul id="fenlan-ul">
+				<li><img src="../图片/tutu1.png" />
+					<a>进口水果></a>
+				</li>
+				<li><img src="../图片/tutu2.png" />
+					<a>国产水果></a>
+				</li>
+				<li><img src="../图片/tutu3.png" />
+					<a>精选肉类></a>
+				</li>
+				<li><img src="../图片/tutu4.png" />
+					<a>禽类蛋品></a>
+				</li>
+				<li><img src="../图片/tutu5.png" />
+					<a>即烹美食></a>
+				</li>
+				<li><img src="../图片/tutu6.png" />
+					<a>海鲜水产></a>
+				</li>
+				<li><img src="../图片/tutu7.png" />
+					<a>乳品糕点></a>
+				</li>
+				<li><img src="../图片/tutu8.png" />
+					<a>新鲜蔬菜></a>
+				</li>
+				<li><img src="../图片/tutu9.png" />
+					<a>方便速食></a>
+				</li>
+				<li><img src="../图片/tutu1.png" />
+					<a>粮油杂货></a>
+				</li>
+				<li><img src="../图片/tutu3.png" />
+					<a>食品饮料></a>
+				</li>
+				<li><img src="../图片/tutu5.png" />
+					<a>礼品礼券></a>
+				</li>
+			</ul>
+			<div id="fenlan-div">
+				<h3 id="h3"></h3>
+				<ul id="fenlan-div-ul"></ul>
+				<p id="fenlan-img"></p>
+			</div>
+		</div>
+	</div>
+<div id="top1">
+	<div id="logo1">
+		<a href="#"><img src="../图片/logo.png" /></a>
+	</div>
+	<div id="logo1-2"><input type="text" placeholder="输入商品名/编号/拼音" /><button id="btnn">搜索</button><span class="keywords">奇异果</span><span class="keywords">谷饲</span><span>家佳康</span><span>贝类</span></div>
+	<div id="shop1">
+		<a href="../空购物车/空购物车.html" id="kongde">
+			<i class="layui-icon">&#xe657</i>
+			<b class="gwcjg">0.0</b>
+		</a>
+		<div id="ycgwc1">
+			<p>购物车里没有东西</p>
+		</div>
+	</div>
+</div>
+
+<script>
+	
+	$("#shop1").hover(function() {
+		$("#ycgwc1").slideDown(300);
+	}, function() {
+		$("#ycgwc1").slideUp(300);
+	})
+	//			滚动监听事件
+	$(document).scroll(function() {
+		var scrolltop = $(document).scrollTop();
+		if(scrolltop > 110) {
+			$("#top1").css({
+				"z-index": "999"
+			}).show();
+		} else if(scrolltop < 110) {
+			$("#top1").hide();
+		}
+
+	})
+	var fenlan = [
+		["奇异果", "车厘子", "李梅", "牛油果", "提子", "苹果", "梨", "柑橘橙柚", "火龙果", "椰子", "芒果", "凤梨", "榴莲", "热带水果", "时令水果"],
+		["苹果 梨", "柑桔橙柚", "猕猴桃", "瓜", "葡萄", "桃", "李", "枣", "莓", "芒果", "凤梨", "莲雾", "百香果", "热带水果", "时令水果", "原箱水果"],
+		["牛排", "进口牛肉", "国产牛肉", "猪肉", "羊肉", "肉制品"],
+		["鸡", "鸭", "鹅", "鸽", "特色禽类", "蛋"],
+		["独家秘制", "中华美食"],
+		["鳕鱼", "虾仁", "大闸蟹券", "鱼", "三文鱼", "虾", "蟹 贝", "活鲜", "海参", "加工水产"],
+		["奶酪", "黄油", "奶油", "乳品", "面包", "蛋糕", "甜点"],
+		["叶菜类", "根茎类", "茄果瓜果类", "花菜豆类", "香料", "菌菇", "沙拉菜", "冷冻蔬菜", "豆制品", "葱蒜类", "蔬菜组合", "净菜类"],
+		["冷冻点心 ", "中式主食", "火锅料", "半成品菜"],
+		["米", "杂粮", "面", "面制品 ", "油", "调味料", "干货", "果干", "零食"],
+		["水 ", "冲调饮品", "葡萄酒", "酒具", "休闲食品", "啤酒"],
+		["礼品礼盒", "礼品礼券", "原膳礼盒"]
+	];
+	var img = [
+		["../图片/tutu01.png"],
+		["../图片/tutu02.png"],
+		["../图片/tutu03.png"],
+		["../图片/tutu04.png"],
+		["../图片/tutu05.png"],
+		["../图片/tutu06.png"],
+		["../图片/tutu07.png"],
+		["../图片/tutu08.png"],
+		["../图片/tutu09.png"],
+		["../图片/tutu10.png"],
+		["../图片/tutu01.png"],
+		["../图片/tutu02.png"]
+	];
+	var uname = [
+		["进口水果"],
+		["国产水果"],
+		["精选肉类"],
+		["禽类蛋品"],
+		["即烹美食"],
+		["海鲜水产"],
+		["乳品糕点"],
+		["新鲜蔬菜"],
+		["方便速食"],
+		["粮油杂货"],
+		["食品饮料"],
+		["礼品礼券"]
+	];
+	$("#fenlan-ul li").mouseenter(function() {
+		var xb = $(this).index();
+		var fl = "";
+		var img1 = "";
+		var uname1 = "";
+		for(var i = 0; i < fenlan[xb].length; i++) {
+			fl = fl + '<li>' + '<span>' + fenlan[xb][i] + '</span>' + '</li>';
+		}
+		$("#fenlan-div-ul").html(fl);
+		for(var j = 0; j < img[xb].length; j++) {
+			img1 = img1 + '<li>' + '<img src="' + img[xb][j] + '"/>' + '' + '</li>';
+		}
+		$("#fenlan-img").html(img1);
+		for(var jj = 0; jj < uname[xb].length; jj++) {
+			uname1 = uname1 + uname[xb][jj];
+		}
+		$("h3").html(uname1);
+	})
+	$("#zfl").hover(function() {
+		$("#fenlan-ul").show();
+	}, function() {
+		$("#fenlan-ul").hide();
+	})
+	$("#fenlan-ul").hover(function() {
+		$("#fenlan-ul").show();
+	}, function() {
+		$("#fenlan-ul").hide();
+	})
+	$("#fenlan-ul li").hover(function() {
+		$("#fenlan-ul").show();
+		$("#fenlan-div").show();
+	}, function() {
+		$("#fenlan-ul").hide();
+		$("#fenlan-div").hide()
+	})
+	$("#fenlan-div").hover(function() {
+		$("#fenlan-div").show();
+		$("#fenlan-ul").show();
+	}, function() {
+		$("#fenlan-div").hide();
+		$("#fenlan-ul").hide();
+	})
+	$("#quanbu-uli li").hover(function() {
+		$(this).css("border-bottom", "5px solid #008842")
+	}, function() {
+		$(this).css("border-bottom", "none")
+	})
+</script>

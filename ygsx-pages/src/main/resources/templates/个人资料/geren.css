@@ -1,0 +1,33 @@
+/ *个人中心* /
+.myyg .user-info .acco-info li i {background-image：url（../ images / themes / user-info.png）;}
+.myyg .user-info .info-m .u级.vip .grade-line i {背景：＃008842;}
+.new-coupon li .mj，.new-coupon li .mz {background-image：url（../ images / themes / coupon-bg.png）;}
+.recharge .complete i {background-image：url（../ images / themes / returns-icon.png）;}
+.si-password i，.si-email i，.si-phone i {background-image：url（../ images / themes / bg_safe.png）;}
+.safe-info .si-user .edit i {background-image：url（../ images / themes / icon_edit.png）;}
+.safe .complete i {background-image：url（../ images / themes / returns-icon.png）;}
+.sp-step，.sm-step {background-image：url（../ images / themes / step_safe.png）;}
+.recipes-upload dd .steps_num b {color：＃008842; border-color：＃008842;}
+.recipes-upload dd .first b {color：#fff; 背景：＃008842;}
+.returns .r提交的.icon {background-image：url（../ images / themes / returns-icon.png）;}
+.returns .CustomerService i {background-image：url（../ images / themes / customer-service.png）;}
+.PickUpCard {margin-top：20px！important;}
+.PickUpCard .ci {background-image：url（../ images / themes / returns-icon.png）;}
+.PickUpCard .c .edit i {background-image：url（../ images / themes / icon_edit.png）;}
+.PickUpCard-list li i {background-image：url（../ images / themes / PickUpCard.png）;}
+.PickUpCard .p-title .t {background-image：url（../ images / themes / PickUpCard.png）;}
+.r-receive .receive-list .selected，.r-发票.invoice-item .selected，.r-receive .receive-list .hover标签，.r-invoice .invoice-item .hover标签，.o-receive标签选择，o接收悬浮标签，订单表td选择，模态表td选择，o付款标签选择，o发票项目标签选择，o发票商品标签：悬停{border-color：＃008842; 背景颜色：＃ebf8f2;}
+.r-receive .receive-list li .btn-setdefault，.r-receive .receive-list li .btn-edit，.r-receive .receive-list li .btn-del，.r-invoice .invoice-item li .btn-edit，.r-invoice .invoice-item li .btn-del，.o-invoice-item标签.btn-edit，.o-invoice-item标签.btn-del {color：＃008842;}
+.r-receive .receive-list li b，.r-发票.invoice-item li b，.order h2，.order i，.modal-header h3 i，.order b，.modal b，.order i，。 o凭证i {background-image：url（../ images / themes / bg_order.png）;}
+.o-receive li：悬停很强，.o-receive .btn-setdefault，.o-receive .btn-edit，.o-receive .btn-del，.order h3，.order.link，.order.table td .selected，.modal .table td a，.o-pay .edit，.o-pay .selectother，.o-pay标签强{color：＃008842;}
+.steps {margin-right：75px; padding-top：5像素；}
+.steps li b {background-image：url（../ images / themes / order-step.png）;}
+在i {border-color：＃008842; 背景：＃008842;}
+.steps li span {top：-6px; 右：-162px; text-align：left;}
+.steps .on span {color：＃008842;}
+.comment_score .stars b {background-image：url（../ images / themes / comment_stars.gif）;}
+.comment-team .stars .stars-bg span，.comment-team .stars .stars-bg {background-image：url（../ images / themes / stars.gif）;}
+.order-detail.order-steps li b，.order-detail.order-steps li i，.return-detail.r-steps li b，.return-detail.r-steps li i {background-image：url（ ../images/order-steps.png）;}
+.order_complete i {background-image：url（../ images / themes / returns-icon.png）;}
+.mylist i {background-image：url（../ images / btn_icon.png）;}
+.loading i {background-image：url（../ images / themes / loading.gif）;}

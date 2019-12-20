@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>优质生活</title>
+		<link rel="stylesheet" href="../layui-v2.5.5/layui/css/layui.css" />
+		<script src="../layui-v2.5.5/layui/layui.js"></script>
+		<script src="../jquery-3.4.1.js"></script>
+		<style type="text/css">
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+
+			li {
+				cursor: pointer;
+			}
+
+			#quanbu{
+				background: white;
+				}
+
+			#xrlhl-caidan-right {
+				overflow: hidden;
+				float: right;
+				width: 1100px;
+				height: 36px;
+				line-height: 36px;
+				border-bottom: 1px solid #008842;
+			}
+
+			#xrlhl-caidan-right ul {
+				overflow: hidden;
+			}
+
+			#xrlhl-caidan-right li {
+				float: left;
+				width: 115px;
+				text-align: center;
+				font-size: 15px;
+				font-weight: bold;
+			}
+
+			#yzsh-img {
+				text-align: center;
+			}
+
+			#yzsh-qqjp {
+				margin: 0 auto;
+				width: 1280px;
+			}
+
+			#yzsh-qqjp {
+				text-align: center;
+			}
+
+			#yzsh-qqjp-u li p {
+				margin-top: 5px;
+			}
+
+			#yzsh-qqjp-u {
+				overflow: hidden;
+				width: 1100px;
+				margin: 0 auto;
+			}
+
+			#yzsh-qqjp-u li {
+				margin: 5px;
+				margin-left: 25px;
+				float: left;
+				width: 240px;
+				height: 342px;
+				text-align: center;
+			}
+
+			#yzsh-qqjp-u li>img {
+				width: 228px;
+				height: 228px;
+			}
+			
+			
+			#slxh-qqjp,#myyx-qqjp {
+				overflow: hidden;
+				width: 1100px;
+				margin: 0 auto;
+			}
+			#slxh-qqjp-u2 {
+				overflow: hidden;
+				width: 1100px;
+				margin: 0 auto;
+			}
+
+			#slxh-qqjp-u2 li {
+				margin: 5px;
+				margin-left: 25px;
+				float: left;
+				width: 240px;
+				height: 342px;
+				text-align: center;
+			}
+
+			#slxh-qqjp-u2 li>img {
+				width: 228px;
+				height: 228px;
+			}
+
+			#slxh-img {
+				text-align: center;
+			}
+
+			#slxh-qqjp {
+				width: 1280px;
+			}
+
+			#slxh-qqjp {
+				text-align: center;
+			}
+
+			#slxh-qqjp-u2 li p {
+				margin-top: 5px;
+			}
+
+			#myyx-qqjp-u2 {
+				overflow: hidden;
+				width: 1100px;
+				margin: 0 auto;
+			}
+
+			#myyx-qqjp-u2 li {
+				margin: 5px;
+				margin-left: 25px;
+				float: left;
+				width: 240px;
+				height: 342px;
+				text-align: center;
+			}
+
+			#myyx-qqjp-u2 li>img {
+				width: 228px;
+				height: 228px;
+			}
+
+			#myyx-img {
+				text-align: center;
+			}
+
+			#myyx-qqjp {
+				width: 1280px;
+			}
+
+			#myyx-qqjp {
+				text-align: center;
+			}
+
+			#myyx-qqjp-u2 li p {
+				margin-top: 5px;
+			}
+
+			/* #quanbu {
+				opacity: 50%;
+			}
+ */
+			#quanbu1 {
+				background: rgba(255, 255, 255, 0.5);
+			}
+
+			#fenlan-div {
+				background: rgba(255, 255, 255, 0.5);
+			}
+			#yzsh-img{
+				margin-top: 60px;
+		</style>
+	</head>
+
+	<body>
+		<div id="yzsh-box">
+			<div id="yzsh-dingbu"></div>
+			<div id="yzsh-daohanglan"></div>
+			
+		<div id="yzsh-img">
+			<img src="youzhishenghuobig.jpg" />
+		</div>
+		<div id="yzsh-qqjp">
+			<img src="yzsh-qqjp.png" />
+			<ul id="yzsh-qqjp-u">
+				<li>
+					<img src="yzshtu1.png" />
+					<p>
+						<a>原膳南美白虾仁（中）250g</a>
+					</p>
+					<p>￥32.9<img src="ljqg.png" /></p>
+				</li>
+			</ul>
+		</div>
+		<div id="slxh-qqjp">
+			<img src="slxhtu2.png" />
+			<ul id="slxh-qqjp-u2">
+				<li>
+					<img src="slxh-tu1.jpg" />
+					<p>
+						<a>智利蓝莓2盒(约125g/盒)</a>
+					</p>
+					<p>¥59.9<img src="ljqg.png" /></p>
+				</li>
+			</ul>
+		</div>
+		<div id="myyx-qqjp">
+			<img src="myyx-logo.png" />
+			<ul id="myyx-qqjp-u2">
+				<li>
+					<img src="mxyx-tu1.png" />
+					<p>
+						<a>兰维乐天然矿泉水10L</a>
+					</p>
+					<p>¥72.9<img src="ljqg.png" /></p>
+				</li>
+			</ul>
+		</div>
+		<div id="yzsh-dibu">
+
+		</div>
+		</div>
+		<script type="text/javascript"></script>
+		<script type="text/javascript">
+			$("#yzsh-dingbu").load("../顶部/顶部.html")
+			$("#yzsh-daohanglan").load("../导航栏/导航栏.html")
+			$("#yzsh-dibu").load("../底部/底部.html")
+
+			//			----------------------------
+			var qqjp = [{
+				imgSrc: "yzshtu1.png",
+				mingzi: "原膳南美白虾仁（中）250g",
+				qian: "32.9"
+			}, {
+				imgSrc: "yzshtu2.png",
+				mingzi: "欧丽薇兰特级初榨橄榄油750ml",
+				qian: "32.9"
+			}, {
+				imgSrc: "yzshtu3.jpg",
+				mingzi: "SunMoon能量STAR墨西哥牛油果4个130-160g/个",
+				qian: "32.9"
+			}, {
+				imgSrc: "yzshtu4.jpg",
+				mingzi: "原膳乌拉圭精修牛腩1kg",
+				qian: "32.9"
+			}, {
+				imgSrc: "yzshtu5.jpg",
+				mingzi: "原膳澳洲谷饲小公牛牡蛎牛排200g(3片)",
+				qian: "32.9"
+			}, {
+				imgSrc: "yzshtu6.jpg",
+				mingzi: "OceanGala海鲜盛宴速冻真鳕鱼切块250g",
+				qian: "32.9"
+			}, {
+				imgSrc: "yzshtu7.jpg",
+				mingzi: "新疆库尔勒精选香梨1kg约120g/个",
+				qian: "32.9"
+			}, {
+				imgSrc: "yzshtu8.jpg",
+				mingzi: "越南红心火龙果2个(大果)410g以上/个",
+				qian: "32.9"
+			}, ];
+			var h = "";
+			for (var i = 0; i < qqjp.length; i++) {
+				h = h + "<li>" +
+					'<img src="' + qqjp[i].imgSrc + '" />' +
+					"<p><a>" + qqjp[i].mingzi + "</a></p>" +
+					"<p>" + qqjp[i].qian + "</p>" +
+					"</li>"
+			}
+			console.log(h);
+			$("#yzsh-qqjp-u").html(h);
+
+			var slxh = [{
+				imgSrc1: "slxh-tu1.jpg",
+				name1: "智利蓝莓2盒(约125g/盒)",
+				qian1: "59.9"
+			}, {
+				imgSrc1: "slxh-tu2.png",
+				name1: "泰国龙眼1kg",
+				qian1: "59.9"
+			}, {
+				imgSrc1: "slxh-tu3.png",
+				name1: "Zespri佳沛意大利阳光金奇异果6个134-175g/个",
+				qian1: "59.9"
+			}, {
+				imgSrc1: "slxh-tu4.jpg",
+				name1: "四川不知火丑柑3kg原箱(9-14个)",
+				qian1: "59.9"
+			}, {
+				imgSrc1: "slxh-tu5.png",
+				name1: "广西沃柑1.5kg",
+				qian1: "59.9"
+			}, {
+				imgSrc1: "slxh-tu6.jpg",
+				name1: "进口凤梨1个1kg以上/个",
+				qian1: "59.9"
+			}, {
+				imgSrc1: "slxh-tu7.jpg",
+				name1: "Zespri佳沛意大利阳光金奇异果3.3kg原箱(22-25个)",
+				qian1: "59.9"
+			}, {
+				imgSrc1: "slxh.png",
+				name1: "海南薄皮脆甜西州蜜瓜1个约1.3kg/个",
+				qian1: "59.9"
+			}, ];
+			var s = "";
+			for (var p = 0; p < slxh.length; p++) {
+				s = s + "<li>" +
+					'<img src="' + slxh[p].imgSrc1 + '" />' +
+					"<p><a>" + slxh[p].name1 + "</a></p>" +
+					"<p>" + slxh[p].qian1 + "</p>" +
+					"</li>"
+			}
+			$("#slxh-qqjp-u2").html(s);
+
+			var myyx = [{
+					imgSrc2: "mxyx-tu1.png",
+					name2: "兰维乐天然矿泉水10L",
+					qian2: "72.9"
+				},
+				{
+					imgSrc2: "mxyx-tu2.jpg",
+					name2: "美威欧式原味三文鱼排（2片装）250g",
+					qian2: "72.9"
+				},
+				{
+					imgSrc2: "mxyx-tu3.jpg",
+					name2: "崇明生态乳鸽300g",
+					qian2: "72.9"
+				},
+				{
+					imgSrc2: "mxyx4.jpg",
+					name2: "鲜元素速冻阿拉斯加黑鳕鱼切身250g",
+					qian2: "72.9"
+				},
+				{
+					imgSrc2: "mxyx5.jpg",
+					name2: "CP正大老母鸡1.5kg",
+					qian2: "72.9"
+				},
+				{
+					imgSrc2: "mxyx6.png",
+					name2: "农百鲜苏北散养童子鸡600g",
+					qian2: "72.9"
+				},
+				{
+					imgSrc2: "mxyx7.jpg",
+					name2: "兰皇鸡蛋（10枚装）",
+					qian2: "72.9"
+				},
+				{
+					imgSrc2: "mxyx8.jpg",
+					name2: "老杜崇明农家老鸭1kg",
+					qian2: "72.9"
+				},
+			]
+			var r = "";
+			for (var q = 0; q < myyx.length; q++) {
+				r = r + "<li>" +
+					'<img src="' + myyx[q].imgSrc2 + '" />' +
+					"<p><a>" + myyx[q].name2 + "</a></p>" +
+					"<p>" + myyx[q].qian2 + "</p>" +
+					"</li>"
+			}
+			$("#myyx-qqjp-u2").html(r);
+			$("#slxh-qqjp-u2 li:eq(5)").click(function(){
+				location.href="../分页/凤梨.html";
+			})
+			$("#yzsh-qqjp-u li:eq(7)").click(function(){
+				location.href="../分页/火龙果.html";
+			})
+		</script>
+	</body>
+
+</html>

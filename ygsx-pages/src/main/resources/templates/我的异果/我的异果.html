@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>我的易果</title>
+		<link rel="stylesheet" type="text/css" href="../layui-v2.5.5/layui/css/layui.css"/>
+		<style type="text/css">
+		*{
+	          margin: 0px;
+	          padding: 0px;
+		 }
+		.wdyg-dh{
+			width:200px;
+			height: 30px;
+		  
+		    margin-top: 10px;
+		}
+		.wdyg-dh li{
+			float: left;
+			margin-left:13px;
+			font-size:13px;
+		}
+		.wdyg-dh li:last-child{
+			text-decoration: underline;
+		}
+		.wdyg-dh li:last-child a{
+			color: red;
+		}
+		.wdyg-dh2{
+			width: 195px;
+			height: 567px;
+			background:white;
+	        float: left;
+		}
+		.wdyg-dh2 ul{
+			width: 150px;
+			height: 400px;
+			padding: 20px 20px;
+			
+		}
+		.wdyg-dh2 ul li{
+			line-height:30px;
+			font-size: 12px;
+		}
+		.wdyg-dh2 ul li:hover a{
+			color: #008842;
+		}
+		.wdyg-dh2 ul li h3{
+			font-weight:550;
+			font-size:16px;
+		}
+		.wddd{
+			width: 920px;
+			height:270px;
+		    background: white;
+			float: left;
+			border: 1px solid #ccc;
+			z-index:1;
+		}
+		.wddd,.wdyg-dh2{
+			display: inline-block;
+		}
+		.wddd2{
+			width: 880px;
+			height: 50px;
+			margin-left:50px;
+			margin: 0 auto;
+			line-height: 58px;
+			border-bottom: 1px solid #008842;
+		}
+		.wddd2 .wddd-xlk{
+			margin-left: 610px;
+		}
+		.wddd2 span{
+			color: #008842 ;
+		}
+		.wddd-ddxx{
+			width: 880px;
+			height: 40px;
+			margin-left:50px;
+			margin: 0 auto;
+			line-height:40px;
+			background: #eee;
+			margin-top:15px;
+		}
+	
+		.wddd-ddxx span{
+			display: inline-block;
+			font-size: 12px;
+		}
+		.wddd-ddxx span:first-child{
+			width: 510px;
+			text-align:center;
+		}
+		.wddd-ddxx span:nth-child(2){
+			width:120px;
+			text-align:center;
+		}
+		.wddd-ddxx span:nth-child(3){
+			width:120px;
+			text-align:center;
+		}
+		.wddd-ddxx span:nth-child(4){
+			width:120px;
+			text-align:center;
+		}
+		.wddd-jl{
+			width: 880px;
+			height: 100px;
+			line-height: 100px;
+			text-align: center;
+		}
+		.wddd-jl a{
+			color: #008842;
+			text-decoration: underline;
+		}
+		#wddd3{
+			width: 1280px;
+			margin: 0 auto;
+		}
+		</style>
+	</head>
+	<body>
+		<script type="text/javascript" src="../layui-v2.5.5/layui/layui.js"></script>
+		<script type="text/javascript" src="../jquery-3.4.1.js"></script>
+		<div class="dingbu"></div>
+		<div class="daohang"></div>
+		<div id="wddd3">
+		<ul class="wdyg-dh">
+			<li>首页<span>></span></li>
+			<li>我的易果<span>></span></li>
+			<li><a href="">我的订单</a></li>
+		</ul>
+		<div class="wdyg-dh2">
+		<ul>
+			<li style="font-weight: bold;font-size: 14px">交易信息</li>
+			<li><a href="../我的异果/我的异果.html">我的订单</a></li>
+			<li><a href="../我的优惠券/我的优惠券.html">我的优惠券</a></li>
+			<li><a href="../我的悠币/我的悠币.html">我的悠币</a></li>
+			<li><a href="../购买过的商品/购买过的商品.html">购买过得商品</a></li>
+			<li><a href="../收藏/收藏.html">我的收藏</a></li>
+			<li><a href="../评论商品/评论商品.html">评论商品</a></li>
+			<li style="font-weight: bold;font-size: 14px">账号信息</li>
+			<li><a href="../个人资料/geren.html">个人资料</a></li>
+			<li><a href="../收货地址/收货地址.html">收货地址管理</a></li>
+		</ul>
+		</div>
+		
+		<div class="wddd">
+			<div class="wddd2">
+				<span>我的订单</span>
+				 <select name="city" lay-verify=""class="layui-form wddd-xlk" >
+                   <option value="">近一个月的订单</option>
+                    <option value="0">三个月的订单</option>
+                    <option value="1">近五年订单</option>
+                     <option value="2">历史订单</option>
+                 </select> 
+                
+                 <select name="city" lay-verify="required"class="layui-form" >
+                   <option value="">全部状态</option>
+                    <option value="0">进行中</option>
+                    <option value="1">已确认</option>
+                    <option value="2">等待发货</option>
+                    <option value="2">等待收货</option>
+                    <option value="2">已完成</option>
+                    <option value="2">已取消</option>   
+                </select> 
+			</div>
+			<div class="wddd-ddxx">
+			<span>订单信息</span><span>实付金额</span><span>订单状态</span><span>操作</span>
+		   </div>
+		    <div class="wddd-jl">
+		    	<span>亲爱的易果用户，您目前尚无记录呦~<a href="http://127.0.0.1:8020/XIANGMU/%E6%96%B0%E5%93%81%E4%B8%93%E5%8C%BAd/%E6%96%B0%E5%93%81%E4%B8%93%E5%8C%BA.html?__hbt=1574124140921">快去逛逛吧~</a></span>
+		    </div>
+		</div>	
+	    </div>
+		<div id="db"></div>
+		<script type="text/javascript">
+			$(".dingbu").load("../顶部/顶部.html")
+			$(".daohang").load("../导航栏/导航栏.html");
+			$("#db").load("../底部/底部.html");
+		</script>
+	  
+	</body>
+</html>

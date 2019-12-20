@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>注册</title>
+		<link rel="stylesheet" href="../layui-v2.5.5/layui/css/layui.css" />
+		<script src="../layui-v2.5.5/layui/layui.js"></script>
+		<script src="../jquery-3.4.1.js"></script>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			/*body,html{
+				width: 100%;
+				height: 100%;
+				background: gray;
+			}*/
+			
+			#top-logo {
+				height: 78px;
+				width: 1280px;
+				background: #E0E0E0;
+				margin: 0 auto;
+			}
+			
+			#top-logo>div {
+				display: inline-block;
+			}
+			
+			#logo a {
+				display: inline-block;
+				width: 145px;
+				height: 50px;
+			}
+			
+			#logo img {
+				width: 145px;
+				height: 50px;
+				vertical-align: middle;
+			}
+			
+			#logo {
+				display: inline-block;
+				width: 280px;
+				height: 50px;
+				margin-left: 70px;
+			}
+			
+			#logo span {
+				color: #008842;
+				/* position: absolute;
+				left: 358px;
+				top: 23px; */
+				font-size: 25px;
+			}
+			#box-zhuce{
+				width: 1280px;
+				margin: 0 auto;
+			}
+			#box-zhuce>div {
+				display: inline-block;
+				vertical-align: top;
+			}
+			
+			#box-zhuce-left {
+				width: 600px;
+				height: 600px;
+				/*background: pink;*/
+				margin-left: 161px;
+				margin-top: 40px;
+			}
+			
+			#box-zhuce-left i {
+				display: none;
+				font-style: normal;
+				margin-left: 10px;
+			}
+			
+			#box-zhuce-left i img {
+				vertical-align: middle;
+				margin-right: 6px;
+			}
+			
+			.inp1 {
+				width: 147px;
+				height: 40px;
+			}
+			
+			.inp2 {
+				width: 290px;
+				height: 40px;
+			}
+			
+			.inp3 {
+				width: 147px;
+				height: 40px;
+			}
+			
+			.inp4 {
+				width: 290px;
+				height: 40px;
+			}
+			
+			.inp5 {
+				width: 290px;
+				height: 40px;
+			}
+			
+			.inp6 {
+				width: 290px;
+				height: 40px;
+			}
+			
+			.yz p span {
+				width: 70px;
+				display: inline-block;
+				margin-right: 20px;
+				text-align: right;
+			}
+			
+			.yz p input {
+				margin-top: 23px;
+			}
+			/*.inp1{
+				background: url(0006.png) no-repeat;
+			}*/
+			.yz p:last-child {
+				margin-left: 85px;
+			}
+			
+			.yz p:last-child a {
+				color: #008842;
+				list-style: none;
+			}
+			
+			.ljzc {
+				width: 306px;
+				height: 50px;
+			}
+			
+			#box-zhuce-right {
+				width: 300px;
+				height: 500px;
+				/* background: red;*/
+				display: inline-block;
+				margin-left: 150px;
+				margin-top: 40px;
+			}
+			
+			.box-zhuce-right-top {
+				margin-left: 140px;
+			}
+			
+			.box-zhuce-right-top a {
+				text-decoration: underline;
+				color: #ef760a;
+			}
+			
+			.box-zhuce-right-mid img {
+				width: 327px;
+				height: 326px;
+				margin-top: 100px;
+			}
+			.hqyzm{
+				width: 65px;
+				height: 40px;
+				text-align: left;
+				line-height: 44px;
+				vertical-align: top;
+			}
+			#hqyzm1{
+				width: 80px;
+				height: 40px;
+				text-align: center;
+				line-height: 40px;
+				vertical-align: middle;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="top-logo">
+			<div id="logo">
+				<a href="../我的易果首页1/首页.html"><img src="../图片/logo.png" /></a>
+				<span>注册</span>
+			</div>
+		</div>
+		<div id="box-zhuce">
+
+			<div id="box-zhuce-left">
+				<div class="yz">
+					<p>
+						<span>图形验证码</span><input type="text" placeholder="图形验证码" class="inp1" />
+						<img src="0004.png" id="suiji" />
+						<a href="#" id="hyz">换一张</a>
+						<i id="i1"><img src="cuo.png"/>图片验证码输入错误</i>
+					</p>
+					<p>
+						<span>手机号</span><input type="text" placeholder="请输入您的手机号" class="inp2" /><i id="i2"><img src="cuo.png"/>输入格式错误</i>
+					</p>
+					<p>
+						<span>手机验证码</span><input type="text" placeholder="手机验证码" class="inp3" />
+						<input type="text" value="------" class="hqyzm" />
+						<button id="hqyzm1">获取验证码</button>
+						<i id="i3"><img src="cuo.png"/>验证码输入错误</i>
+					</p>
+					<p>
+						<span>设置密码</span><input type="text" placeholder="6-20位字母、符号或数字" class="inp4" />
+						<i id="i4"><img src="cuo.png"/>密码格式错误</i>
+					</p>
+					<p>
+						<span>确认密码</span><input type="text" placeholder="再次输入密码" class="inp5" />
+						<i id="i5"><img src="cuo.png"/>密码与前边不同</i>
+					</p>
+					<p>
+						<span>邀请码</span><input type="text" placeholder="邀请码可选填" class="inp6" />
+					</p>
+					<p>
+						<input type="checkbox" id="tongyi"/>"我已阅读同意"
+						<a href="#" class="a1">《易果服务协议》</a>
+						<a href="#" class="a2">《隐私政策》</a>
+					</p>
+					<p>
+						<input type="button" placeholder="" value="立即注册" class="ljzc" />
+					</p>
+				</div>
+			</div>
+			<div id="box-zhuce-right">
+				<div class="box-zhuce-right-top">
+					我已经注册，现在就
+					<a href="../登录/登录.html">登录</a>
+				</div>
+				<div class="box-zhuce-right-mid">
+					<img src="right0001.png" />
+				</div>
+			</div>
+
+			<!--底部-->
+			
+		</div>
+		<div id="zhuce-dibu">
+		
+		</div>
+		<script src="../jquery-3.4.1.js"></script>
+		<script type="text/javascript">
+//			图片验证码
+			var aaa = [
+				"0001.png", "0002.png", "0003.png", "0004.png", "0005.png"
+			]
+			$("#hyz").click(function() {
+				var a = aaa.length;
+				var b = Math.ceil(Math.random() * (a - 2) - 0 + 1 + 0);
+				console.log(aaa[b]);
+				$("#suiji").attr("src", aaa[b])
+			})
+			//			load方法
+			$("#zhuce-dibu").load("../底部/底部.html");
+//			生成验证码
+			$("#hqyzm1").click(function(){
+				var suiji="";
+				for(var i=0;i<6;i++){
+					suiji=suiji+Math.floor(Math.random()*10);
+				}
+				console.log(suiji);
+				$(".hqyzm").val(suiji);
+			})
+//	  			验证表单
+			$(".ljzc").click(function() {
+				var phone = /^(\+86)?1{1}[3-9]{1}[0-9]{9}$/;
+				var passw = /^\w{6,20}$/;
+				var phone1 = phone.test($(".inp2").val());
+				var passw1 = passw.test($(".inp4").val());
+
+				if(!phone1) {
+					$("#i2").css("display", "inline-block")
+				} else if(phone1) {
+					$("#i2").css("display", "inline-block")
+					$("#i2").html("<img src='dui.png'/>");
+				}else if($(".inp2").val()==""){
+					$("#i2").css("display", "inline-block")
+				}
+				if($(".hqyzm").val()==$(".inp3").val()){
+					$("#i3").css("display","inline-block");
+					$("#i3").html("<img src='dui.png' />")
+				}else{
+					$("#i3").css("display","inline-block");
+				}
+				 if($(".inp3").val()==""){
+					$("#i3").css("display", "inline-block")
+				}
+				if(!passw1||$(".inp4").val()==""){
+					$("#i4").css("display","inline-block");
+				}else{
+					$("#i4").css("display","inline-block");
+					$("#i4").html("<img src='dui.png' />")
+				} 
+ 				if($(".inp5").val()!=$(".inp4").val()||$(".inp4").val()==""){
+ 					$("#i5").html("<img src='cuo.png'/>格式错误")
+ 					$("#i5").css("display","inline-block");
+					
+ 				}else{
+ 					$("#i5").css("display","inline-block");
+ 					$("#i5").html("<img src='dui.png'/>")
+ 				}
+			})
+		</script>
+	</body>
+
+</html>
+
+<!--padding: 40px 0 50px;
+    border: 1px solid #a5c9b6;
+    border-top: 0;
+    background-color: #fff;-->

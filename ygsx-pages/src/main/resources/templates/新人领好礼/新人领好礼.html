@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../layui-v2.5.5/layui/css/layui.css" />
+		<script src="../layui-v2.5.5/layui/layui.js"></script>
+		<script src="../jquery-3.4.1.js"></script>
+		<style type="text/css">
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			#xrlhl-box {
+				width: 1280px;
+				margin: 0 auto;
+			}
+			#xrlhl-caidan-right {
+				overflow: hidden;
+				float: right;
+				width: 1100px;
+				height: 36px;
+				line-height: 36px;
+				border-bottom: 1px solid #008842;
+			}
+			
+			#xrlhl-caidan-right ul {
+				overflow: hidden;
+			}
+			
+			#xrlhl-caidan-right li {
+				float: left;
+				width: 115px;
+				text-align: center;
+				font-size: 15px;
+				font-weight: bold;
+			}
+			#xrlhl-mid{
+				width: 1280px;
+				margin: 0 auto;
+			}
+			#xrlhl-mid img:first-child {
+				width: 1280px;
+				line-height: 509px;
+			}
+			.tupian{
+				margin-left: 100px;
+				vertical-align: middle;
+				text-align: center;
+			}
+			.tupian2 {
+				margin-left: 130px;
+			}
+			.di1{
+				width: 230px;
+				height: 700px;
+				background: pink;
+				position: absolute;
+				left: 180px;
+				top: -38px;
+				display: none;
+			}
+			#xrlhl-mid{
+				margin: 0 auto;
+				text-align: center;
+			}
+			#fenlan-div{
+				background: rgba(255,255,255,0.5);
+			}
+			#quanbu1{
+				background: rgba(255,255,255,0.5);
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="xrlhl-box">
+			<div id="xrlhl-dingbu"></div>
+			<div id="xrlhl-daohanglan"></div>
+			<div id="xrlhl-mid">
+				<img src="xrlhl-tupian.png" class=".tupian"/>
+				<img src="xrlhl-tupian2.png" class="tupian2" />
+			</div>
+			<div id="xrlhl-dibu"></div>
+		</div>
+
+		<script type="text/javascript"></script>
+		<script type="text/javascript">
+//			load方法
+			
+			$("#xrlhl-dingbu").load("../顶部/顶部.html")
+			$("#xrlhl-daohanglan").load("../导航栏/导航栏.html")
+			$("#xrlhl-dibu").load("../底部/底部.html")
+			
+//			----------------------------------------
+			$("#fenlan-ul li img").hover(function(){
+				$(this).css({
+					"border-top":"1px solid #ccc",
+					"border-bottom":"1px solid #ccc",
+					"transform":"translateX(5px)",
+					"transition":"transform 500ms"
+				})
+				$("#fenlan-ul").css("border","1px solid #ccc")
+			},function(){
+				$(this).css({
+					"border":"none",
+					"transform":"translateX(0px)",
+					"transition":"transform 500ms"
+				})
+			})
+			var fenlan=[
+				["奇异果","车厘子","李梅","牛油果","提子","苹果","梨","柑橘橙柚","火龙果","椰子","芒果","凤梨","榴莲","热带水果","时令水果"],
+				["苹果 梨","柑桔橙柚","猕猴桃","瓜","葡萄","桃","李","枣","莓","芒果" ,"凤梨","莲雾","百香果","热带水果","时令水果","原箱水果"],
+				["牛排","进口牛肉","国产牛肉","猪肉","羊肉","肉制品"],
+				["鸡","鸭","鹅","鸽","特色禽类","蛋"],
+				["独家秘制","中华美食"],
+				["鳕鱼","虾仁","大闸蟹券","鱼","三文鱼","虾","蟹 贝","活鲜","海参","加工水产"],
+				["奶酪","黄油","奶油","乳品","面包","蛋糕","甜点"],
+				["叶菜类","根茎类","茄果瓜果类","花菜豆类","香料","菌菇","沙拉菜","冷冻蔬菜","豆制品","葱蒜类","蔬菜组合","净菜类"],
+				["冷冻点心 ","中式主食","火锅料","半成品菜"],
+				["米","杂粮","面","面制品 ","油","调味料","干货","果干","零食"],
+				["水 ","冲调饮品","葡萄酒","酒具","休闲食品","啤酒"],
+				["礼品礼盒","礼品礼券","原膳礼盒"]
+			];
+			var img=[
+				["sstutu01.png"],
+				["sstutu02.png"],
+				["sstutu03.png"],
+				["sstutu04.png"],
+				["sstutu05.png"],
+				["sstutu06.png"],
+				["sstutu07.png"],
+				["sstutu01.png"],
+				["sstutu09.png"],
+				["sstutu10.png"],
+				["sstutu01.png"],
+				["sstutu02.png"]
+			];
+			var uname=[
+			["进口水果"],
+			["国产水果"],
+			["精选肉类"],
+			["禽类蛋品"],
+			["即烹美食"],
+			["海鲜水产"],
+			["乳品糕点"],
+			["新鲜蔬菜"],
+			["方便速食"],
+			["粮油杂货"],
+			["食品饮料"],
+			["礼品礼券"]
+			];
+			$("#fenlan-ul li").mouseenter(function(){
+				var xb=$(this).index();
+				console.log(xb);
+				var fl="";
+				var img1="";
+				var uname1="";
+				for(var i=0;i<fenlan[xb].length;i++){
+					fl=fl+'<li>'+'<span>'+fenlan[xb][i]+'</span>'+'</li>';
+				}
+				$("#fenlan-div-ul").html(fl);
+				for(var j=0;j<img[xb].length;j++){
+					img1=img1+'<li>'+'<img src="'+img[xb][j]+'"/>'+''+'</li>';
+				}
+				$("#fenlan-img").html(img1);
+				for(var jj=0;jj<uname[xb].length;jj++){
+					uname1=uname1+uname[xb][jj];
+				}
+				$("h3").html(uname1);
+			})
+			$("#zfl").hover(function(){
+				$("#fenlan-ul").show();
+			},function(){
+				$("#fenlan-ul").hide();
+			})
+			$("#fenlan-ul").hover(function(){
+				$("#fenlan-ul").show();
+			},function(){
+				$("#fenlan-ul").hide();
+			})
+			$("#fenlan-ul li").hover(function(){
+				$("#fenlan-ul").show();
+				$("#fenlan-div").show();
+			},function(){
+				$("#fenlan-ul").hide();
+				$("#fenlan-div").hide()
+			})
+			$("#fenlan-div").hover(function(){
+				$("#fenlan-div").show();
+				$("#fenlan-ul").show();
+			},function(){
+				$("#fenlan-div").hide();
+				$("#fenlan-ul").hide();
+			})
+		</script>
+	</body>
+
+</html>

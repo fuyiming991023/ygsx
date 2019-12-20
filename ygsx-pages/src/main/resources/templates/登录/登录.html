@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<link rel="stylesheet" href="../layui-v2.5.5/layui/css/layui.css" />
+		<script src="../layui-v2.5.5/layui/layui.js"></script>
+		<script src="../jquery-3.4.1.js"></script>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}	
+			#top-logo {
+				line-height: 78px;
+				height: 78px;
+				width: 1280px;
+				background: #E0E0E0;
+				margin: 0 auto;
+			}	
+			#top-logo>div {
+				display: inline-block;
+			}	
+			#logo a {
+				display: inline-block;
+				width: 145px;
+				height: 50px;
+			}	
+			#logo img {
+				width: 145px;
+				height: 50px;
+				vertical-align: middle;
+			}	
+			#logo {
+				display: inline-block;
+				width: 280px;
+				height: 50px;
+				margin-left: 70px;
+			}
+			#logo span {
+				color: #008842;
+				/* position: absolute;
+				left: 358px;
+				top: -1px; */
+				font-size: 25px;
+			}
+			#denglu-bottom-box{
+				margin: 0 auto;
+				width: 1280px;
+				height: 501px;
+				/*background: pink;*/
+			/* margin-left: 43px; */
+				margin-top: 40px
+			}
+			/*//1280-1100*/
+			#denglu-box{
+				width: 1100px;
+				height: 501px;
+				/*background: yellow;*/
+				background: url(../图片/9288737682794109_500.jpg) no-repeat scroll top left;
+				background-size: 566px 318px;
+				margin: 0 auto;
+			}
+			#denglukuang{
+				width: 370px;
+				height: 432px;
+    			padding: 30px 20px 20px;
+    			background-color: #fff;
+    			border: 1px solid #e3e6e0;
+    			margin-left: 670px;
+			}
+			#denglukuang p{
+				margin-bottom: 20px;
+   				color: #878787;
+    			overflow: hidden;
+			}
+			#denglukuang strong{
+				color: #000000;
+				font-size: 16px;
+			}
+			#denglukuang a{
+				color: #008842;
+			}
+			#denglukuang span{
+				border: 1px solid gainsboro;
+				
+			}
+			.tu1 ,.tu2,.tu3{
+				font-size: 41px;
+				text-align: center;
+				vertical-align: middle;
+				right: 0px;
+			}
+			.inpu1{
+				width: 300px;
+				height: 40px;
+				vertical-align: middle;
+				padding-left: 10px;	
+			}
+			.inpu2{
+				width: 300px;
+				height: 40px;
+				vertical-align: middle;	
+				padding-left: 10px;
+			}
+			.inpu3{
+				width: 100px;
+				height: 40px;
+				vertical-align: middle;
+				padding-left: 10px;
+			}
+			#p555 a{
+				float: right; 
+			}
+			#p666 input{
+				width: 306px;
+				height: 50px;
+				background: #008842;
+				margin-left: 30px;
+			}
+			#p888 a{
+				margin-left: 20px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="top-logo">
+			<div id="logo">
+				<a href="../我的易果首页1/首页.html"><img src="../图片/logo.png" /></a>
+				<span>登录</span>
+			</div>
+		</div>
+		<div id="denglu-bottom-box">
+			<div id="denglu-box">
+				<div id="denglukuang">
+					<p>
+						<strong>欢迎登录</strong>
+						<span>
+							还没有账号？
+							<a href="../注册/注册.html">立即注册</a>
+						</span>
+					</p>
+					<p id="p222">
+						<span class="layui-icon layui-icon-friends tu1"></span>
+						<input class="inpu1" id="zhanghao" placeholder="邮箱/账号/已验证手机" type="text" value="">
+					</p>
+					<p id="p333">
+						<span class="layui-icon layui-icon-edit tu2"></span>
+						<input class="inpu2" id="zhanghao" placeholder="密码" type="text" value="">
+					</p>
+					<p id="p444">
+						<span class="layui-icon layui-icon-edit tu3"></span>
+						<input class="inpu3" id="zhanghao" placeholder="验证码" type="text" value="">
+						<img src="0004.png" id="suiji" />
+						<a href="#" id="hyz">换一张</a>
+					</p>
+					<p id="p555">
+						<input type="checkbox" />自动登录
+						<a>忘记登录密码？</a>
+					</p>
+					<p id="p666">
+						<input type="button" value="登录"/>
+					</p>
+					<p id="p777">
+						第三方登录
+					</p>
+					<p id="p888">
+					<a href="#"><img src="0007.png"/></a>
+					<a href="#"><img src="0008.png"/></a>
+					<a href="#"><img src="0009.png"/></a>
+					
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="denglu-dibu"></div>
+		<script src="../jquery-3.4.1.js"></script>
+		<script type="text/javascript">
+//			图片验证码
+			var aaa = [
+				"0001.png", "0002.png", "0003.png", "0004.png", "0005.png"
+			]
+			$("#hyz").click(function() {
+				var a = aaa.length;
+				var b = Math.ceil(Math.random() * (a - 2) - 0 + 1 + 0);
+				$("#suiji").attr("src", aaa[b]);
+			})
+			
+			$("#denglu-dibu").load("../底部/底部.html")
+		</script>	
+	</body>
+</html>
+
+
+   

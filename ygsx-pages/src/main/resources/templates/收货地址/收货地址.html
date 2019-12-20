@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>收货地址管理</title>
+		<link rel="stylesheet" type="text/css" href="../layui-v2.5.5/layui/css/layui.css" />
+		<style type="text/css">
+			* {
+				margin: 0px;
+				padding: 0px;
+				font-size: 12px;
+				font-family: Arial, Verdana, "\5b8b\4f53"
+			}
+
+			.wdyg-dh {
+				width: 220px;
+				height: 30px;
+
+				margin-top: 10px;
+			}
+
+			.wdyg-dh li {
+				float: left;
+				margin-left: 13px;
+				font-size: 13px;
+			}
+
+			.wdyg-dh li:last-child {
+				text-decoration: underline;
+			}
+
+			.wdyg-dh li:last-child a {
+				color: red;
+			}
+
+			.wdyg-dh2 {
+				width: 195px;
+				height: 567px;
+				background: white;
+				float: left;
+			}
+
+			.wdyg-dh2 ul {
+				width: 150px;
+				height: 400px;
+				padding: 20px 20px;
+
+			}
+
+			.wdyg-dh2 ul li {
+				line-height: 30px;
+				font-size: 12px;
+			}
+
+			.wdyg-dh2 ul li:hover a {
+				color: #008842;
+			}
+
+			.wdyg-dh2 ul li h3 {
+				font-weight: 550;
+				font-size: 16px;
+			}
+
+			.wddd {
+				width: 920px;
+				padding: 20px;
+				background: white;
+				float: left;
+				border: 1px solid #ccc;
+				z-index: 1;
+			}
+
+			.wddd,
+			.wdyg-dh2 {
+				display: inline-block;
+			}
+
+			.wddd2 {
+				width: 880px;
+				height: 50px;
+				margin-left: 50px;
+				margin: 0 auto;
+				line-height: 58px;
+				border-bottom: 1px solid #008842;
+			}
+
+			.wddd2 .wddd-xlk {
+				margin-left: 610px;
+			}
+
+			.wddd2 span {
+				color: #008842;
+			}
+
+			.wddd-ddxx {
+				width: 880px;
+				height: 40px;
+				margin-left: 50px;
+				margin: 0 auto;
+				line-height: 40px;
+				background: #eee;
+				margin-top: 15px;
+			}
+
+			.wddd-ddxx span {
+				display: inline-block;
+				font-size: 12px;
+			}
+
+			.wddd-ddxx span:first-child {
+				width: 510px;
+				text-align: center;
+			}
+
+			.wddd-ddxx span:nth-child(2) {
+				width: 120px;
+				text-align: center;
+			}
+
+			.wddd-ddxx span:nth-child(3) {
+				width: 120px;
+				text-align: center;
+			}
+
+			.wddd-ddxx span:nth-child(4) {
+				width: 120px;
+				text-align: center;
+			}
+
+			.wddd-jl {
+				width: 880px;
+				height: 100px;
+				line-height: 100px;
+				text-align: center;
+			}
+
+			.wddd-jl a {
+				color: #008842;
+				text-decoration: underline;
+			}
+
+			#wddd3 {
+				width: 1280px;
+				margin: 0 auto;
+			}
+
+			.tips {
+				margin: 25px 0 20px 30px;
+				font-size: 12px;
+			}
+
+			.addrs {
+				margin: 15px 30px;
+			}
+
+			.addrs .btn-gn {
+				padding: 7px 10px;
+				margin-right: 20px;
+				vertical-align: middle;
+			}
+
+			.btn-gn {
+				color: #fff;
+				border: 1px solid #008842;
+				background: #008842;
+			}
+
+			a {
+				text-decoration: none;
+				outline: none;
+			}
+			.addressList li {
+			    position: relative;
+			    width: 800px;
+			    padding: 15px 20px;
+			    margin-bottom: 15px;
+			    border: 1px solid #eaeaea;
+			}
+			.addressList dt {
+			    padding-bottom: 10px;
+			}
+			.addressList .name {
+			    font: bold 18px microsoft yahei;
+			    color: #333;
+			}
+			.addressList .name span {
+			    font: normal 12px SimSun;
+			    color: #fff;
+			    padding: 5px 7px;
+			    background: #ef760a;
+			    margin-left: 10px;
+			}
+			.addressList .del-btn {
+			    cursor: pointer;
+			    font-size: 20px;
+			    color: #b5c399;
+			    font-family: sans-serif;
+			    position: absolute;
+			    right: 15px;
+			    top: 15px;
+			}
+			.addressList dd {
+			    line-height: 25px;
+			}
+			.addressList .btns {
+			    position: absolute;
+			    right: 15px;
+			    bottom: 15px;
+			}
+			.addressList .btns a {
+			    padding-left: 15px;
+			    color: #666;
+			}
+			.addressList{
+				margin-top: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<script type="text/javascript" src="../layui-v2.5.5/layui/layui.js"></script>
+		<script type="text/javascript" src="../jquery-3.4.1.js"></script>
+		<div class="dingbu"></div>
+		<div class="daohang"></div>
+		<div id="wddd3">
+			<ul class="wdyg-dh">
+				<li>首页<span>></span></li>
+				<li>我的易果<span>></span></li>
+				<li><a href="">收货地址管理</a></li>
+			</ul>
+			<div class="wdyg-dh2">
+				<ul>
+					<li style="font-weight: bold;font-size: 14px">交易信息</li>
+					<li><a href="../我的异果/我的异果.html">我的订单</a></li>
+					<li><a href="../我的优惠券/我的优惠券.html">我的优惠券</a></li>
+					<li><a href="../我的悠币/我的悠币.html">我的悠币</a></li>
+					<li><a href="../购买过的商品/购买过的商品.html">购买过得商品</a></li>
+					<li><a href="../收藏/收藏.html">我的收藏</a></li>
+					<li><a href="../评论商品/评论商品.html">评论商品</a></li>
+					<li style="font-weight: bold;font-size: 14px">账号信息</li>
+					<li><a href="../个人资料/geren.html">个人资料</a></li>
+					<li><a href="../收货地址/收货地址.html">收货地址管理</a></li>
+				</ul>
+			</div>
+
+			<div class="wddd">
+				<div class="wddd2">
+					<span>收货地址管理</span>
+				</div>
+				<div class="addrs">
+					<a href="javascript:" data-toggle="modal" class="btn-gn addConsignee">新增收货地址</a>
+					您已创建
+					<b class="consigneeCount">1</b>
+					个收货地址，最多可创建
+					<b>20</b>个
+					<div class="addressList">
+						<ul>
+							<li>
+								<dl>
+									<dt>
+										<div class="name">李旭冉<span>默认地址</span>
+											<div class="del-btn" data-id="4378e634-b6de-482e-b9bc-e6b8987049be">×</div>
+										</div>
+									</dt>
+									<dd><span>收货人：</span>李旭冉</dd>
+									<dd><span>所在地区：</span>北京 昌平区 昌平区</dd>
+									<dd><span>地址：</span>北京工商管理专修学院</dd>
+									<dd><span>手机：</span>138****8311</dd>
+								</dl>
+								<div class="btns"><a class="edit editConsignee" href="javascript:" data-toggle="modal" >编辑</a></div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="db"></div>
+		<script type="text/javascript">
+			$(".dingbu").load("../顶部/顶部.html")
+			$(".daohang").load("../导航栏/导航栏.html");
+			$("#db").load("../底部/底部.html");
+			layui.use('element', function() {
+				var element = layui.element;
+			});
+		</script>
+
+	</body>
+</html>
