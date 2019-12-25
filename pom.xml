@@ -15,6 +15,7 @@
         <module>ygsx-server</module>
         <module>ygsx-server-api</module>
         <module>ygsx-pages</module>
+        <module>ygsx-bgpages</module>
     </modules>
 
     <dependencyManagement>
